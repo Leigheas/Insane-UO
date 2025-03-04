@@ -1,7 +1,8 @@
 <h1>Tooltip Overrides (only useable with TazUO)</h1>
 
 <h2>How to install:</h2>
-Click options- then select TazUO Specific, then select tooltip overrides then click tooltip override settings.
+Options -> TazUO -> Tooltips -> Tooltip override settings
+then click Import.<br />
 
 
 
