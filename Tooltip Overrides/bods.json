@@ -541,39 +541,39 @@
   {
     "Index": 49,
     "SearchText": "Night Sight",
-    "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
+    "FormattedText": "{0}",
     "Min1": -1,
     "Max1": 99,
     "Min2": -1,
     "Max2": 99,
-    "ItemLayer": 0,
+    "ItemLayer": 161,
     "IsNew": false
   },
   {
     "Index": 50,
-    "SearchText": "Hit Harm",
-    "FormattedText": "{0}{1}%",
+    "SearchText": "Night Sight",
+    "FormattedText": "{0}",
     "Min1": -1,
     "Max1": 99,
     "Min2": -1,
     "Max2": 99,
-    "ItemLayer": 0,
+    "ItemLayer": 162,
     "IsNew": false
   },
   {
     "Index": 51,
-    "SearchText": "Harm",
-    "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
+    "SearchText": "Night Sight",
+    "FormattedText": "{0}",
     "Min1": -1,
     "Max1": 99,
     "Min2": -1,
     "Max2": 99,
-    "ItemLayer": 0,
+    "ItemLayer": 163,
     "IsNew": false
   },
   {
     "Index": 52,
-    "SearchText": "Magic Trap",
+    "SearchText": "Night Sight",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
     "Max1": 99,
@@ -584,8 +584,8 @@
   },
   {
     "Index": 53,
-    "SearchText": "Magic Untrap",
-    "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
+    "SearchText": "Hit Harm",
+    "FormattedText": "{0}{1}%",
     "Min1": -1,
     "Max1": 99,
     "Min2": -1,
@@ -595,8 +595,8 @@
   },
   {
     "Index": 54,
-    "SearchText": "Crafting Failure Protection",
-    "FormattedText": "{0}{1}",
+    "SearchText": "Harm",
+    "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
     "Max1": 99,
     "Min2": -1,
@@ -606,7 +606,7 @@
   },
   {
     "Index": 55,
-    "SearchText": "Protection",
+    "SearchText": "Magic Trap",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
     "Max1": 99,
@@ -617,18 +617,7 @@
   },
   {
     "Index": 56,
-    "SearchText": "Hit Fireball",
-    "FormattedText": "{0}{1}%",
-    "Min1": -1,
-    "Max1": 99,
-    "Min2": -1,
-    "Max2": 99,
-    "ItemLayer": 0,
-    "IsNew": false
-  },
-  {
-    "Index": 57,
-    "SearchText": "Fireball",
+    "SearchText": "Magic Untrap",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
     "Max1": 99,
@@ -638,8 +627,19 @@
     "IsNew": false
   },
   {
+    "Index": 57,
+    "SearchText": "Crafting Failure Protection",
+    "FormattedText": "{0}{1}",
+    "Min1": -1,
+    "Max1": 99,
+    "Min2": -1,
+    "Max2": 99,
+    "ItemLayer": 0,
+    "IsNew": false
+  },
+  {
     "Index": 58,
-    "SearchText": "Magic Lock",
+    "SearchText": "Protection",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
     "Max1": 99,
@@ -650,7 +650,7 @@
   },
   {
     "Index": 59,
-    "SearchText": "Hit Poison",
+    "SearchText": "Hit Fireball",
     "FormattedText": "{0}{1}%",
     "Min1": -1,
     "Max1": 99,
@@ -661,8 +661,8 @@
   },
   {
     "Index": 60,
-    "SearchText": "Poison Resist",
-    "FormattedText": "{0}{1}%",
+    "SearchText": "Fireball",
+    "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
     "Max1": 99,
     "Min2": -1,
@@ -672,8 +672,8 @@
   },
   {
     "Index": 61,
-    "SearchText": "Poison Damage",
-    "FormattedText": "{0}{1}%",
+    "SearchText": "Magic Lock",
+    "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
     "Max1": 99,
     "Min2": -1,
@@ -683,7 +683,7 @@
   },
   {
     "Index": 62,
-    "SearchText": "Poison Eater",
+    "SearchText": "Hit Poison",
     "FormattedText": "{0}{1}%",
     "Min1": -1,
     "Max1": 99,
@@ -694,6 +694,39 @@
   },
   {
     "Index": 63,
+    "SearchText": "Poison Resist",
+    "FormattedText": "{0}{1}%",
+    "Min1": -1,
+    "Max1": 99,
+    "Min2": -1,
+    "Max2": 99,
+    "ItemLayer": 0,
+    "IsNew": false
+  },
+  {
+    "Index": 64,
+    "SearchText": "Poison Damage",
+    "FormattedText": "{0}{1}%",
+    "Min1": -1,
+    "Max1": 99,
+    "Min2": -1,
+    "Max2": 99,
+    "ItemLayer": 0,
+    "IsNew": false
+  },
+  {
+    "Index": 65,
+    "SearchText": "Poison Eater",
+    "FormattedText": "{0}{1}%",
+    "Min1": -1,
+    "Max1": 99,
+    "Min2": -1,
+    "Max2": 99,
+    "ItemLayer": 0,
+    "IsNew": false
+  },
+  {
+    "Index": 66,
     "SearchText": "Poison",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -704,7 +737,7 @@
     "IsNew": false
   },
   {
-    "Index": 64,
+    "Index": 67,
     "SearchText": "Telekinisis",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -715,7 +748,7 @@
     "IsNew": false
   },
   {
-    "Index": 65,
+    "Index": 68,
     "SearchText": "Teleport",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -726,7 +759,7 @@
     "IsNew": false
   },
   {
-    "Index": 66,
+    "Index": 69,
     "SearchText": "Unlock",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -737,7 +770,7 @@
     "IsNew": false
   },
   {
-    "Index": 67,
+    "Index": 70,
     "SearchText": "Wall Of Stone",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -748,7 +781,7 @@
     "IsNew": false
   },
   {
-    "Index": 68,
+    "Index": 71,
     "SearchText": "Arch Cure",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -759,7 +792,7 @@
     "IsNew": false
   },
   {
-    "Index": 69,
+    "Index": 72,
     "SearchText": "Arch Protection",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -770,7 +803,7 @@
     "IsNew": false
   },
   {
-    "Index": 70,
+    "Index": 73,
     "SearchText": "Fire Field",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -781,7 +814,7 @@
     "IsNew": false
   },
   {
-    "Index": 71,
+    "Index": 74,
     "SearchText": "Hit Lightning",
     "FormattedText": "{0}{1}%",
     "Min1": -1,
@@ -792,7 +825,7 @@
     "IsNew": false
   },
   {
-    "Index": 72,
+    "Index": 75,
     "SearchText": "Chain Lightning",
     "FormattedText": "{0}{1}%",
     "Min1": -1,
@@ -803,7 +836,7 @@
     "IsNew": false
   },
   {
-    "Index": 73,
+    "Index": 76,
     "SearchText": "Lightning",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -814,7 +847,7 @@
     "IsNew": false
   },
   {
-    "Index": 74,
+    "Index": 77,
     "SearchText": "Hit Mana Drain",
     "FormattedText": "{0}{1}%",
     "Min1": -1,
@@ -825,7 +858,7 @@
     "IsNew": false
   },
   {
-    "Index": 75,
+    "Index": 78,
     "SearchText": "Mana Drain",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -836,7 +869,7 @@
     "IsNew": false
   },
   {
-    "Index": 76,
+    "Index": 79,
     "SearchText": "Incognito",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -847,7 +880,7 @@
     "IsNew": false
   },
   {
-    "Index": 77,
+    "Index": 80,
     "SearchText": "Mind Blast",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -858,7 +891,7 @@
     "IsNew": false
   },
   {
-    "Index": 78,
+    "Index": 81,
     "SearchText": "Poison Field",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -869,7 +902,7 @@
     "IsNew": false
   },
   {
-    "Index": 79,
+    "Index": 82,
     "SearchText": "Hit Dispel",
     "FormattedText": "{0}{1}%",
     "Min1": -1,
@@ -880,7 +913,7 @@
     "IsNew": false
   },
   {
-    "Index": 80,
+    "Index": 83,
     "SearchText": "Dispel",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -891,7 +924,7 @@
     "IsNew": false
   },
   {
-    "Index": 81,
+    "Index": 84,
     "SearchText": "Energy Bolt",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -902,7 +935,7 @@
     "IsNew": false
   },
   {
-    "Index": 82,
+    "Index": 85,
     "SearchText": "Explosion Potion",
     "FormattedText": "{0}{1}",
     "Min1": -1,
@@ -913,7 +946,7 @@
     "IsNew": false
   },
   {
-    "Index": 83,
+    "Index": 86,
     "SearchText": "Greater Explosion Potion",
     "FormattedText": "{0}{1}",
     "Min1": -1,
@@ -924,7 +957,7 @@
     "IsNew": false
   },
   {
-    "Index": 84,
+    "Index": 87,
     "SearchText": "Explosion",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -935,7 +968,7 @@
     "IsNew": false
   },
   {
-    "Index": 85,
+    "Index": 88,
     "SearchText": "Invisibility",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -946,7 +979,7 @@
     "IsNew": false
   },
   {
-    "Index": 86,
+    "Index": 89,
     "SearchText": "Mark",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -957,7 +990,7 @@
     "IsNew": false
   },
   {
-    "Index": 87,
+    "Index": 90,
     "SearchText": "Mass Curse",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -968,7 +1001,7 @@
     "IsNew": false
   },
   {
-    "Index": 88,
+    "Index": 91,
     "SearchText": "Paralyze Field",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -979,7 +1012,7 @@
     "IsNew": false
   },
   {
-    "Index": 89,
+    "Index": 92,
     "SearchText": "Reveal",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -990,7 +1023,7 @@
     "IsNew": false
   },
   {
-    "Index": 90,
+    "Index": 93,
     "SearchText": "Energy Field",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1001,7 +1034,7 @@
     "IsNew": false
   },
   {
-    "Index": 91,
+    "Index": 94,
     "SearchText": "Gate Travel",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1012,7 +1045,7 @@
     "IsNew": false
   },
   {
-    "Index": 92,
+    "Index": 95,
     "SearchText": "Mass Dispel",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1023,7 +1056,7 @@
     "IsNew": false
   },
   {
-    "Index": 93,
+    "Index": 96,
     "SearchText": "Earthquake",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1034,7 +1067,7 @@
     "IsNew": false
   },
   {
-    "Index": 94,
+    "Index": 97,
     "SearchText": "Energy Vortex",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1045,7 +1078,7 @@
     "IsNew": false
   },
   {
-    "Index": 95,
+    "Index": 98,
     "SearchText": "Resurrection",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1056,7 +1089,7 @@
     "IsNew": false
   },
   {
-    "Index": 96,
+    "Index": 99,
     "SearchText": "Lich Form",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1067,7 +1100,7 @@
     "IsNew": false
   },
   {
-    "Index": 97,
+    "Index": 100,
     "SearchText": "Vengeful Spirit",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1078,7 +1111,7 @@
     "IsNew": false
   },
   {
-    "Index": 98,
+    "Index": 101,
     "SearchText": "Wraith Form",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1089,7 +1122,7 @@
     "IsNew": false
   },
   {
-    "Index": 99,
+    "Index": 102,
     "SearchText": "Vampiric Embrace",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1100,7 +1133,7 @@
     "IsNew": false
   },
   {
-    "Index": 100,
+    "Index": 103,
     "SearchText": "Barrel Tap",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1111,7 +1144,7 @@
     "IsNew": false
   },
   {
-    "Index": 101,
+    "Index": 104,
     "SearchText": "Barrel Hoops",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1122,7 +1155,7 @@
     "IsNew": false
   },
   {
-    "Index": 102,
+    "Index": 105,
     "SearchText": "Pewter Mug",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1133,7 +1166,7 @@
     "IsNew": false
   },
   {
-    "Index": 103,
+    "Index": 106,
     "SearchText": "Clipper",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1144,7 +1177,7 @@
     "IsNew": false
   },
   {
-    "Index": 104,
+    "Index": 107,
     "SearchText": "Tongs",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1155,7 +1188,7 @@
     "IsNew": false
   },
   {
-    "Index": 105,
+    "Index": 108,
     "SearchText": "Sledge Hammer",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1166,7 +1199,7 @@
     "IsNew": false
   },
   {
-    "Index": 106,
+    "Index": 109,
     "SearchText": "Saw",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1177,7 +1210,7 @@
     "IsNew": false
   },
   {
-    "Index": 107,
+    "Index": 110,
     "SearchText": "Froe",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1188,7 +1221,7 @@
     "IsNew": false
   },
   {
-    "Index": 108,
+    "Index": 111,
     "SearchText": "Flour Sifter",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1199,7 +1232,7 @@
     "IsNew": false
   },
   {
-    "Index": 109,
+    "Index": 112,
     "SearchText": "Nunchaku",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1210,7 +1243,7 @@
     "IsNew": false
   },
   {
-    "Index": 110,
+    "Index": 113,
     "SearchText": "Hatchet",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1221,7 +1254,7 @@
     "IsNew": false
   },
   {
-    "Index": 111,
+    "Index": 114,
     "SearchText": "Pickaxe",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1232,7 +1265,7 @@
     "IsNew": false
   },
   {
-    "Index": 112,
+    "Index": 115,
     "SearchText": "Cleaver",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1243,7 +1276,7 @@
     "IsNew": false
   },
   {
-    "Index": 113,
+    "Index": 116,
     "SearchText": "Pitchfork",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1254,7 +1287,7 @@
     "IsNew": false
   },
   {
-    "Index": 114,
+    "Index": 117,
     "SearchText": "Lantern",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1265,7 +1298,7 @@
     "IsNew": false
   },
   {
-    "Index": 115,
+    "Index": 118,
     "SearchText": "Candelabra",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1276,7 +1309,7 @@
     "IsNew": false
   },
   {
-    "Index": 116,
+    "Index": 119,
     "SearchText": "Scales",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1287,7 +1320,7 @@
     "IsNew": false
   },
   {
-    "Index": 117,
+    "Index": 120,
     "SearchText": "Gears",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1298,7 +1331,7 @@
     "IsNew": false
   },
   {
-    "Index": 118,
+    "Index": 121,
     "SearchText": "Axle",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1309,7 +1342,7 @@
     "IsNew": false
   },
   {
-    "Index": 119,
+    "Index": 122,
     "SearchText": "Springs",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1320,7 +1353,7 @@
     "IsNew": false
   },
   {
-    "Index": 120,
+    "Index": 123,
     "SearchText": "Axle Gears",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1331,7 +1364,7 @@
     "IsNew": false
   },
   {
-    "Index": 121,
+    "Index": 124,
     "SearchText": "Clock Parts",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1342,7 +1375,7 @@
     "IsNew": false
   },
   {
-    "Index": 122,
+    "Index": 125,
     "SearchText": "Clock",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1353,7 +1386,7 @@
     "IsNew": false
   },
   {
-    "Index": 123,
+    "Index": 126,
     "SearchText": "Potion Keg",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1364,7 +1397,7 @@
     "IsNew": false
   },
   {
-    "Index": 124,
+    "Index": 127,
     "SearchText": "Clock Frame",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1375,7 +1408,7 @@
     "IsNew": false
   },
   {
-    "Index": 125,
+    "Index": 128,
     "SearchText": "Metal Container Engraver",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
@@ -1386,7 +1419,7 @@
     "IsNew": false
   },
   {
-    "Index": 126,
+    "Index": 129,
     "SearchText": "Sextant Parts",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
