@@ -265,7 +265,7 @@
   },
   {
     "Index": 24,
-    "SearchText": "Wooden Chest",
+    "SearchText": "$^\bWooden Chest\b",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
     "Max1": 99,
@@ -397,7 +397,7 @@
   },
   {
     "Index": 36,
-    "SearchText": "Fruit Pie",
+    "SearchText": "$\bFruit Pie\b",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
     "Max1": 99,
@@ -408,7 +408,7 @@
   },
   {
     "Index": 37,
-    "SearchText": "Peach Cobbler",
+    "SearchText": "$^\bPeach Cobbler\b",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
     "Max1": 99,
@@ -419,7 +419,7 @@
   },
   {
     "Index": 38,
-    "SearchText": "Apple Pie",
+    "SearchText": "$\bApple Pie\b",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
     "Max1": 99,
@@ -430,7 +430,7 @@
   },
   {
     "Index": 39,
-    "SearchText": "Pumpkin Pie",
+    "SearchText": "$^\bPumpkin Pie\b",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
     "Max1": 99,
