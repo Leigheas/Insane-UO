@@ -6,3 +6,11 @@ then click Import<br>
 <br>
 <a href="https://github.com/Leigheas/Insane-UO/blob/main/Tooltip%20Overrides/bods.json">bods.json</a> - tooltip override that will show if a small bod (sbod) isn't used<br>
             for a large bod (lbod)
+
+<a href="https://github.com/Leigheas/Insane-UO/blob/main/Tooltip%20Overrides/bonuses.json">bonuses.json</a> holds overrides for stuff like spell damage increase, damage increase ect... (skill increases included as well)
+
+<a href="https://github.com/Leigheas/Insane-UO/blob/main/Tooltip%20Overrides/item%20grades.json">item grades.json</a> holds overrides for item grades minor magic, artifact, ect...
+
+<a href="https://github.com/Leigheas/Insane-UO/blob/main/Tooltip%20Overrides/resists.json">resists.json</a> holds overrides for resists (physical, energy, ect...)
+
+<a href="https://github.com/Leigheas/Insane-UO/blob/main/Tooltip%20Overrides/slayers.json">slayers.json</a> holds overrides for slayer types.
