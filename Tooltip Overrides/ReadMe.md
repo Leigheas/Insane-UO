@@ -4,5 +4,5 @@
 <p></p>Options -> TazUO -> Tooltips -> Tooltip override settings
 then click Import<br>
 <br>
-bods.json - tooltip override that will show if a small bod (sbod) insn't used 
-          - for a large bod (lbod)
+bods.json - tooltip override that will show if a small bod (sbod) isn't used<br>
+            for a large bod (lbod)
