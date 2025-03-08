@@ -628,7 +628,7 @@
   },
   {
     "Index": 57,
-    "SearchText": "Poison",
+    "SearchText": "$^\bPoison\b",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
     "Max1": 99,
