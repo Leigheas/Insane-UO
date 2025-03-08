@@ -1,0 +1,90 @@
+[
+  {
+    "Index": 0,
+    "SearchText": "Minor Magic Item",
+    "FormattedText": "/c[#C6C6C6]Minor Magic Item",
+    "Min1": -1,
+    "Max1": 99,
+    "Min2": -1,
+    "Max2": 99,
+    "ItemLayer": 0,
+    "IsNew": false
+  },
+  {
+    "Index": 1,
+    "SearchText": "Lesser Magic Item",
+    "FormattedText": "/c[#04E72E]Lesser Magic Item",
+    "Min1": -1,
+    "Max1": 99,
+    "Min2": -1,
+    "Max2": 99,
+    "ItemLayer": 0,
+    "IsNew": false
+  },
+  {
+    "Index": 2,
+    "SearchText": "Greater Magic Item",
+    "FormattedText": "/c[#00E6E6]Greater Magic Item",
+    "Min1": -1,
+    "Max1": 99,
+    "Min2": -1,
+    "Max2": 99,
+    "ItemLayer": 0,
+    "IsNew": false
+  },
+  {
+    "Index": 3,
+    "SearchText": "Major Magic Item",
+    "FormattedText": "/c[#0770FB]Major Magic Item",
+    "Min1": -1,
+    "Max1": 99,
+    "Min2": -1,
+    "Max2": 99,
+    "ItemLayer": 0,
+    "IsNew": false
+  },
+  {
+    "Index": 4,
+    "SearchText": "Lesser Artifact",
+    "FormattedText": "/c[#A72DEC]Lesser Artifact",
+    "Min1": -1,
+    "Max1": 99,
+    "Min2": -1,
+    "Max2": 99,
+    "ItemLayer": 0,
+    "IsNew": false
+  },
+  {
+    "Index": 5,
+    "SearchText": "Greater Artifact",
+    "FormattedText": "/c[#FEFF37]Greater Artifact",
+    "Min1": -1,
+    "Max1": 99,
+    "Min2": -1,
+    "Max2": 99,
+    "ItemLayer": 0,
+    "IsNew": false
+  },
+  {
+    "Index": 6,
+    "SearchText": "Major Artifact",
+    "FormattedText": "/c[#FE8527]Major Artifact",
+    "Min1": -1,
+    "Max1": 99,
+    "Min2": -1,
+    "Max2": 99,
+    "ItemLayer": 0,
+    "IsNew": false
+  },
+  {
+    "Index": 7,
+    "SearchText": "Legendary Artifact",
+    "FormattedText": "/c[#F0161E]Legendary Artifact",
+    "Min1": -1,
+    "Max1": 99,
+    "Min2": -1,
+    "Max2": 99,
+    "ItemLayer": 0,
+    "IsNew": false
+  }
+]
