@@ -419,7 +419,7 @@
   },
   {
     "Index": 38,
-    "SearchText": "$\bApple Pie\b",
+    "SearchText": "$^\bApple Pie\b",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
     "Max1": 99,
