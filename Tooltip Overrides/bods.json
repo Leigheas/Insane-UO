@@ -397,7 +397,7 @@
   },
   {
     "Index": 36,
-    "SearchText": "$\bFruit Pie\b",
+    "SearchText": "$^\bBaked Fruit Pie\b",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
     "Max1": 99,
@@ -408,7 +408,7 @@
   },
   {
     "Index": 37,
-    "SearchText": "$^\bPeach Cobbler\b",
+    "SearchText": "$^Baked Peach Cobbler\b",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
     "Max1": 99,
@@ -419,7 +419,7 @@
   },
   {
     "Index": 38,
-    "SearchText": "$^\bApple Pie\b",
+    "SearchText": "$^Baked Apple Pie\b",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
     "Max1": 99,
@@ -430,7 +430,7 @@
   },
   {
     "Index": 39,
-    "SearchText": "$^\bPumpkin Pie\b",
+    "SearchText": "$^Baked Pumpkin Pie\b",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
     "Max1": 99,
@@ -514,6 +514,39 @@
     "Min2": -1,
     "Max2": 99,
     "ItemLayer": 0,
+    "IsNew": false
+  },
+  {
+    "Index": 49,
+    "SearchText": "Night Sight",
+    "FormattedText": "{0}",
+    "Min1": -1,
+    "Max1": 99,
+    "Min2": -1,
+    "Max2": 99,
+    "ItemLayer": 161,
+    "IsNew": false
+  },
+  {
+    "Index": 50,
+    "SearchText": "Night Sight",
+    "FormattedText": "{0}",
+    "Min1": -1,
+    "Max1": 99,
+    "Min2": -1,
+    "Max2": 99,
+    "ItemLayer": 162,
+    "IsNew": false
+  },
+  {
+    "Index": 51,
+    "SearchText": "Night Sight",
+    "FormattedText": "{0}",
+    "Min1": -1,
+    "Max1": 99,
+    "Min2": -1,
+    "Max2": 99,
+    "ItemLayer": 163,
     "IsNew": false
   },
   {
