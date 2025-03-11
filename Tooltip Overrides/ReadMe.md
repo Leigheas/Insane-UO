@@ -11,6 +11,7 @@ for a large bod (lbod) (note: some overrides make use of regex so they don't tri
 <br>
 <a href="https://github.com/Leigheas/Insane-UO/blob/main/Tooltip%20Overrides/item%20grades.json">item grades.json</a> holds overrides for item grades minor magic, artifact, ect...
 <br>
-<a href="https://github.com/Leigheas/Insane-UO/blob/main/Tooltip%20Overrides/resists.json">resists.json</a> holds overrides for resists (physical, energy, ect...)
+<a href="https://github.com/Leigheas/Insane-UO/blob/main/Tooltip%20Overrides/resists.json">resists.json</a> holds overrides for resists (physical, energy, ect...)<br>
+1-4% is white, 4-6% is a light green, 7-9% is a light blue, 13-15% is orange and 16% and above is a light red almost pinkish
 <br>
 <a href="https://github.com/Leigheas/Insane-UO/blob/main/Tooltip%20Overrides/slayers.json">slayers.json</a> holds overrides for slayer types.
