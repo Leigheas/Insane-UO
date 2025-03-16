@@ -89,7 +89,7 @@
   },
   {
     "Index": 8,
-    "SearchText": "Helmet",
+    "SearchText": "$^\bHelmet\b",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
     "Max1": 99,
@@ -408,7 +408,7 @@
   },
   {
     "Index": 37,
-    "SearchText": "$^Baked Peach Cobbler\b",
+    "SearchText": "$^\bBaked Peach Cobbler\b",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
     "Max1": 99,
