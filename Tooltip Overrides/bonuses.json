@@ -1871,7 +1871,7 @@
   },
   {
     "Index": 170,
-    "SearchText": "Mace Fighting",
+    "SearchText": "$^\bMace Fighting\b",
     "FormattedText": "/c[#e8da10]{0}{1}",
     "Min1": 1,
     "Max1": 3,
@@ -1882,7 +1882,7 @@
   },
   {
     "Index": 171,
-    "SearchText": "Mace Fighting",
+    "SearchText": "$^\bMace Fighting\b",
     "FormattedText": "/c[#e8da10]{0}{1}",
     "Min1": 4,
     "Max1": 6,
@@ -1893,7 +1893,7 @@
   },
   {
     "Index": 172,
-    "SearchText": "Mace Fighting",
+    "SearchText": "$^\bMace Fighting\b",
     "FormattedText": "/c[#e8da10]{0}{1}",
     "Min1": 7,
     "Max1": 9,
@@ -1904,7 +1904,7 @@
   },
   {
     "Index": 173,
-    "SearchText": "Mace Fighting",
+    "SearchText": "$^\bMace Fighting\b",
     "FormattedText": "/c[#e8da10]{0}{1}",
     "Min1": 10,
     "Max1": 12,
@@ -1915,7 +1915,7 @@
   },
   {
     "Index": 174,
-    "SearchText": "Mace Fighting",
+    "SearchText": "$^\bMace Fighting\b",
     "FormattedText": "/c[#e8da10]{0}{1}",
     "Min1": 13,
     "Max1": 15,
@@ -1926,7 +1926,7 @@
   },
   {
     "Index": 175,
-    "SearchText": "Mace Fighting",
+    "SearchText": "$^\bMace Fighting\b",
     "FormattedText": "/c[#e8da10]{0}{1}",
     "Min1": 16,
     "Max1": 99,
