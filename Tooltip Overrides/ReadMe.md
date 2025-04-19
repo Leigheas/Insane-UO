@@ -1,4 +1,4 @@
-<h1>Tooltip Overrides (only useable with TazUO)</h1>
+<h1>Tooltip Overrides (only useable with TazUO 3.26 or higher)</h1>
 
 <h2>How to install:</h2> 
 <p></p>Options -> TazUO -> Tooltips -> Tooltip override settings
