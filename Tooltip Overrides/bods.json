@@ -397,7 +397,7 @@
   },
   {
     "Index": 36,
-    "SearchText": "Baked Fruit Pie",
+    "SearchText": "$\\wBaked Fruit Pie",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
     "Max1": 99,
@@ -408,7 +408,7 @@
   },
   {
     "Index": 37,
-    "SearchText": "Baked Peach Cobbler",
+    "SearchText": "$\\wBaked Peach Cobbler",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
     "Max1": 99,
@@ -419,7 +419,7 @@
   },
   {
     "Index": 38,
-    "SearchText": "Baked Apple Pie",
+    "SearchText": "$\\wBaked Apple Pie",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
     "Max1": 99,
@@ -430,7 +430,7 @@
   },
   {
     "Index": 39,
-    "SearchText": "Baked Pumpkin Pieb",
+    "SearchText": "$\\wBaked Pumpkin Pie",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
     "Max1": 99,
