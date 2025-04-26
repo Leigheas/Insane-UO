@@ -2674,7 +2674,7 @@
   },
   {
     "Index": 243,
-    "SearchText": "Stealing",
+    "SearchText": "$\\wStealing",
     "FormattedText": "/c[#e8da10]{0}{1}",
     "Min1": 1,
     "Max1": 3,
@@ -2685,7 +2685,7 @@
   },
   {
     "Index": 244,
-    "SearchText": "Stealing",
+    "SearchText": "$\\wStealing",
     "FormattedText": "/c[#e8da10]{0}{1}",
     "Min1": 4,
     "Max1": 6,
@@ -2696,7 +2696,7 @@
   },
   {
     "Index": 245,
-    "SearchText": "Stealing",
+    "SearchText": "$\\wStealing",
     "FormattedText": "/c[#e8da10]{0}{1}",
     "Min1": 7,
     "Max1": 9,
@@ -2707,7 +2707,7 @@
   },
   {
     "Index": 246,
-    "SearchText": "Stealing",
+    "SearchText": "$\\wStealing",
     "FormattedText": "/c[#e8da10]{0}{1}",
     "Min1": 10,
     "Max1": 12,
@@ -2718,7 +2718,7 @@
   },
   {
     "Index": 247,
-    "SearchText": "Stealing",
+    "SearchText": "$\\wStealing",
     "FormattedText": "/c[#e8da10]{0}{1}",
     "Min1": 13,
     "Max1": 15,
