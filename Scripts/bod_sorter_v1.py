@@ -113,15 +113,7 @@ def is_small_bod(bod):
     """
     props = Items.GetPropStringList(bod)
     return any("small" in prop.lower() for prop in props)
-'''
-def belongs_to_large_bod(item, excluded_list):
-    """
-    Checks if a small BOD does not belong to a large BOD.
-    """
-    props = Items.GetPropStringList(item)
-    sanitized_props = [prop.translate(str.maketrans('', '', ':01234')).strip().lower() for prop in props]
-    return not any(prop in excluded_list for prop in sanitized_props)
-'''
+
 def has_no_large_bod(current_bod, bod_type, excluded_items):
 # Get the properties of the current BOD
     props = Items.GetPropStringList(current_bod)
@@ -130,12 +122,7 @@ def has_no_large_bod(current_bod, bod_type, excluded_items):
     # Done so it will match against both filled and unfilled BODs
     chars_to_remove = ':01234'
     stripped_props = [s.translate({ord(c): None for c in chars_to_remove}) for s in props]
-    
-    '''
-    for item in stripped_props:
-        print(item)
-    '''
-    
+        
     # Get the list of excluded items for the specified category
     excluded_list = EXCLUDED_ITEMS.get(bod_type.lower(), [])
     
@@ -165,9 +152,7 @@ def sort_bod(bod_type):
     current_bod = find_item(BOD_ITEM_ID, BOD_CONTAINER, bod_map["color"], [IGNORED_CONTAINER_SERIAL])
     while current_bod:
         if is_small_bod(current_bod):
-            #Player.HeadMessage(1266, 'sbod check entered')
             if IS_USING_NO_LBOD_BOOK and has_no_large_bod(current_bod, bod_type, excluded):
-                #Player.HeadMessage(1266, 'sbod has no large check entered!!!')
                 move_item(current_bod, bod_map["no_lbod_book"])
                 total_sbods_with_no_lbods += 1
             else:
@@ -337,58 +322,44 @@ def buttoncheck():
     
     #===== BOD Sorting Buttons =====
     if gd.buttonid == 1: 
-        #Player.HeadMessage("blah")
         sort_bod("alchemy")
     elif gd.buttonid == 2:
-        #Player.HeadMessage("blah")
         sort_bod("blacksmith")
     elif gd.buttonid == 3:
-        #Player.HeadMessage("blah")
         sort_bod("carpentry")
     elif gd.buttonid == 4:
-        #Player.HeadMessage("blah")
         sort_bod("cooking")
     elif gd.buttonid == 5:
-        #Player.HeadMessage("blah")
         sort_bod("fletching")
     elif gd.buttonid == 6:
-        #Player.HeadMessage("blah")
         sort_bod("inscription")
     elif gd.buttonid == 7:
-        #Player.HeadMessage("blah")
         sort_bod("tinkering")
     elif gd.buttonid == 8:
-        #Player.HeadMessage("blah")
         sort_bod("tailoring")  
     elif gd.buttonid == 9:
         sbod_with_no_lbod_switch()
-    #===== BOD Gathering Buttons =====
+    '''
+	#===== BOD Gathering Buttons =====
     elif gd.buttonid == 10:
-        #Player.HeadMessage("blah")
         gather_bod(specific_npc_suffix="alchemist")
     elif gd.buttonid == 11:
-        #Player.HeadMessage("blah")
         gather_bod(specific_npc_suffix="blacksmith")
     elif gd.buttonid == 12:
-        #Player.HeadMessage("blah")
         gather_bod(specific_npc_suffix="carpenter")
     elif gd.buttonid == 13:
-        #Player.HeadMessage("blah")
         gather_bod(specific_npc_suffix="cook")
     elif gd.buttonid == 14:
-        #Player.HeadMessage("blah")
         gather_bod(specific_npc_suffix="bowyer")
     elif gd.buttonid == 15:
-        #Player.HeadMessage("blah")
         gather_bod(specific_npc_suffix="scribe")
     elif gd.buttonid == 16:
-        #Player.HeadMessage("blah")
         gather_bod(specific_npc_suffix="tinker")
     elif gd.buttonid == 17:
-        #Player.HeadMessage("blah")
         gather_bod(specific_npc_suffix="tailor") 
     elif gd.buttonid == 18:
-        gather_bod() 
+        gather_bod()
+	'''
     elif gd.buttonid == 19:
         shut_down()
 
