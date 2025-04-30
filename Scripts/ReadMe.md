@@ -1,5 +1,7 @@
 Small collection of scripts for IUO.
 
+All scripts are self contained and will run on their own without needing any additional files.<br>
+<br>
 credits:<br>
 thomasthorun from UOA for the bod maker script, I just fixed the gumpid to work with IUO<br>
 omgarturo https://github.com/GloriousRedLeader/omgarturo/ for code for bod collection and tile data 
