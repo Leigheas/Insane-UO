@@ -7,3 +7,6 @@ various tooltip overrides for use with
 TazUO (https://github.com/bittiez/TazUO) which is a client used
 with UO private shards that has numerous QOL features and 
 additions.
+
+<a href= https://github.com/Leigheas/Insane-UO/tree/main/Scripts>Scripts</a> holds some scripts for use
+with Enhanced Razor for IUO
