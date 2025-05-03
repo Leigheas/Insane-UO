@@ -2958,21 +2958,40 @@ def get_tool(skill):
         container_list.append(salvage_bag.Serial)
         to_container = salvage_bag.Serial
     container_list.append(Player.Backpack.Serial)
-    container_list.extend([item.Serial for item
-                           in get_items_by_filter(None, None, 2, True, True)])
+    container_list.extend([item.Serial for item in get_items_by_filter(None, None, 2, True, True)])
     for _ in range(10):
         for i, container in enumerate(container_list):
             tool_list = find_items_list(tool_cod_list, container, -1, True)
-            if tool_list:
+            # Filter out special tools
+            filtered_tools = [tool for tool in tool_list if not is_special_tool(tool)]
+            if filtered_tools:
                 if i > 0:
-                    Items.Move(get_first(tool_list), to_container, 1)
+                    Items.Move(get_first(filtered_tools), to_container, 1)
                     Misc.Pause(600)
                     break
                 else:
-                    tool = get_first(tool_list)
+                    tool = get_first(filtered_tools)
                     to_container = dot_container(tool)
                     return tool
-    return None
+	 # Error reporting if no tool is found
+    error_message = f"Error: No tool found for skill '{skill}' after searching all containers and retries."
+    Misc.SendMessage(error_message, 33)  
+    
+	return None
+
+def is_special_tool(tool):
+    # Logic to identify special tools
+    # Example: Check tool name or specific properties
+    special_tool_names = ["Runic Hammer"]  # Add names of special tools to ignore
+    if tool.Name in special_tool_names:
+        return True
+    # Check if "runic" is in the item's name (case-insensitive)
+    if "runic" in tool.Name.lower():
+        return True
+    # Example: Check tool properties or other criteria
+    #if "exceptional" in str(tool.Properties).lower():
+    #    return True
+    return False
 
 
 def open_craft_gump(skill):
