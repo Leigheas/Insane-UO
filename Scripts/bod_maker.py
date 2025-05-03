@@ -2845,7 +2845,12 @@ def get_bod_resources(bod):
         if not resource_data:
             for name in common_names:
                 if resource[0] == name:
-                    resource_data = {'id': common_names[name], 'color': -1}
+					 # Check for "Cloth" or "Yards of Cloth" and assign color 0x0000
+					 # to prevent usage of any colored reward cloth.
+                    if name in ["Cloth", "Yards of Cloth"]:
+                        resource_data = {'id': common_names[name], 'color': 0x0000}
+                    else:
+                        resource_data = {'id': common_names[name], 'color': -1}
                     break
         if not resource_data:
             resource_data = {'id': [resource[0]], 'color': -1}
