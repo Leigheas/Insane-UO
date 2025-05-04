@@ -340,7 +340,7 @@ def buttoncheck():
     elif gd.buttonid == 9:
         sbod_with_no_lbod_switch()
     '''
-	#===== BOD Gathering Buttons =====
+    #===== BOD Gathering Buttons =====
     elif gd.buttonid == 10:
         gather_bod(specific_npc_suffix="alchemist")
     elif gd.buttonid == 11:
@@ -359,9 +359,9 @@ def buttoncheck():
         gather_bod(specific_npc_suffix="tailor") 
     elif gd.buttonid == 18:
         gather_bod()
-	'''
-    elif gd.buttonid == 19:
-        shut_down()
+    '''
+    #elif gd.buttonid == 19:
+    #    shut_down()
 
 while Player.Connected: 
     sendgump()

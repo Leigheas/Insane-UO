@@ -2845,8 +2845,8 @@ def get_bod_resources(bod):
         if not resource_data:
             for name in common_names:
                 if resource[0] == name:
-					 # Check for "Cloth" or "Yards of Cloth" and assign color 0x0000
-					 # to prevent usage of any colored reward cloth.
+                     # Check for "Cloth" or "Yards of Cloth" and assign color 0x0000
+                     # to prevent usage of any colored reward cloth.
                     if name in ["Cloth", "Yards of Cloth"]:
                         resource_data = {'id': common_names[name], 'color': 0x0000}
                     else:
@@ -2978,11 +2978,11 @@ def get_tool(skill):
                     tool = get_first(filtered_tools)
                     to_container = dot_container(tool)
                     return tool
-	 # Error reporting if no tool is found
-    error_message = f"Error: No tool found for skill '{skill}' after searching all containers and retries."
-    Misc.SendMessage(error_message, 33)  
+     # Error reporting if no tool is found
+        error_message = f"Error: No tool found for skill '{skill}' after searching all containers and retries."
+        Misc.SendMessage(error_message, 33)  
     
-	return None
+    return None
 
 def is_special_tool(tool):
     # Logic to identify special tools
