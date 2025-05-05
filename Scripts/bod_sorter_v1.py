@@ -31,6 +31,7 @@ IS_USING_NO_LBOD_BOOK = True  # Toggle for using a book for small BODs without a
 USING_SERIALS_FOR_BOD_BOOK = True  # Toggle for identifying BOD books by serials or names 
 CONTINUOUS_BOD_GATHER = True # Toggled thru gump to enable continuously trying to gather bod
 is_paused = False
+is_using_central_book = False #for pulling from a central bod book to sort
 
 # Prompt the user to select a container for BODs
 BOD_CONTAINER_SERIAL = Target.PromptTarget('Select container with BODs')
@@ -173,6 +174,7 @@ def gather_bod(range=4, npc_bod_gump_id=0x9bade6ea, specific_npc_suffix=None):
     #Based on the code from omgarturo from InsaneUO discord
     #https://discord.gg/sTEcgq9xNA
     #modified to take specific suffix as target
+	#modified to append armourer and weaponsmith for blacksmith bods
   
     # Define the allowed suffixes
     allowed_suffixes = ["scribe", "alchemist", "carpenter", "bowyer", "tinker", "tailor", "blacksmith", "cook"]
@@ -218,7 +220,7 @@ def gather_bod(range=4, npc_bod_gump_id=0x9bade6ea, specific_npc_suffix=None):
 				# Check for additional related suffixes if "blacksmith" is found
 				if "blacksmith" in suffixes_to_check:
 					suffixes_to_check.extend(["armourer", "weaponsmith"])
-                
+
 				if any(suffix in prop.ToString() for suffix in suffixes_to_check):
                     Misc.UseContextMenu(npc.Serial, "Bulk Order Info", 3000)
                     Misc.Pause(1000)
