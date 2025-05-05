@@ -174,7 +174,7 @@ def gather_bod(range=4, npc_bod_gump_id=0x9bade6ea, specific_npc_suffix=None):
     #modified to take specific suffix as target
   
     # Define the allowed suffixes
-    allowed_suffixes = ["scribe", "alchemist", "carpenter", "bowyer", "tinker", "tailor", "blacksmith", "cook"]
+    allowed_suffixes = ["scribe", "alchemist", "carpenter", "bowyer", "tinker", "tailor", "blacksmith", "cook", "armourer"]
 
     # Validate the specific_npc_suffix against allowed_suffixes
     if specific_npc_suffix and specific_npc_suffix not in allowed_suffixes:
