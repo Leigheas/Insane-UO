@@ -4,8 +4,6 @@
 #InsaneUO Discord: https://discord.gg/CjBhM6vJZr
 
 #This is a work in progress and by no means finished.
-#Current Bugs:
-#Bod gathering needs a little work, will only attempt to get one bod
 
 
 
