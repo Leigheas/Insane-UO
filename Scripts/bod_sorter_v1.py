@@ -217,12 +217,12 @@ def gather_bod(range=4, npc_bod_gump_id=0x9bade6ea, specific_npc_suffix=None):
                 else:
                     suffixes_to_check = allowed_suffixes
 				
-				# Check for additional related suffixes if "blacksmith" is found
-				if "blacksmith" in suffixes_to_check:
-					suffixes_to_check.extend(["armourer", "weaponsmith"])
-					
 
-				if any(suffix in prop.ToString() for suffix in suffixes_to_check):
+		# Check for additional related suffixes if "blacksmith" is found
+		if "blacksmith" in suffixes_to_check:
+    			suffixes_to_check.extend(["armourer", "weaponsmith"])    
+		
+		if any(suffix in prop.ToString() for suffix in suffixes_to_check):
                     Misc.UseContextMenu(npc.Serial, "Bulk Order Info", 3000)
                     Misc.Pause(1000)
                     gid = Gumps.CurrentGump()
