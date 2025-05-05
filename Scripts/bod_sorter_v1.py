@@ -135,11 +135,11 @@ def has_no_large_bod(current_bod, bod_type, excluded_items):
     
 #def bod_material_type():
     #placeholder
-
+"""
 def sort_bod(bod_type):
-    """
-    Sorts BODs of a specific type into their respective books.
-    """
+    
+    #Sorts BODs of a specific type into their respective books.
+    
     bod_map = BOD_MAPPINGS[bod_type]
     excluded = [item.lower() for item in EXCLUDED_ITEMS.get(bod_type, [])]
     
@@ -162,7 +162,40 @@ def sort_bod(bod_type):
             move_item(current_bod, bod_map["lbod_book"])
             total_lbods += 1
         current_bod = find_item(BOD_ITEM_ID, BOD_CONTAINER, bod_map["color"], [IGNORED_CONTAINER_SERIAL])
-        
+ """
+
+def sort_bod(bod_type=None):
+    """
+    Sorts BODs of a specific type into their respective books.
+    If no bod_type is provided, processes all types.
+    """
+    global total_lbods, total_sbods, total_sbods_with_no_lbod
+
+    # Reset global counters
+    total_lbods = 0
+    total_sbods = 0
+    total_sbods_with_no_lbod = 0
+
+    # Determine which BOD types to process
+    bod_types_to_process = [bod_type] if bod_type else BOD_MAPPINGS.keys()
+
+    for current_bod_type in bod_types_to_process:
+        bod_map = BOD_MAPPINGS[current_bod_type]
+        excluded = [item.lower() for item in EXCLUDED_ITEMS.get(current_bod_type, [])]
+
+        current_bod = find_item(BOD_ITEM_ID, BOD_CONTAINER, bod_map["color"], [IGNORED_CONTAINER_SERIAL])
+        while current_bod:
+            if is_small_bod(current_bod):
+                if IS_USING_NO_LBOD_BOOK and has_no_large_bod(current_bod, current_bod_type, excluded):
+                    move_item(current_bod, bod_map["no_lbod_book"])
+                    total_sbods_with_no_lbod += 1
+                else:
+                    move_item(current_bod, bod_map["sbod_book"])
+                    total_sbods += 1
+            else:
+                move_item(current_bod, bod_map["lbod_book"])
+                total_lbods += 1
+            current_bod = find_item(BOD_ITEM_ID, BOD_CONTAINER, bod_map["color"], [IGNORED_CONTAINER_SERIAL]) 
 
 def gather_bod(range=4, npc_bod_gump_id=0x9bade6ea, specific_npc_suffix=None):
    
@@ -230,6 +263,7 @@ def gather_bod(range=4, npc_bod_gump_id=0x9bade6ea, specific_npc_suffix=None):
 #=============================== GUMP ===============================
 setX = 200
 setY = 300
+page = 0
 is_using_no_lbod_book = True
 
 def sbod_with_no_lbod_switch():
@@ -241,9 +275,10 @@ def sendgump():
     Gumps.AddPage(gd, 0)
 
     #Gumps.AddBackground(gd, 0, 0, 781, 503, 1755)
-    Gumps.AddBackground(gd, 0, 0, 190, 290, 1755) 
-    Gumps.AddAlphaRegion(gd,0, 0, 190, 290)
+    Gumps.AddBackground(gd, 0, 0, 200, 325, 1755) 
+    Gumps.AddAlphaRegion(gd,0, 0, 190, 325)
     
+    Gumps.AddPage(gd, 1)#page 1
     if is_using_no_lbod_book:
         Gumps.AddLabel(gd, 35, 15, 0x064a, "Put sbods with no lbod")
         Gumps.AddLabel(gd, 35, 30, 0x064a, "into its own book (ON)")
@@ -278,38 +313,49 @@ def sendgump():
     Gumps.AddLabel(gd, 35, 238, 0x0492, "Sort Tailoring Bods")
     Gumps.AddButton(gd, 4, 233, 1154, 1154, 8, 1, 0)
     Gumps.AddTooltip(gd, r"Sort Tailoring Bods")
-    '''
+    Gumps.AddLabel(gd, 35, 262, 0x0492, r"Sort All Bods")
+    Gumps.AddButton(gd, 4, 255, 1154, 1154, 19, 1, 0)
+    Gumps.AddTooltip(gd, r"Sort All Bods")
+    
+    Gumps.AddLabel(gd, 35, 286, 0x0001, r"Goto Gathering")
+    Gumps.AddButton(gd, 4, 284, 5540, 5541, 1, 0, 2)
+    #Gumps.AddButton(gd,x,y,normalID,pressedID,buttonID,type,param)
+   
+    Gumps.AddPage(gd, 2) #page 2
     #=============BOD Collection Stuff=============
-    Gumps.AddLabel(gd, 220, 71, 0x09c9, "Gather Alchemy Bods")
-    Gumps.AddButton(gd, 190, 67, 1154, 1154, 10, 1, 0)
+    Gumps.AddLabel(gd, 35, 71, 0x09c9, "Gather Alchemy Bods")
+    Gumps.AddButton(gd, 4, 67, 1154, 1154, 10, 1, 0)
     Gumps.AddTooltip(gd, r"Gather Alchemy Bods")
-    Gumps.AddLabel(gd, 220, 95, 0x044e, "Gather Blacksmith Bods")
-    Gumps.AddButton(gd, 190, 91, 1154, 1154, 11, 1, 0)
+    Gumps.AddLabel(gd, 35, 95, 0x044e, "Gather Blacksmith Bods")
+    Gumps.AddButton(gd, 4, 91, 1154, 1154, 11, 1, 0)
     Gumps.AddTooltip(gd, r"Gather Blacksmith Bods")
-    Gumps.AddLabel(gd, 220, 119, 0x05e8, "Gather Carpentry Bods")
-    Gumps.AddButton(gd, 190, 115, 1154, 1154, 12, 1, 0)
+    Gumps.AddLabel(gd, 35, 119, 0x05e8, "Gather Carpentry Bods")
+    Gumps.AddButton(gd, 4, 115, 1154, 1154, 12, 1, 0)
     Gumps.AddTooltip(gd, r"Gather Carpentry Bods")
-    Gumps.AddLabel(gd, 220, 143, 0x0491, "Gather Cooking Bods")
-    Gumps.AddButton(gd, 190, 139, 1154, 1154, 13, 1, 0)
+    Gumps.AddLabel(gd, 35, 143, 0x0491, "Gather Cooking Bods")
+    Gumps.AddButton(gd, 4, 139, 1154, 1154, 13, 1, 0)
     Gumps.AddTooltip(gd, r"Gather Cooking Bods")
-    Gumps.AddLabel(gd, 220, 167, 0x0591, "Gather Fletching Bods")
-    Gumps.AddButton(gd, 190, 163, 1154, 1154, 14, 1, 0)
+    Gumps.AddLabel(gd, 35, 167, 0x0591, "Gather Fletching Bods")
+    Gumps.AddButton(gd, 4, 163, 1154, 1154, 14, 1, 0)
     Gumps.AddTooltip(gd, r"Gather Fletching Bods")
-    Gumps.AddLabel(gd, 220, 193, 0x0a26, "Gather Inscription Bods")
-    Gumps.AddButton(gd, 190, 187, 1154, 1154, 15, 1, 0)
-    Gumps.AddTooltip(gd, r"Gather Inscription Bods")
-    Gumps.AddLabel(gd, 220, 214, 0x0455, "Gather Tinkering Bods")
-    Gumps.AddButton(gd, 190, 210, 1154, 1154, 16, 1, 0)
+    Gumps.AddLabel(gd, 35, 193, 0x0a26, "Gather Inscription Bods")
+    Gumps.AddButton(gd, 4, 187, 1154, 1154, 15, 1, 0)
+    Gumps.AddTooltip(gd, "Gather Inscription Bods")
+    Gumps.AddLabel(gd, 35, 214, 0x0455, "Gather Tinkering Bods")
+    Gumps.AddButton(gd, 4, 210, 1154, 1154, 16, 1, 0)
     Gumps.AddTooltip(gd, r"Gather Tinkering Bods")
-    Gumps.AddLabel(gd, 220, 238, 0x0492, "Gather Tailoring Bods")
-    Gumps.AddButton(gd, 190, 233, 1154, 1154, 17, 1, 0)
+    Gumps.AddLabel(gd, 35, 238, 0x0492, "Gather Tailoring Bods")
+    Gumps.AddButton(gd, 4, 233, 1154, 1154, 17, 1, 0)
     Gumps.AddTooltip(gd, r"Gather Tailoring Bods")
     
     #gather all
-    Gumps.AddLabel(gd, 220, 262, 0x09c9, "Gather All Bods In Room")
-    Gumps.AddButton(gd, 190, 256, 1154, 1154, 18, 1, 0)
-    Gumps.AddTooltip(gd, r"Gather All Bods")
-    '''
+    #Gumps.AddLabel(gd, 35, 262, 0x09c9, "Gather All Bods In Room")
+    #Gumps.AddButton(gd, 4, 256, 1154, 1154, 18, 1, 0)
+    #Gumps.AddTooltip(gd, r"Gather All Bods")
+    
+    Gumps.AddLabel(gd, 35, 286, 0x0001, r"Goto Sorting")
+    Gumps.AddButton(gd, 4, 284, 5537, 5538, 1, 0, 1)
+
     #Gumps.AddLabel(gd, 4, 333, 0x09c9, f"SORTED TOTALS Lbods: {total_lbods} Sbods: {total_sbods} Sbods with no LBODs: {total_sbods_with_no_lbods}")
 
     Gumps.SendGump(987654, Player.Serial, setX, setY, gd.gumpDefinition, gd.gumpStrings)
@@ -339,7 +385,6 @@ def buttoncheck():
         sort_bod("tailoring")  
     elif gd.buttonid == 9:
         sbod_with_no_lbod_switch()
-    '''
     #===== BOD Gathering Buttons =====
     elif gd.buttonid == 10:
         gather_bod(specific_npc_suffix="alchemist")
@@ -358,10 +403,9 @@ def buttoncheck():
     elif gd.buttonid == 17:
         gather_bod(specific_npc_suffix="tailor") 
     elif gd.buttonid == 18:
-        gather_bod()
-    '''
-    #elif gd.buttonid == 19:
-    #    shut_down()
+        gather_bod() 
+    elif gd.buttonid == 19:
+        sort_bod()
 
 while Player.Connected: 
     sendgump()
