@@ -19,6 +19,7 @@ sort by material.
 
 from System.Collections.Generic import List
 from System import Byte
+import sys
 
 global total_lbods, total_sbods, total_sbods_with_no_lbods
 
@@ -376,6 +377,8 @@ def buttoncheck():
         gather_bod() 
     elif gd.buttonid == 19:
         sort_bod()
+    if gd.buttonid == 0:
+        sys.Exit(99)
 
 while Player.Connected: 
     sendgump()
