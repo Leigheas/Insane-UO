@@ -135,34 +135,6 @@ def has_no_large_bod(current_bod, bod_type, excluded_items):
     
 #def bod_material_type():
     #placeholder
-"""
-def sort_bod(bod_type):
-    
-    #Sorts BODs of a specific type into their respective books.
-    
-    bod_map = BOD_MAPPINGS[bod_type]
-    excluded = [item.lower() for item in EXCLUDED_ITEMS.get(bod_type, [])]
-    
-    global total_lbods, total_sbods, total_sbods_with_no_lbods
-    
-    total_lbods = 0
-    total_sbods = 0
-    total_sbods_with_no_lbod = 0
-    
-    current_bod = find_item(BOD_ITEM_ID, BOD_CONTAINER, bod_map["color"], [IGNORED_CONTAINER_SERIAL])
-    while current_bod:
-        if is_small_bod(current_bod):
-            if IS_USING_NO_LBOD_BOOK and has_no_large_bod(current_bod, bod_type, excluded):
-                move_item(current_bod, bod_map["no_lbod_book"])
-                total_sbods_with_no_lbods += 1
-            else:
-                move_item(current_bod, bod_map["sbod_book"])
-                total_sbods += 1
-        else:
-            move_item(current_bod, bod_map["lbod_book"])
-            total_lbods += 1
-        current_bod = find_item(BOD_ITEM_ID, BOD_CONTAINER, bod_map["color"], [IGNORED_CONTAINER_SERIAL])
- """
 
 def sort_bod(bod_type=None):
     """
@@ -317,7 +289,7 @@ def sendgump():
     Gumps.AddButton(gd, 4, 255, 1154, 1154, 19, 1, 0)
     Gumps.AddTooltip(gd, r"Sort All Bods")
     
-    Gumps.AddLabel(gd, 35, 286, 0x0001, r"Goto Gathering")
+    Gumps.AddLabel(gd, 35, 286, 0x064a, r"Goto Gathering")
     Gumps.AddButton(gd, 4, 284, 5540, 5541, 1, 0, 2)
     #Gumps.AddButton(gd,x,y,normalID,pressedID,buttonID,type,param)
    
@@ -353,7 +325,7 @@ def sendgump():
     #Gumps.AddButton(gd, 4, 256, 1154, 1154, 18, 1, 0)
     #Gumps.AddTooltip(gd, r"Gather All Bods")
     
-    Gumps.AddLabel(gd, 35, 286, 0x0001, r"Goto Sorting")
+    Gumps.AddLabel(gd, 35, 286, 0x064a, r"Goto Sorting")
     Gumps.AddButton(gd, 4, 284, 5537, 5538, 1, 0, 1)
 
     #Gumps.AddLabel(gd, 4, 333, 0x09c9, f"SORTED TOTALS Lbods: {total_lbods} Sbods: {total_sbods} Sbods with no LBODs: {total_sbods_with_no_lbods}")
