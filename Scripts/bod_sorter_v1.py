@@ -175,7 +175,7 @@ def gather_bod(range=4, npc_bod_gump_id=0x9bade6ea, specific_npc_suffix=None):
     #modified to take specific suffix as target
   
     # Define the allowed suffixes
-    allowed_suffixes = ["scribe", "alchemist", "carpenter", "bowyer", "tinker", "tailor", "blacksmith", "cook", "armourer", "weaponsmith"]
+    allowed_suffixes = ["scribe", "alchemist", "carpenter", "bowyer", "tinker", "tailor", "blacksmith", "cook"]
 
     # Validate the specific_npc_suffix against allowed_suffixes
     if specific_npc_suffix and specific_npc_suffix not in allowed_suffixes:
@@ -214,8 +214,12 @@ def gather_bod(range=4, npc_bod_gump_id=0x9bade6ea, specific_npc_suffix=None):
                     suffixes_to_check = [specific_npc_suffix]
                 else:
                     suffixes_to_check = allowed_suffixes
-
-                if any(suffix in prop.ToString() for suffix in suffixes_to_check):
+				
+				# Check for additional related suffixes if "blacksmith" is found
+				if "blacksmith" in suffixes_to_check:
+					suffixes_to_check.extend(["armourer", "weaponsmith"])
+                
+				if any(suffix in prop.ToString() for suffix in suffixes_to_check):
                     Misc.UseContextMenu(npc.Serial, "Bulk Order Info", 3000)
                     Misc.Pause(1000)
                     gid = Gumps.CurrentGump()
@@ -377,7 +381,7 @@ def buttoncheck():
         gather_bod() 
     elif gd.buttonid == 19:
         sort_bod()
-    if gd.buttonid == 0:
+	if gd.buttonid == 0:
         sys.Exit(99)
 
 while Player.Connected: 
