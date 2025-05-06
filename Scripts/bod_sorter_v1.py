@@ -385,7 +385,7 @@ def buttoncheck():
     elif gd.buttonid == 19:
         sort_bod()
     elif gd.buttonid == 0:
-        sys.Exit(99)
+        Misc.ScriptStop('bod_sorter_v1.py')
 
 while Player.Connected: 
     sendgump()
