@@ -771,7 +771,7 @@
   },
   {
     "Index": 70,
-    "SearchText": "$\\wDispel\\w",
+    "SearchText": "$\\wDispel",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
     "Max1": 99,
@@ -1123,7 +1123,7 @@
   },
   {
     "Index": 102,
-    "SearchText": "$\\wCleaver\\w",
+    "SearchText": "$\\wCleaver",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
     "Max1": 99,
