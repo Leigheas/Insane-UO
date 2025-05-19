@@ -10,7 +10,7 @@ omgarturo https://github.com/GloriousRedLeader/omgarturo/ for code for bod colle
 reads bod information (material, size, quantity ect.) and will make the bods and combine them into the lbods for you<br>
 <br>
 <a href= https://github.com/Leigheas/Insane-UO/blob/main/Scripts/bod_sorter_v1.py>Bod Sorter(WIP)</a><br>
-sorts bods by type, with nifty GUI gump. currently the bods and bod books must be on your person to sort also will colpect bods from specific people or collect all in the same room with you<br>
+sorts bods by type, with nifty GUI gump. currently the bods and bod books must be on your person to sort also will collect bods from specific professiona or collect all in the same room with you<br>
 <br>
 <a href= https://github.com/Leigheas/Insane-UO/blob/main/Scripts/miner.py>Miner</a><br>
 non-automated miner, mines where you are standing till no more ore then you manually move to the next spot.<br> 
