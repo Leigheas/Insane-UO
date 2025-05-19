@@ -3,7 +3,7 @@ Small collection of scripts for IUO.
 All scripts are self contained and will run on their own without needing any additional files.<br>
 <br>
 credits:<br>
-thomasthorun from UOA for the bod maker script, I just fixed the gumpid to work with IUO and fixed 8t not using runic tools<br>
+thomasthorun from UOA for the bod maker script, I just fixed the gumpid to work with IUO and fixed it not using runic tools<br>
 omgarturo https://github.com/GloriousRedLeader/omgarturo/ for code for bod collection and tile data 
 
 <a href= https://github.com/Leigheas/Insane-UO/blob/main/Scripts/bod_maker.py>Bod Maker</a><br>
