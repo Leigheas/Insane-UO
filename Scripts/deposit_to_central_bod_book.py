@@ -113,9 +113,9 @@ def dump_to_central_book():
     
     # Pull the BOD book to backpack
     pull_bod_storage_book()
-	
-	bod_book = Items.FindBySerial(BOD_BOOK_SERIAL)
-	
+    
+    bod_book = Items.FindBySerial(BOD_BOOK_SERIAL)
+    
     # Find and move all BODs in backpack into the book
     while True:
         bod = find_item(BOD_ITEM_ID, Player.Backpack)
