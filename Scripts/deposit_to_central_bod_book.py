@@ -69,9 +69,9 @@ def pull_bod_storage_book():
     Misc.Pause(wait_for_container_delay)
     bod_book = Items.FindBySerial(BOD_BOOK_SERIAL)
     # Only move if not already in backpack
-    #if bod_book.Container != Player.Backpack.Serial:
-    move_item(bod_book, Player.Backpack.Serial)
-
+    if bod_book.Container != Player.Backpack.Serial:
+        move_item(bod_book, Player.Backpack.Serial)
+        
 def put_bod_book_back():
     
     # Puts the BOD book back into its container.
@@ -79,7 +79,9 @@ def put_bod_book_back():
     Items.UseItem(bod_book_container.Serial)
     Misc.Pause(wait_for_container_delay)
     bod_book = Items.FindBySerial(BOD_BOOK_SERIAL)
-    move_item(bod_book, bod_book_container.Serial)
+    # Only move if not already in container
+    if bod_book.Container == Player.Backpack.Serial:
+        move_item(bod_book, bod_book_container.Serial)
 
 def dump_to_central_book():
     # Dumps all BODs on character into the specified BOD book.
