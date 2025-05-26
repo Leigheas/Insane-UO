@@ -23,7 +23,7 @@ BOD_BOOK_SERIAL = 0x4015EEE0         # The serial of the bod book you want to us
 BOD_BOOK_CONTAINER_SERIAL = 0x4020A5FF  # The serial of the container holding the book
 
 # Get the Item objects
-bod_book = Items.FindBySerial(BOD_BOOK_SERIAL)
+#bod_book = Items.FindBySerial(BOD_BOOK_SERIAL)
 bod_book_container = Items.FindBySerial(BOD_BOOK_CONTAINER_SERIAL)
 
 # ============================= Helper Functions ===========================
