@@ -24,3 +24,5 @@ will also run inside the ACME mines.<br>
 <br>
 <a href= https://github.com/Leigheas/Insane-UO/blob/main/Scripts/moveallcont1tocont2.py>Move all container 1 to container 2</a><br>
 simple script to move everything from one container to another.<br>
+<h2>Walking Lumberjack is a WIP, not responsible for issues as its not in a release state</h2>
+<h2>Once Ready for release will post in discord!!</h2>
