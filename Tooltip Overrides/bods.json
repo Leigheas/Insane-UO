@@ -639,7 +639,7 @@
   },
   {
     "Index": 58,
-    "SearchText": "$\\wPoison\\w",
+    "SearchText": "$\\wPoison\\s*",
     "FormattedText": "{0}{1} /c[red][No LBOD]/cd",
     "Min1": -1,
     "Max1": 99,
