@@ -253,54 +253,55 @@ def sendgump():
     Gumps.AddPage(gd, 0)
 
     #Gumps.AddBackground(gd, 0, 0, 781, 503, 1755)
-    Gumps.AddBackground(gd, 0, 0, 200, 325, 1755) 
-    Gumps.AddAlphaRegion(gd,0, 0, 190, 325)
+    Gumps.AddBackground(gd, 0, 0, 200, 375, 1755) 
+    Gumps.AddAlphaRegion(gd,0, 0, 190, 375)
     
     Gumps.AddPage(gd, 1)#page 1
+    Gumps.AddLabel(gd, 13, 15, 0x09c9, "****[BOD Sorting]****")
     if is_using_no_lbod_book:
-        Gumps.AddLabel(gd, 35, 15, 0x064a, "Put sbods with no lbod")
-        Gumps.AddLabel(gd, 35, 30, 0x064a, "into its own book (ON)")
-        Gumps.AddButton(gd, 4, 17, 5828, 5828, 9, 1, 0)
+        Gumps.AddLabel(gd, 35, 55, 0x064a, "Put sbods with no lbod")
+        Gumps.AddLabel(gd, 35, 70, 0x064a, "into its own book (ON)")
+        Gumps.AddButton(gd, 4, 56, 5828, 5828, 9, 1, 0)
     else:
-        Gumps.AddLabel(gd, 35, 15, 0x064a, "Put sbods with no lbod")
-        Gumps.AddLabel(gd, 35, 30, 0x064a, "into its own book (ON)")
-        Gumps.AddButton(gd, 4, 17, 5828, 5828, 9, 1, 0)
+        Gumps.AddLabel(gd, 35, 55, 0x064a, "Put sbods with no lbod")
+        Gumps.AddLabel(gd, 35, 70, 0x064a, "into its own book (ON)")
+        Gumps.AddButton(gd, 4, 56, 5828, 5828, 9, 1, 0)
     
     #=============Sorting Stuff=============    
-    Gumps.AddLabel(gd, 35, 71, 0x09c9, "Sort Alchemy Bods")
-    Gumps.AddButton(gd, 4, 67, 1154, 1154, 1, 1, 0)
+    Gumps.AddLabel(gd, 35, 99, 0x09c9, "Sort Alchemy Bods")
+    Gumps.AddButton(gd, 4, 97, 1154, 1154, 1, 1, 0)
     Gumps.AddTooltip(gd, r"Sort Alchemy Bods")
-    Gumps.AddLabel(gd, 35, 95, 0x044e, "Sort Blacksmith Bods")
-    Gumps.AddButton(gd, 4, 91, 1154, 1154, 2, 1, 0)
+    Gumps.AddLabel(gd, 35, 122, 0x044e, "Sort Blacksmith Bods")
+    Gumps.AddButton(gd, 4, 120, 1154, 1154, 2, 1, 0)
     Gumps.AddTooltip(gd, r"Sort Blacksmith Bods")
-    Gumps.AddLabel(gd, 35, 119, 0x05e8, "Sort Carpentry Bods")
-    Gumps.AddButton(gd, 4, 115, 1154, 1154, 3, 1, 0)
+    Gumps.AddLabel(gd, 35, 146, 0x05e8, "Sort Carpentry Bods")
+    Gumps.AddButton(gd, 4, 144, 1154, 1154, 3, 1, 0)
     Gumps.AddTooltip(gd, r"Sort Carpentry Bods")
-    Gumps.AddLabel(gd, 35, 143, 0x0491, "Sort Cooking Bods")
-    Gumps.AddButton(gd, 4, 139, 1154, 1154, 4, 1, 0)
+    Gumps.AddLabel(gd, 35, 170, 0x0491, "Sort Cooking Bods")
+    Gumps.AddButton(gd, 4, 168, 1154, 1154, 4, 1, 0)
     Gumps.AddTooltip(gd, r"Sort Cooking Bods")
-    Gumps.AddLabel(gd, 35, 167, 0x0591, "Sort Fletching Bods")
-    Gumps.AddButton(gd, 4, 163, 1154, 1154, 5, 1, 0)
+    Gumps.AddLabel(gd, 35, 194, 0x0591, "Sort Fletching Bods")
+    Gumps.AddButton(gd, 4, 192, 1154, 1154, 5, 1, 0)
     Gumps.AddTooltip(gd, r"Sort Fletching Bods")
-    Gumps.AddLabel(gd, 35, 190, 0x0a26, "Sort Inscription Bods")
-    Gumps.AddButton(gd, 4, 187, 1154, 1154, 6, 1, 0)
+    Gumps.AddLabel(gd, 35, 217, 0x0a26, "Sort Inscription Bods")
+    Gumps.AddButton(gd, 4, 215, 1154, 1154, 6, 1, 0)
     Gumps.AddTooltip(gd, r"Sort Inscription Bods")
-    Gumps.AddLabel(gd, 35, 214, 0x0455, "Sort Tinkering Bods")
-    Gumps.AddButton(gd, 4, 210, 1154, 1154, 7, 1, 0)
+    Gumps.AddLabel(gd, 35, 241, 0x0455, "Sort Tinkering Bods")
+    Gumps.AddButton(gd, 4, 239, 1154, 1154, 7, 1, 0)
     Gumps.AddTooltip(gd, r"Sort Tinkering Bods")
-    Gumps.AddLabel(gd, 35, 238, 0x0492, "Sort Tailoring Bods")
-    Gumps.AddButton(gd, 4, 233, 1154, 1154, 8, 1, 0)
+    Gumps.AddLabel(gd, 35, 265, 0x0492, "Sort Tailoring Bods")
+    Gumps.AddButton(gd, 4, 263, 1154, 1154, 8, 1, 0)
     Gumps.AddTooltip(gd, r"Sort Tailoring Bods")
-    Gumps.AddLabel(gd, 35, 262, 0x0492, r"Sort All Bods")
-    Gumps.AddButton(gd, 4, 255, 1154, 1154, 19, 1, 0)
+    Gumps.AddLabel(gd, 35, 312, 0x0492, r"Sort All Bods")
+    Gumps.AddButton(gd, 4, 310, 1154, 1154, 19, 1, 0)
     Gumps.AddTooltip(gd, r"Sort All Bods")
-    
-    Gumps.AddLabel(gd, 35, 286, 0x064a, r"Goto Gathering")
-    Gumps.AddButton(gd, 4, 284, 5540, 5541, 1, 0, 2)
-    #Gumps.AddButton(gd,x,y,normalID,pressedID,buttonID,type,param)
+    #262,255
+    Gumps.AddLabel(gd, 35, 345, 0x064a, r"Goto Gathering")
+    Gumps.AddButton(gd, 4, 345, 5540, 5541, 1, 0, 2)
    
     Gumps.AddPage(gd, 2) #page 2
     #=============BOD Collection Stuff=============
+    Gumps.AddLabel(gd, 10, 15, 0x09c9, "****[BOD Collection]****")
     Gumps.AddLabel(gd, 35, 71, 0x09c9, "Gather Alchemy Bods")
     Gumps.AddButton(gd, 4, 67, 1154, 1154, 10, 1, 0)
     Gumps.AddTooltip(gd, r"Gather Alchemy Bods")
@@ -327,14 +328,12 @@ def sendgump():
     Gumps.AddTooltip(gd, r"Gather Tailoring Bods")
     
     #gather all
-    #Gumps.AddLabel(gd, 35, 262, 0x09c9, "Gather All Bods In Room")
-    #Gumps.AddButton(gd, 4, 256, 1154, 1154, 18, 1, 0)
-    #Gumps.AddTooltip(gd, r"Gather All Bods")
+    Gumps.AddLabel(gd, 35, 282, 0x09c9, "Gather All Bods In Room")
+    Gumps.AddButton(gd, 4, 276, 1154, 1154, 18, 1, 0)
+    Gumps.AddTooltip(gd, r"Gather All Bods")
     
-    Gumps.AddLabel(gd, 35, 286, 0x064a, r"Goto Sorting")
-    Gumps.AddButton(gd, 4, 284, 5537, 5538, 1, 0, 1)
-
-    #Gumps.AddLabel(gd, 4, 333, 0x09c9, f"SORTED TOTALS Lbods: {total_lbods} Sbods: {total_sbods} Sbods with no LBODs: {total_sbods_with_no_lbods}")
+    Gumps.AddLabel(gd, 35, 345, 0x064a, r"Goto Sorting")
+    Gumps.AddButton(gd, 4, 345, 5537, 5538, 1, 0, 1)
 
     Gumps.SendGump(987654, Player.Serial, setX, setY, gd.gumpDefinition, gd.gumpStrings)
     buttoncheck() 
@@ -390,3 +389,4 @@ def buttoncheck():
 while Player.Connected: 
     sendgump()
     Misc.Pause(750)
+
