@@ -17,7 +17,7 @@ from System import Byte
 drag_delay_milliseconds = 700
 
 # ========================== Item IDs, Colors, Serials ====================
-BOD_ITEM_ID = 0x2258                # Set to your BOD itemID
+BOD_ITEM_ID = 0x2258                # Set to your BOD itemID (SHOULD NOT NEED TO CHANGE)
 BOD_BOOK_SERIAL = 0x4015EEE0         # The serial of the bod book you want to use
 BOD_BOOK_CONTAINER_SERIAL = 0x4020A5FF  # The serial of the container holding the book
 
