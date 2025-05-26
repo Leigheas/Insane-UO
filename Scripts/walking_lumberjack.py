@@ -8,13 +8,18 @@
 WOOD_LOGS = 0x1BDD
 WOOD_BOARDS = 0x1BD7
 AXE_SERIAL = 0x40F9310B  # Change to your axe serial
+
+#change this to the total number of blue beetles you want to use (MAX IS 5)
+number_of_beetles_to_use = 3
+max_beetle_weight = 1500 #change to how full you want your beetle to be
+
 BEETLE1_SERIAL = 0x000787BF   # Change to your beetle serial
-BEETLE2_SERIAL = 0x00000000
-BEETLE3_SERIAL = 0x00000000
+BEETLE2_SERIAL = 0x0008FF98
+BEETLE3_SERIAL = 0x0008F967
 BEETLE4_SERIAL = 0x00000000
 BEETLE5_SERIAL = 0x00000000
 
-beetle_serials = [BEETLE1_SERIAL, BEETLE2_SERIAL, BEETLE3_SERIAL, BEETLE4_SERIAL, BEETLE5_SERIAL]
+BEETLE_SERIALS = [BEETLE1_SERIAL, BEETLE2_SERIAL, BEETLE3_SERIAL, BEETLE4_SERIAL, BEETLE5_SERIAL]
 
 # Resource types to move to beetle
 # itemids for resources gained, for easy remove/add
@@ -22,14 +27,10 @@ beetle_serials = [BEETLE1_SERIAL, BEETLE2_SERIAL, BEETLE3_SERIAL, BEETLE4_SERIAL
 # switch            0x2F5F
 # bark fragment     0x318F
 # parasitic plant   0x3190
-# lumi fungi        0x3199 
-# brill amber       0x5738
-# crystal shard     
+# lumi fungi        0x3191 
+# brill amber       0x3199
+# crystal shard     0x5738
 LJ_RESOURCES = [0x1BD7, 0x2F5F, 0x318F, 0x3190, 0x3191, 0x3199, 0x5738]
-
-#change this to the total number of blue beetles you want to use (MAX IS 5)
-number_of_beetles_to_use = 1
-max_beetle_weight = 1500 #change to how full you want your beetle to be
 
 max_weight = Player.MaxWeight
 start_chopping_logs_weight = max_weight - 50    #adjust as needed
