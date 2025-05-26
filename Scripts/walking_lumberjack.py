@@ -9,20 +9,12 @@ WOOD_LOGS = 0x1BDD
 WOOD_BOARDS = 0x1BD7
 AXE_SERIAL = 0x40F9310B  # Change to your axe serial
 BEETLE1_SERIAL = 0x000787BF   # Change to your beetle serial
-BEETLE2_SERIAL = 0x000787BF
-BEETLE3_SERIAL = 0x000787BF
-BEETLE4_SERIAL = 0x000787BF
-BEETLE5_SERIAL = 0x000787BF
+BEETLE2_SERIAL = 0x00000000
+BEETLE3_SERIAL = 0x00000000
+BEETLE4_SERIAL = 0x00000000
+BEETLE5_SERIAL = 0x00000000
 
 beetle_serials = [BEETLE1_SERIAL, BEETLE2_SERIAL, BEETLE3_SERIAL, BEETLE4_SERIAL, BEETLE5_SERIAL]
-beetle_weights = []
-
-for i in range(number_of_beetles_to_use):
-    beetle = Mobiles.FindBySerial(beetle_serials[i])
-    Mobiles.WaitForProps(beetle, 200)
-    weight = Mobiles.GetPropValue(beetle, "Weight")
-    beetle_weights.append(weight)
-
 
 # Resource types to move to beetle
 # itemids for resources gained, for easy remove/add
@@ -68,6 +60,36 @@ if not axe_serial:
     Player.EquipItem(axe_serial)
     Misc.Pause(600)
 
+def setup_beetles(BEETLE_SERIALS, number_of_beetles_to_use):
+    """
+    Scans thru beetles to pull their serials and backpacks for use 
+    thru the script.
+    
+    Args:
+        BEETLE_SERIALS: List of beetle serial numbers.
+        number_of_beetles_to_use: Number of beetles to process.
+    """
+    for i in range(number_of_beetles_to_use):
+        serial = BEETLE_SERIALS[i]
+        beetle = Mobiles.FindBySerial(serial)
+        if not beetle:
+            Misc.SendMessage(f"Beetle {i+1} not found! Check BEETLE_SERIALS[{i}] value.")
+            raise Exception(f"Beetle {i+1} not found!")
+
+        Mobiles.WaitForProps(beetle, 200)
+        weight = Mobiles.GetPropValue(beetle, "Weight")
+        print(f"Beetle {i+1} weight: {weight}")
+
+        backpack = beetle.Backpack
+        if not backpack:
+            Misc.SendMessage(f"Beetle {i+1} backpack not found!")
+            raise Exception(f"Beetle {i+1} backpack not found!")
+
+        # Dynamically assign variables in the global namespace
+        globals()[f'beetle{i+1}'] = beetle
+        globals()[f'beetle{i+1}_weight'] = weight
+        globals()[f'beetle{i+1}_backpack'] = backpack
+
 def set_beetle_weight_globals(number_of_beetles_to_use):
     if number_of_beetles_to_use >= 1:
         beetle1 = Mobiles.FindBySerial(BEETLE1_SERIAL)
@@ -107,6 +129,10 @@ def move_resources():
             Items.Move(res, beetle1_backpack.Serial, 0)
             Misc.Pause(delay_drag)
             set_beetle_weight_globals(number_of_beetles_to_use) # update beetle weights
+
+# Initialize Beetle information
+setup_beetles(BEETLE_SERIALS, number_of_beetles_to_use) # pull in serials and backpack info
+set_beetle_weight_globals(number_of_beetles_to_use) # pull in initial weights
 
 # Chop trees as you run up against them, until you are too heavy.
 while True:
