@@ -36,30 +36,6 @@ start_chopping_logs_weight = max_weight - 50    #adjust as needed
 stop_chopping_trees_weight = max_weight - 10    #adjust as needed
 delay_drag = 600 #only adjust due to lag
 
-# Find beetle mobile and beetle backpack
-beetle1 = Mobiles.FindBySerial(BEETLE1_SERIAL)
-if not beetle1:
-    Misc.SendMessage("Beetle not found! Check BEETLE_SERIAL value.")
-    raise Exception("Beetle not found!")
-
-#pull beetle weight
-Mobiles.WaitForProps(beetle1, 200)
-beetle1_weight = Mobiles.GetPropValue(beetle1, "Weight")
-print(f"Beetle1 weight: {beetle1_weight}")
-
-beetle1_backpack = beetle1.Backpack
-if not beetle1_backpack:
-    Misc.SendMessage("Beetle backpack not found!")
-    raise Exception("Beetle backpack not found!")
-
-# Equip your axe if not already equipped.
-axe_serial = Player.GetItemOnLayer('LeftHand')
-if not axe_serial:
-    Misc.SendMessage('No axe found in hand! Equipping...')
-    axe_serial = AXE_SERIAL
-    Player.EquipItem(axe_serial)
-    Misc.Pause(600)
-
 def setup_beetles(BEETLE_SERIALS, number_of_beetles_to_use):
     """
     Scans thru beetles to pull their serials and backpacks for use 
@@ -133,6 +109,14 @@ def move_resources():
 # Initialize Beetle information
 setup_beetles(BEETLE_SERIALS, number_of_beetles_to_use) # pull in serials and backpack info
 set_beetle_weight_globals(number_of_beetles_to_use) # pull in initial weights
+
+# Equip your axe if not already equipped.
+axe_serial = Player.GetItemOnLayer('LeftHand')
+if not axe_serial:
+    Misc.SendMessage('No axe found in hand! Equipping...')
+    axe_serial = AXE_SERIAL
+    Player.EquipItem(axe_serial)
+    Misc.Pause(600)
 
 # Chop trees as you run up against them, until you are too heavy.
 while True:
