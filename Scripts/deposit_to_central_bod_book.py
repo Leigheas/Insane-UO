@@ -64,11 +64,12 @@ def pull_bod_storage_book():
     
     # Pulls the BOD book from its storage container to your backpack.
     
-    Items.UseItem(bod_book_container.Serial)
-    Misc.Pause(wait_for_container_delay)
+    #Items.UseItem(bod_book_container.Serial)
+    Items.WaitForContents(bod_book_container.Serial, 1000)
+    #Misc.Pause(wait_for_container_delay)
     # Only move if not already in backpack
-    #if bod_book.Container != Player.Backpack.Serial:
-    move_item(bod_book, Player.Backpack.Serial)
+    if bod_book.Container != Player.Backpack.Serial:
+        move_item(bod_book, Player.Backpack.Serial)
 
 def put_bod_book_back():
     
