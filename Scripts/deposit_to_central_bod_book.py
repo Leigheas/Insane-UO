@@ -65,7 +65,7 @@ def pull_bod_storage_book():
         # Pulls the BOD book from its storage container to your backpack.
         Items.UseItem(bod_book_container.Serial)
         Misc.Pause(wait_for_container_delay)
-        bod_book = Items.FindBySerial(BOD_BOOK_SERIAL)
+        bod_book = Items.FindBySerial(BOD_BOOK_SERIAL) #scan now that container is opened
         if bod_book is None:
             Misc.SendMessage("Error: BOD book not found!", 33)
             return
@@ -74,7 +74,7 @@ def pull_bod_storage_book():
             move_item(bod_book, Player.Backpack.Serial)
             # Check if move was successful
             Misc.Pause(500)
-            bod_book = Items.FindBySerial(BOD_BOOK_SERIAL)
+            bod_book = Items.FindBySerial(BOD_BOOK_SERIAL) #scan again for redundancy
             if bod_book.Container != Player.Backpack.Serial:
                 Misc.SendMessage("Error: Failed to move BOD book to backpack.", 33)
             else:
@@ -89,7 +89,7 @@ def put_bod_book_back():
         # Puts the BOD book back into its container.
         Items.UseItem(bod_book_container.Serial)
         Misc.Pause(wait_for_container_delay)
-        bod_book = Items.FindBySerial(BOD_BOOK_SERIAL)
+        bod_book = Items.FindBySerial(BOD_BOOK_SERIAL) #scan now that container is opened
         if bod_book is None:
             Misc.SendMessage("Error: BOD book not found!", 33)
             return
@@ -98,7 +98,7 @@ def put_bod_book_back():
             move_item(bod_book, bod_book_container.Serial)
             # Check if move was successful
             Misc.Pause(500)
-            bod_book = Items.FindBySerial(BOD_BOOK_SERIAL)
+            bod_book = Items.FindBySerial(BOD_BOOK_SERIAL) #scan again for redundancy
             if bod_book.Container != bod_book_container.Serial:
                 Misc.SendMessage("Error: Failed to move BOD book back to container.", 33)
             else:
