@@ -15,6 +15,7 @@ from System import Byte
 
 # ========================== MISC Settings ================================
 drag_delay_milliseconds = 700
+wait_for_container_delay = 1000
 
 # ========================== Item IDs, Colors, Serials ====================
 BOD_ITEM_ID = 0x2258                # Set to your BOD itemID (SHOULD NOT NEED TO CHANGE)
@@ -64,7 +65,7 @@ def pull_bod_storage_book():
     # Pulls the BOD book from its storage container to your backpack.
     
     Items.UseItem(bod_book_container.Serial)
-    Misc.Pause(drag_delay_milliseconds)
+    Misc.Pause(wait_for_container_delay)
     # Only move if not already in backpack
     if bod_book.Container != Player.Backpack.Serial:
         move_item(bod_book, Player.Backpack.Serial)
@@ -74,7 +75,7 @@ def put_bod_book_back():
     # Puts the BOD book back into its container.
     
     Items.UseItem(bod_book_container.Serial)
-    Misc.Pause(drag_delay_milliseconds)
+    Misc.Pause(wait_for_container_delay)
     move_item(bod_book, bod_book_container.Serial)
 
 def dump_to_central_book():
