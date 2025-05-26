@@ -14,6 +14,16 @@ BEETLE3_SERIAL = 0x000787BF
 BEETLE4_SERIAL = 0x000787BF
 BEETLE5_SERIAL = 0x000787BF
 
+beetle_serials = [BEETLE1_SERIAL, BEETLE2_SERIAL, BEETLE3_SERIAL, BEETLE4_SERIAL, BEETLE5_SERIAL]
+beetle_weights = []
+
+for i in range(number_of_beetles_to_use):
+    beetle = Mobiles.FindBySerial(beetle_serials[i])
+    Mobiles.WaitForProps(beetle, 200)
+    weight = Mobiles.GetPropValue(beetle, "Weight")
+    beetle_weights.append(weight)
+
+
 # Resource types to move to beetle
 # itemids for resources gained, for easy remove/add
 # boards            0x1BD7
@@ -27,6 +37,7 @@ LJ_RESOURCES = [0x1BD7, 0x2F5F, 0x318F, 0x3190, 0x3191, 0x3199, 0x5738]
 
 #change this to the total number of blue beetles you want to use (MAX IS 5)
 number_of_beetles_to_use = 1
+max_beetle_weight = 1500 #change to how full you want your beetle to be
 
 max_weight = Player.MaxWeight
 start_chopping_logs_weight = max_weight - 50    #adjust as needed
@@ -57,6 +68,28 @@ if not axe_serial:
     Player.EquipItem(axe_serial)
     Misc.Pause(600)
 
+def set_beetle_weight_globals(number_of_beetles_to_use):
+    if number_of_beetles_to_use >= 1:
+        beetle1 = Mobiles.FindBySerial(BEETLE1_SERIAL)
+        Mobiles.WaitForProps(beetle1, 200)
+        globals()['beetle1_weight'] = Mobiles.GetPropValue(beetle1, "Weight")
+    if number_of_beetles_to_use >= 2:
+        beetle2 = Mobiles.FindBySerial(BEETLE2_SERIAL)
+        Mobiles.WaitForProps(beetle2, 200)
+        globals()['beetle2_weight'] = Mobiles.GetPropValue(beetle2, "Weight")
+    if number_of_beetles_to_use >= 3:
+        beetle3 = Mobiles.FindBySerial(BEETLE3_SERIAL)
+        Mobiles.WaitForProps(beetle3, 200)
+        globals()['beetle3_weight'] = Mobiles.GetPropValue(beetle3, "Weight")
+    if number_of_beetles_to_use >= 4:
+        beetle4 = Mobiles.FindBySerial(BEETLE4_SERIAL)
+        Mobiles.WaitForProps(beetle4, 200)
+        globals()['beetle4_weight'] = Mobiles.GetPropValue(beetle4, "Weight")
+    if number_of_beetles_to_use >= 5:
+        beetle5 = Mobiles.FindBySerial(BEETLE5_SERIAL)
+        Mobiles.WaitForProps(beetle5, 200)
+        globals()['beetle5_weight'] = Mobiles.GetPropValue(beetle5, "Weight")
+
 def chop_logs():
     log = Items.FindByID(WOOD_LOGS, -1, Player.Backpack.Serial)
     while log is not None:
@@ -67,11 +100,13 @@ def chop_logs():
         log = Items.FindByID(WOOD_LOGS, -1, Player.Backpack.Serial)
 
 def move_resources():
+    set_beetle_weight_globals(number_of_beetles_to_use) # update beetle weights
     for resource_id in LJ_RESOURCES:
         resources = Items.FindAllByID(resource_id, -1, Player.Backpack.Serial, False)
         for res in resources:
             Items.Move(res, beetle1_backpack.Serial, 0)
             Misc.Pause(delay_drag)
+            set_beetle_weight_globals(number_of_beetles_to_use) # update beetle weights
 
 # Chop trees as you run up against them, until you are too heavy.
 while True:
