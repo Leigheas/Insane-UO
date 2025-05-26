@@ -72,6 +72,15 @@ def pull_bod_storage_book():
         # Only move if not already in backpack
         if bod_book.Container != Player.Backpack.Serial:
             move_item(bod_book, Player.Backpack.Serial)
+            # Check if move was successful
+            Misc.Pause(500)
+            bod_book = Items.FindBySerial(BOD_BOOK_SERIAL)
+            if bod_book.Container != Player.Backpack.Serial:
+                Misc.SendMessage("Error: Failed to move BOD book to backpack.", 33)
+            else:
+                Misc.SendMessage("Moved BOD book to backpack.", 34)
+        else:
+            Misc.SendMessage("BOD book is already in your backpack.", 34)
     except Exception as e:
         Misc.SendMessage(f"Exception in pull_bod_storage_book: {e}", 33)
 
@@ -84,9 +93,18 @@ def put_bod_book_back():
         if bod_book is None:
             Misc.SendMessage("Error: BOD book not found!", 33)
             return
-        # Only move if not already in container
+        # Only move if in backpack
         if bod_book.Container == Player.Backpack.Serial:
             move_item(bod_book, bod_book_container.Serial)
+            # Check if move was successful
+            Misc.Pause(500)
+            bod_book = Items.FindBySerial(BOD_BOOK_SERIAL)
+            if bod_book.Container != bod_book_container.Serial:
+                Misc.SendMessage("Error: Failed to move BOD book back to container.", 33)
+            else:
+                Misc.SendMessage("Moved BOD book back to container.", 34)
+        else:
+            Misc.SendMessage("BOD book is not in your backpack; cannot move it back to container.", 33)
     except Exception as e:
         Misc.SendMessage(f"Exception in put_bod_book_back: {e}", 33)
 
