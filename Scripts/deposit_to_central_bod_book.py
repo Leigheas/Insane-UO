@@ -75,8 +75,6 @@ def put_bod_book_back():
     
     Items.UseItem(bod_book_container.Serial)
     Misc.Pause(drag_delay_milliseconds)
-    # Only move if not already in container
-    #if bod_book.Container == Player.Backpack.Serial:
     move_item(bod_book, bod_book_container.Serial)
 
 def dump_to_central_book():
