@@ -68,7 +68,7 @@ def pull_bod_storage_book():
     Misc.Pause(wait_for_container_delay)
     # Only move if not already in backpack
     #if bod_book.Container != Player.Backpack.Serial:
-    #    move_item(bod_book, Player.Backpack.Serial)
+    move_item(bod_book, Player.Backpack.Serial)
 
 def put_bod_book_back():
     
