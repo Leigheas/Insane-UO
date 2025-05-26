@@ -61,27 +61,34 @@ def move_item(item, destination_serial, amount=0):
     Misc.Pause(drag_delay_milliseconds)
 
 def pull_bod_storage_book():
-    
-    # Pulls the BOD book from its storage container to your backpack.
-    
-    Items.UseItem(bod_book_container.Serial)
-    #Items.WaitForContents(bod_book_container.Serial, 1000)
-    Misc.Pause(wait_for_container_delay)
-    bod_book = Items.FindBySerial(BOD_BOOK_SERIAL)
-    # Only move if not already in backpack
-    if bod_book.Container != Player.Backpack.Serial:
-        move_item(bod_book, Player.Backpack.Serial)
-        
+    try:
+        # Pulls the BOD book from its storage container to your backpack.
+        Items.UseItem(bod_book_container.Serial)
+        Misc.Pause(wait_for_container_delay)
+        bod_book = Items.FindBySerial(BOD_BOOK_SERIAL)
+        if bod_book is None:
+            Misc.SendMessage("Error: BOD book not found!", 33)
+            return
+        # Only move if not already in backpack
+        if bod_book.Container != Player.Backpack.Serial:
+            move_item(bod_book, Player.Backpack.Serial)
+    except Exception as e:
+        Misc.SendMessage(f"Exception in pull_bod_storage_book: {e}", 33)
+
 def put_bod_book_back():
-    
-    # Puts the BOD book back into its container.
-    
-    Items.UseItem(bod_book_container.Serial)
-    Misc.Pause(wait_for_container_delay)
-    bod_book = Items.FindBySerial(BOD_BOOK_SERIAL)
-    # Only move if not already in container
-    if bod_book.Container == Player.Backpack.Serial:
-        move_item(bod_book, bod_book_container.Serial)
+    try:
+        # Puts the BOD book back into its container.
+        Items.UseItem(bod_book_container.Serial)
+        Misc.Pause(wait_for_container_delay)
+        bod_book = Items.FindBySerial(BOD_BOOK_SERIAL)
+        if bod_book is None:
+            Misc.SendMessage("Error: BOD book not found!", 33)
+            return
+        # Only move if not already in container
+        if bod_book.Container == Player.Backpack.Serial:
+            move_item(bod_book, bod_book_container.Serial)
+    except Exception as e:
+        Misc.SendMessage(f"Exception in put_bod_book_back: {e}", 33)
 
 def dump_to_central_book():
     # Dumps all BODs on character into the specified BOD book.
