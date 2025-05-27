@@ -50,7 +50,8 @@ def setup_beetles(BEETLE_SERIALS, number_of_beetles_to_use):
         serial = BEETLE_SERIALS[i]
         beetle = Mobiles.FindBySerial(serial)
         if not beetle:
-            Misc.SendMessage(f"Beetle {i+1} not found! Check BEETLE_SERIALS[{i}] value.")
+            #Misc.SendMessage(f"Beetle {i+1} not found! Check BEETLE_SERIALS[{i}] value.")
+            Player.HeadMessage(2125, 'Beetle {i+1} not found! Check BEETLE_SERIALS[{i}] value.')
             raise Exception(f"Beetle {i+1} not found!")
 
         Mobiles.WaitForProps(beetle, 200)
@@ -59,7 +60,8 @@ def setup_beetles(BEETLE_SERIALS, number_of_beetles_to_use):
 
         backpack = beetle.Backpack
         if not backpack:
-            Misc.SendMessage(f"Beetle {i+1} backpack not found!")
+            #Misc.SendMessage(f"Beetle {i+1} backpack not found!")
+            Player.HeadMessage(2125, 'Beetle {i+1} backpack not found!!')
             raise Exception(f"Beetle {i+1} backpack not found!")
 
         # Dynamically assign variables in the global namespace
@@ -107,6 +109,8 @@ def get_next_non_full_beetle():
         backpack = globals().get(f'beetle{i+1}_backpack', None)
         if weight is not None and backpack is not None and weight < max_beetle_weight:
             return i, serial, backpack
+        else
+            Player.HeadMessage(2125, 'Beetle {i+1} is full, going to next beetle!!')
     return None
 
 def move_resources():
@@ -116,7 +120,8 @@ def move_resources():
         for res in resources:
             beetle_info = get_next_non_full_beetle()
             if beetle_info is None:
-                Misc.SendMessage("All beetles are full! Cannot move more resources.")
+                #Misc.SendMessage("All beetles are full! Cannot move more resources.")
+                Player.HeadMessage(2125, 'ALL BEETLES FULL!!!!')
                 return
             _, _, beetle_backpack = beetle_info
             Items.Move(res, beetle_backpack.Serial, 0)
@@ -139,7 +144,8 @@ set_beetle_weight_globals(number_of_beetles_to_use) # pull in initial weights
 # Equip your axe if not already equipped.
 axe_serial = Player.GetItemOnLayer('LeftHand')
 if not axe_serial:
-    Misc.SendMessage('No axe found in hand! Equipping...')
+    #Misc.SendMessage('No axe found in hand! Equipping...')
+    Player.HeadMessage(2125, 'No axe found in hand! Equipping')
     axe_serial = AXE_SERIAL
     Player.EquipItem(axe_serial)
     Misc.Pause(600)
@@ -152,11 +158,13 @@ while True:
     
     # If getting heavy, chop up the logs.
     if Player.Weight >= start_chopping_logs_weight:
-        Misc.SendMessage("Heavy, chopping logs...")
+        #Misc.SendMessage("Heavy, chopping logs...")
+        Player.HeadMessage(2125, 'Heavy, chopping logs...')
         chop_logs()
         move_resources()
         Misc.Pause(600)
     # Stop chopping trees when we can't carry more.
     if Player.Weight >= stop_chopping_trees_weight:
-        Misc.SendMessage("Too heavy.... Stop")
+        #Misc.SendMessage("Too heavy.... Stop")
+        Player.HeadMessage(2125, 'Too heavy... Stopping')
         break
