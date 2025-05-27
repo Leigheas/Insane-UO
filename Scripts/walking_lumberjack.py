@@ -98,14 +98,39 @@ def chop_logs():
         Misc.Pause(1000)
         log = Items.FindByID(WOOD_LOGS, -1, Player.Backpack.Serial)
 
+def get_next_non_full_beetle():
+    # Returns the index and serial of the next beetle that isn't full.
+    # Returns None if all beetles are full
+    for i in range(number_of_beetles_to_use):
+        weight = globals().get(f'beetle{i+1}_weight', None)
+        serial = BEETLE_SERIALS[i]
+        backpack = globals().get(f'beetle{i+1}_backpack', None)
+        if weight is not None and backpack is not None and weight < max_beetle_weight:
+            return i, serial, backpack
+    return None
+
 def move_resources():
     set_beetle_weight_globals(number_of_beetles_to_use) # update beetle weights
     for resource_id in LJ_RESOURCES:
         resources = Items.FindAllByID(resource_id, -1, Player.Backpack.Serial, False)
         for res in resources:
-            Items.Move(res, beetle1_backpack.Serial, 0)
+            beetle_info = get_next_non_full_beetle()
+            if beetle_info is None:
+                Misc.SendMessage("All beetles are full! Cannot move more resources.")
+                return
+            _, _, beetle_backpack = beetle_info
+            Items.Move(res, beetle_backpack.Serial, 0)
             Misc.Pause(delay_drag)
             set_beetle_weight_globals(number_of_beetles_to_use) # update beetle weights
+
+#def move_resources():
+#    set_beetle_weight_globals(number_of_beetles_to_use) # update beetle weights
+#    for resource_id in LJ_RESOURCES:
+#        resources = Items.FindAllByID(resource_id, -1, Player.Backpack.Serial, False)
+#        for res in resources:
+#            Items.Move(res, beetle1_backpack.Serial, 0)
+#            Misc.Pause(delay_drag)
+#            set_beetle_weight_globals(number_of_beetles_to_use) # update beetle weights
 
 # Initialize Beetle information
 setup_beetles(BEETLE_SERIALS, number_of_beetles_to_use) # pull in serials and backpack info
