@@ -5,35 +5,17 @@
 # 1. Set axe_serial to your axe serial (Razor Enhanced > Inspect Entity > target axe > Serial)
 # 2. Set beetle_serial to your beetle serial (Razor Enhanced > Inspect Entity > target beetle > Serial)
 
+from System.Collections.Generic import List
+from System import Byte
+import sys
+
 WOOD_LOGS = 0x1BDD
 WOOD_BOARDS = 0x1BD7
 AXE_SERIAL = 0x40F9310B  # Change to your axe serial
 
-auto_detect_beetles = true     # change to true to autodetect following beetles 
+auto_detect_beetles = False      # change to true to autodetect following beetles NOT WORKING
 BLUE_BEETLE_BODY_ID = 0x0317    # Change if needed
 
-if auto_detect_beetles == false:
-    #change this to the total number of blue beetles you want to use (MAX IS 5)
-    number_of_beetles_to_use = 3
-
-    BEETLE1_SERIAL = 0x000787BF   # Change to your beetle serial
-    BEETLE2_SERIAL = 0x0008FF98
-    BEETLE3_SERIAL = 0x0008F967
-    BEETLE4_SERIAL = 0x00000000
-    BEETLE5_SERIAL = 0x00000000
-else:
-    beetle_info = find_blue_beetles_with_names()
-    BEETLE_SERIALS = [serial for serial, name in beetle_info]
-    BEETLE_NAMES = [name for serial, name in beetle_info]
-    number_of_beetles_to_use = len(BEETLE_SERIALS)
-"""    
-    #BEETLE_SERIALS = find_blue_beetles_nearby()
-    #number_of_beetles_to_use = len(BEETLE_SERIALS)
-"""
-
-max_beetle_weight = 1500 # change to how full you want your beetle to be
-
-BEETLE_SERIALS = [BEETLE1_SERIAL, BEETLE2_SERIAL, BEETLE3_SERIAL, BEETLE4_SERIAL, BEETLE5_SERIAL]
 
 # Resource types to move to beetle
 # itemids for resources gained, for easy remove/add
@@ -63,6 +45,29 @@ def find_blue_beetles_with_names():
         if mob.Body == BLUE_BEETLE_BODY_ID and mob.Notoriety == 1:
             beetles.append((mob.Serial, mob.Name))
     return beetles
+
+if auto_detect_beetles == False:
+    #change this to the total number of blue beetles you want to use (MAX IS 5)
+    number_of_beetles_to_use = 3
+
+    BEETLE1_SERIAL = 0x000787BF   # Change to your beetle serial
+    BEETLE2_SERIAL = 0x0008FF98
+    BEETLE3_SERIAL = 0x0008F967
+    BEETLE4_SERIAL = 0x00000000
+    BEETLE5_SERIAL = 0x00000000
+else:
+    beetle_info = find_blue_beetles_with_names()
+    BEETLE_SERIALS = [serial for serial, name in beetle_info]
+    BEETLE_NAMES = [name for serial, name in beetle_info]
+    number_of_beetles_to_use = len(BEETLE_SERIALS)
+"""    
+    #BEETLE_SERIALS = find_blue_beetles_nearby()
+    #number_of_beetles_to_use = len(BEETLE_SERIALS)
+"""
+
+max_beetle_weight = 1500 # change to how full you want your beetle to be
+
+BEETLE_SERIALS = [BEETLE1_SERIAL, BEETLE2_SERIAL, BEETLE3_SERIAL, BEETLE4_SERIAL, BEETLE5_SERIAL]
 
 def setup_beetles(BEETLE_SERIALS, number_of_beetles_to_use):
     """
@@ -128,7 +133,7 @@ def chop_logs():
         log = Items.FindByID(WOOD_LOGS, -1, Player.Backpack.Serial)
 
 def get_next_non_full_beetle():
-    # Returns the index and serial of the next beetle that isn't full.
+    # Returns the index and serial of the next beetle that isnt full.
     # Returns None if all beetles are full
     for i in range(number_of_beetles_to_use):
         weight = globals().get(f'beetle{i+1}_weight', None)
@@ -136,7 +141,7 @@ def get_next_non_full_beetle():
         backpack = globals().get(f'beetle{i+1}_backpack', None)
         if weight is not None and backpack is not None and weight < max_beetle_weight:
             return i, serial, backpack
-        else
+        else:
             Player.HeadMessage(2125, 'Beetle {i+1} is full, going to next beetle!!')
     return None
 
@@ -151,27 +156,31 @@ def move_resources():
                 return
             beetle_index, _, beetle_backpack = beetle_info
 
-            # Get the weight per single item (sometimes called "weight per unit" in UO)
+            # Get the weight per single item
             # For stackables, the "Weight" property is usually total weight; divide by amount.
             total_item_weight = Items.GetPropValue(res, "Weight")
             amount = Items.GetPropValue(res, "Amount") or 1
             current_beetle_weight = globals().get(f'beetle{beetle_index+1}_weight', 0)
             available_beetle_weight = max_beetle_weight - current_beetle_weight
+            Player.HeadMessage(2125, f"DEBUG avail beetle weight: {available_beetle_weight}")
 
             if total_item_weight is None or amount is None or amount == 0:
                 Player.HeadMessage(2125, f"Cannot determine weight/amount for item {res.Serial}!")
                 continue
 
             weight_per_item = float(total_item_weight) / amount
+            Player.HeadMessage(2125, f"DEBUG weight per item: {weight_per_item}")
 
             # How many can we move and not exceed max_beetle_weight?
             max_movable = int(available_beetle_weight // weight_per_item)
+            Player.HeadMessage(2125, f"DEBUG max movable: {max_movable}")
             if max_movable <= 0:
                 Player.HeadMessage(2125, f"Not enough space in Beetle {beetle_index+1}, skipping!")
                 continue
 
-            # Move only as much as fits (never more than what's left in the stack)
+            # Move only as much as fits (never more than whats left in the stack)
             move_amount = min(amount, max_movable)
+            Player.HeadMessage(2125, f"DEBUG move amount: {move_amount}")
             Items.Move(res, beetle_backpack.Serial, move_amount)
             Misc.Pause(delay_drag)
             set_beetle_weight_globals(number_of_beetles_to_use) # update beetle weights
@@ -220,6 +229,11 @@ while True:
     Journal.Clear()
     Target.TargetResource(AXE_SERIAL, "wood")
     Misc.Pause(500)
+    
+    
+    #DEBUG:
+    #for serial, name in beetle_info:
+    #    Misc.SendMessage(f"Detected beetle: {name} (serial: {hex(serial)})")
     
     # If getting heavy, chop up the logs.
     if Player.Weight >= start_chopping_logs_weight:
