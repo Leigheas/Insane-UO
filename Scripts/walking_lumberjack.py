@@ -142,7 +142,8 @@ def get_next_non_full_beetle():
         if weight is not None and backpack is not None and weight < max_beetle_weight:
             return i, serial, backpack
         else:
-            Player.HeadMessage(2125, 'Beetle {i+1} is full, going to next beetle!!')
+            current_beetle = str(i)
+            Player.HeadMessage(2125, 'Beetle {i} is full, going to next beetle!!')
     return None
 
 def move_resources():
@@ -159,7 +160,7 @@ def move_resources():
             # Get the weight per single item
             # For stackables, the "Weight" property is usually total weight; divide by amount.
             total_item_weight = Items.GetPropValue(res, "Weight")
-            amount = Items.GetPropValue(res, "Amount") or 1
+            amount = int(total_item_weight / 1)
             current_beetle_weight = globals().get(f'beetle{beetle_index+1}_weight', 0)
             available_beetle_weight = max_beetle_weight - current_beetle_weight
             Player.HeadMessage(2125, f"DEBUG avail beetle weight: {available_beetle_weight}")
@@ -168,7 +169,8 @@ def move_resources():
                 Player.HeadMessage(2125, f"Cannot determine weight/amount for item {res.Serial}!")
                 continue
 
-            weight_per_item = float(total_item_weight) / amount
+            #weight_per_item = float(total_item_weight) / amount
+            weight_per_item = 1
             Player.HeadMessage(2125, f"DEBUG weight per item: {weight_per_item}")
 
             # How many can we move and not exceed max_beetle_weight?
