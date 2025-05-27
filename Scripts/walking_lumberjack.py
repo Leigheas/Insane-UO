@@ -9,9 +9,8 @@ WOOD_LOGS = 0x1BDD
 WOOD_BOARDS = 0x1BD7
 AXE_SERIAL = 0x40F9310B  # Change to your axe serial
 
-auto_detect_beetles = false #change to true to autodetect following beetles
-BLUE_BEETLE_BODY_ID = 0x31  # Change if needed
-FOLLOW_DISTANCE = 2         # Tiles to check around player
+auto_detect_beetles = false     # change to true to autodetect following beetles 
+BLUE_BEETLE_BODY_ID = 0x0317    # Change if needed
 
 if auto_detect_beetles == false:
     #change this to the total number of blue beetles you want to use (MAX IS 5)
@@ -23,8 +22,14 @@ if auto_detect_beetles == false:
     BEETLE4_SERIAL = 0x00000000
     BEETLE5_SERIAL = 0x00000000
 else:
-    BEETLE_SERIALS = find_blue_beetles_nearby()
+    beetle_info = find_blue_beetles_with_names()
+    BEETLE_SERIALS = [serial for serial, name in beetle_info]
+    BEETLE_NAMES = [name for serial, name in beetle_info]
     number_of_beetles_to_use = len(BEETLE_SERIALS)
+"""    
+    #BEETLE_SERIALS = find_blue_beetles_nearby()
+    #number_of_beetles_to_use = len(BEETLE_SERIALS)
+"""
 
 max_beetle_weight = 1500 # change to how full you want your beetle to be
 
@@ -46,13 +51,17 @@ start_chopping_logs_weight = max_weight - 50    #adjust as needed
 stop_chopping_trees_weight = max_weight - 10    #adjust as needed
 delay_drag = 600 #only adjust due to lag
 
-# Find all nearby blue beetles (pets)
-def find_blue_beetles_nearby():
+# find nearby blue beetles and pull in their serial and name.
+def find_blue_beetles_with_names():
     beetles = []
-    for mob in Mobiles.GetMobiles():
-        # Ensure it's a blue beetle (check body), is close, and is a pet
-        if mob.Body == BLUE_BEETLE_BODY_ID and mob.Distance <= FOLLOW_DISTANCE and mob.Notoriety == 1:
-            beetles.append(mob.Serial)
+    fil = Mobiles.Filter()
+    fil.Enabled = True
+    fil.RangeMax = 4
+    fil.Notorieties = List[Byte](bytes([1]))
+    
+    for mob in Mobiles.ApplyFilter(fil):
+        if mob.Body == BLUE_BEETLE_BODY_ID and mob.Notoriety == 1:
+            beetles.append((mob.Serial, mob.Name))
     return beetles
 
 def setup_beetles(BEETLE_SERIALS, number_of_beetles_to_use):
