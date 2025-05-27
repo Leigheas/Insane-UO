@@ -9,7 +9,7 @@ WOOD_LOGS = 0x1BDD
 WOOD_BOARDS = 0x1BD7
 AXE_SERIAL = 0x40F9310B  # Change to your axe serial
 
-auto_detect_beetles = false     # change to true to autodetect following beetles 
+auto_detect_beetles = true     # change to true to autodetect following beetles 
 BLUE_BEETLE_BODY_ID = 0x0317    # Change if needed
 
 if auto_detect_beetles == false:
