@@ -120,6 +120,42 @@ def move_resources():
         for res in resources:
             beetle_info = get_next_non_full_beetle()
             if beetle_info is None:
+                Player.HeadMessage(2125, 'ALL BEETLES FULL!!!!')
+                return
+            beetle_index, _, beetle_backpack = beetle_info
+
+            # Get the weight per single item (sometimes called "weight per unit" in UO)
+            # For stackables, the "Weight" property is usually total weight; divide by amount.
+            total_item_weight = Items.GetPropValue(res, "Weight")
+            amount = Items.GetPropValue(res, "Amount") or 1
+            current_beetle_weight = globals().get(f'beetle{beetle_index+1}_weight', 0)
+            available_beetle_weight = max_beetle_weight - current_beetle_weight
+
+            if total_item_weight is None or amount is None or amount == 0:
+                Player.HeadMessage(2125, f"Cannot determine weight/amount for item {res.Serial}!")
+                continue
+
+            weight_per_item = float(total_item_weight) / amount
+
+            # How many can we move and not exceed max_beetle_weight?
+            max_movable = int(available_beetle_weight // weight_per_item)
+            if max_movable <= 0:
+                Player.HeadMessage(2125, f"Not enough space in Beetle {beetle_index+1}, skipping!")
+                continue
+
+            # Move only as much as fits (never more than what's left in the stack)
+            move_amount = min(amount, max_movable)
+            Items.Move(res, beetle_backpack.Serial, move_amount)
+            Misc.Pause(delay_drag)
+            set_beetle_weight_globals(number_of_beetles_to_use) # update beetle weights
+"""
+def move_resources():
+    set_beetle_weight_globals(number_of_beetles_to_use) # update beetle weights
+    for resource_id in LJ_RESOURCES:
+        resources = Items.FindAllByID(resource_id, -1, Player.Backpack.Serial, False)
+        for res in resources:
+            beetle_info = get_next_non_full_beetle()
+            if beetle_info is None:
                 #Misc.SendMessage("All beetles are full! Cannot move more resources.")
                 Player.HeadMessage(2125, 'ALL BEETLES FULL!!!!')
                 return
@@ -127,16 +163,18 @@ def move_resources():
             Items.Move(res, beetle_backpack.Serial, 0)
             Misc.Pause(delay_drag)
             set_beetle_weight_globals(number_of_beetles_to_use) # update beetle weights
+"""
 
-#def move_resources():
-#    set_beetle_weight_globals(number_of_beetles_to_use) # update beetle weights
-#    for resource_id in LJ_RESOURCES:
-#        resources = Items.FindAllByID(resource_id, -1, Player.Backpack.Serial, False)
-#        for res in resources:
-#            Items.Move(res, beetle1_backpack.Serial, 0)
-#            Misc.Pause(delay_drag)
-#            set_beetle_weight_globals(number_of_beetles_to_use) # update beetle weights
-
+""" original move_resources code
+def move_resources():
+    set_beetle_weight_globals(number_of_beetles_to_use) # update beetle weights
+    for resource_id in LJ_RESOURCES:
+        resources = Items.FindAllByID(resource_id, -1, Player.Backpack.Serial, False)
+        for res in resources:
+            Items.Move(res, beetle1_backpack.Serial, 0)
+            Misc.Pause(delay_drag)
+            set_beetle_weight_globals(number_of_beetles_to_use) # update beetle weights
+"""
 # Initialize Beetle information
 setup_beetles(BEETLE_SERIALS, number_of_beetles_to_use) # pull in serials and backpack info
 set_beetle_weight_globals(number_of_beetles_to_use) # pull in initial weights
