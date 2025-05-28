@@ -290,7 +290,7 @@ while True:
     # If getting heavy, chop up the logs.
     if Player.Weight >= start_chopping_logs_weight:
         #Misc.SendMessage("Heavy, chopping logs...")
-        Player.HeadMessage(2125, 'Heavy, dumping to beetles if room')
+        Player.HeadMessage(2125, 'Heavy, choping logs if needed then dumping to beetles if room')
         chop_logs()
         move_resources()
         Misc.Pause(600)
