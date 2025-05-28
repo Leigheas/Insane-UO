@@ -35,20 +35,20 @@ import sys
 # ***************************************
 # ****	Settings (Can Change) Start  ****
 # ***************************************
-debug_mode = False 								# set to true if needing to see debug messages
-auto_detect_beetles = True      				# change to true to auto detect beetles
-max_beetle_weight = 1500 						# change to how full you want your beetle to be
+debug_mode = False                              # set to true if needing to see debug messages
+auto_detect_beetles = True                      # change to true to auto detect beetles
+max_beetle_weight = 1500                        # change to how full you want your beetle to be
 max_weight = Player.MaxWeight
 start_chopping_logs_weight = max_weight - 50    #adjust as needed
 stop_chopping_trees_weight = max_weight - 10    #adjust as needed
-delay_drag = 600 								#only adjust due to lag
+delay_drag = 600                                #only adjust due to lag
 
 # serials
-AXE_SERIAL = 0x40F9310B  						# Change to your axe serial
+AXE_SERIAL = 0x40F9310B                         # Change to your axe serial
 
 # ===== ItemID =====
-wood_logs = 0x1BDD								# change only if the ItemID for logs are different
-blue_beetle_body_id = 0x0317    				# Change if needed
+wood_logs = 0x1BDD                              # change only if the ItemID for logs are different
+blue_beetle_body_id = 0x0317                    # Change if needed
 
 # Resource types to move to beetle
 # add/remove the itemid from LJ_RESOURCES to tell system what to move. 
