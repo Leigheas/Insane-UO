@@ -57,8 +57,7 @@ if auto_detect_beetles == False: # manual adding
     BEETLE5_SERIAL = 0x00000000
 else: # auto detect beetles
     beetle_info = find_blue_beetles_with_serials()
-    BEETLE_SERIALS = [serial for serial, name in beetle_info]
-    BEETLE_NAMES = [name for serial, name in beetle_info]
+    BEETLE_SERIALS = beetle_info
     number_of_beetles_to_use = len(BEETLE_SERIALS)
 """    
     #BEETLE_SERIALS = find_blue_beetles_nearby()
