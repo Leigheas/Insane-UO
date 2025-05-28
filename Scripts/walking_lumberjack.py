@@ -185,7 +185,7 @@ def get_next_non_full_beetle():
             return i, serial, backpack
         else:
             current_beetle = str(i)
-            Player.HeadMessage(2125, f'Beetle {i} is full, going to next beetle!!')
+            #Player.HeadMessage(2125, f'Beetle {i} is full, going to next beetle!!')
     return None
 
 def move_resources():
