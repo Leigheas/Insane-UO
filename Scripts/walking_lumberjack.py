@@ -34,7 +34,7 @@ stop_chopping_trees_weight = max_weight - 10    #adjust as needed
 delay_drag = 600 #only adjust due to lag
 
 # find nearby blue beetles and pull in their serial and name.
-def find_blue_beetles_with_names():
+def find_blue_beetles_with_serials():
     beetles = []
     fil = Mobiles.Filter()
     fil.Enabled = True
@@ -43,10 +43,10 @@ def find_blue_beetles_with_names():
     
     for mob in Mobiles.ApplyFilter(fil):
         if mob.Body == BLUE_BEETLE_BODY_ID and mob.Notoriety == 1:
-            beetles.append((mob.Serial, mob.Name))
+            beetles.append(mob.Serial)
     return beetles
-
-if auto_detect_beetles == False:
+    
+if auto_detect_beetles == False: # manual adding
     #change this to the total number of blue beetles you want to use (MAX IS 5)
     number_of_beetles_to_use = 3
 
@@ -55,7 +55,7 @@ if auto_detect_beetles == False:
     BEETLE3_SERIAL = 0x0008F967
     BEETLE4_SERIAL = 0x00000000
     BEETLE5_SERIAL = 0x00000000
-else:
+else: # auto detect beetles
     beetle_info = find_blue_beetles_with_names()
     BEETLE_SERIALS = [serial for serial, name in beetle_info]
     BEETLE_NAMES = [name for serial, name in beetle_info]
@@ -102,26 +102,34 @@ def setup_beetles(BEETLE_SERIALS, number_of_beetles_to_use):
         globals()[f'beetle{i+1}_backpack'] = backpack
 
 def set_beetle_weight_globals(number_of_beetles_to_use):
-    if number_of_beetles_to_use >= 1:
-        beetle1 = Mobiles.FindBySerial(BEETLE1_SERIAL)
-        Mobiles.WaitForProps(beetle1, 200)
-        globals()['beetle1_weight'] = Mobiles.GetPropValue(beetle1, "Weight")
-    if number_of_beetles_to_use >= 2:
-        beetle2 = Mobiles.FindBySerial(BEETLE2_SERIAL)
-        Mobiles.WaitForProps(beetle2, 200)
-        globals()['beetle2_weight'] = Mobiles.GetPropValue(beetle2, "Weight")
-    if number_of_beetles_to_use >= 3:
-        beetle3 = Mobiles.FindBySerial(BEETLE3_SERIAL)
-        Mobiles.WaitForProps(beetle3, 200)
-        globals()['beetle3_weight'] = Mobiles.GetPropValue(beetle3, "Weight")
-    if number_of_beetles_to_use >= 4:
-        beetle4 = Mobiles.FindBySerial(BEETLE4_SERIAL)
-        Mobiles.WaitForProps(beetle4, 200)
-        globals()['beetle4_weight'] = Mobiles.GetPropValue(beetle4, "Weight")
-    if number_of_beetles_to_use >= 5:
-        beetle5 = Mobiles.FindBySerial(BEETLE5_SERIAL)
-        Mobiles.WaitForProps(beetle5, 200)
-        globals()['beetle5_weight'] = Mobiles.GetPropValue(beetle5, "Weight")
+    if auto_detect_beetles == False:
+        if number_of_beetles_to_use >= 1:
+            beetle1 = Mobiles.FindBySerial(BEETLE1_SERIAL)
+            Mobiles.WaitForProps(beetle1, 200)
+            globals()['beetle1_weight'] = Mobiles.GetPropValue(beetle1, "Weight")
+        if number_of_beetles_to_use >= 2:
+            beetle2 = Mobiles.FindBySerial(BEETLE2_SERIAL)
+            Mobiles.WaitForProps(beetle2, 200)
+            globals()['beetle2_weight'] = Mobiles.GetPropValue(beetle2, "Weight")
+        if number_of_beetles_to_use >= 3:
+            beetle3 = Mobiles.FindBySerial(BEETLE3_SERIAL)
+            Mobiles.WaitForProps(beetle3, 200)
+            globals()['beetle3_weight'] = Mobiles.GetPropValue(beetle3, "Weight")
+        if number_of_beetles_to_use >= 4:
+            beetle4 = Mobiles.FindBySerial(BEETLE4_SERIAL)
+            Mobiles.WaitForProps(beetle4, 200)
+            globals()['beetle4_weight'] = Mobiles.GetPropValue(beetle4, "Weight")
+        if number_of_beetles_to_use >= 5:
+            beetle5 = Mobiles.FindBySerial(BEETLE5_SERIAL)
+            Mobiles.WaitForProps(beetle5, 200)
+            globals()['beetle5_weight'] = Mobiles.GetPropValue(beetle5, "Weight")
+    else:
+        for i in range(number_of_beetles_to_use):
+            serial = BEETLE_SERIALS[i]
+            beetle = Mobiles.FindBySerial(serial)
+            Mobiles.WaitForProps(beetle, 200)
+            globals()[f'beetle{i+1}_weight'] = Mobiles.GetPropValue(beetle, "Weight")
+
 
 def chop_logs():
     log = Items.FindByID(WOOD_LOGS, -1, Player.Backpack.Serial)
