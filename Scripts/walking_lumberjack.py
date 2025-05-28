@@ -9,6 +9,7 @@ from System.Collections.Generic import List
 from System import Byte
 import sys
 
+debug_mode = False # set to true if needing to see debug messages
 WOOD_LOGS = 0x1BDD
 WOOD_BOARDS = 0x1BD7
 AXE_SERIAL = 0x40F9310B  # Change to your axe serial
@@ -82,17 +83,18 @@ def setup_beetles(BEETLE_SERIALS, number_of_beetles_to_use):
         beetle = Mobiles.FindBySerial(serial)
         if not beetle:
             #Misc.SendMessage(f"Beetle {i+1} not found! Check BEETLE_SERIALS[{i}] value.")
-            Player.HeadMessage(2125, 'Beetle {i+1} not found! Check BEETLE_SERIALS[{i}] value.')
+            Player.HeadMessage(2125, f'Beetle {i+1} not found! Check BEETLE_SERIALS[{i}] value.')
             raise Exception(f"Beetle {i+1} not found!")
 
         Mobiles.WaitForProps(beetle, 200)
         weight = Mobiles.GetPropValue(beetle, "Weight")
-        print(f"Beetle {i+1} weight: {weight}")
+        if debug_mode = True:
+            print(f"Beetle {i+1} weight: {weight}")
 
         backpack = beetle.Backpack
         if not backpack:
             #Misc.SendMessage(f"Beetle {i+1} backpack not found!")
-            Player.HeadMessage(2125, 'Beetle {i+1} backpack not found!!')
+            Player.HeadMessage(2125, f'Beetle {i+1} backpack not found!!')
             raise Exception(f"Beetle {i+1} backpack not found!")
 
         # Dynamically assign variables in the global namespace
@@ -150,10 +152,13 @@ def get_next_non_full_beetle():
             return i, serial, backpack
         else:
             current_beetle = str(i)
-            Player.HeadMessage(2125, 'Beetle {i} is full, going to next beetle!!')
+            Player.HeadMessage(2125, f'Beetle {i} is full, going to next beetle!!')
     return None
 
 def move_resources():
+    global all_beetles_full
+    all_beetles_full = False 
+    
     set_beetle_weight_globals(number_of_beetles_to_use) # update beetle weights
     for resource_id in LJ_RESOURCES:
         resources = Items.FindAllByID(resource_id, -1, Player.Backpack.Serial, False)
@@ -161,6 +166,7 @@ def move_resources():
             beetle_info = get_next_non_full_beetle()
             if beetle_info is None:
                 Player.HeadMessage(2125, 'ALL BEETLES FULL!!!!')
+                all_beetles_full = True
                 return
             beetle_index, _, beetle_backpack = beetle_info
 
@@ -170,7 +176,8 @@ def move_resources():
             amount = int(total_item_weight / 1)
             current_beetle_weight = globals().get(f'beetle{beetle_index+1}_weight', 0)
             available_beetle_weight = max_beetle_weight - current_beetle_weight
-            Player.HeadMessage(2125, f"DEBUG avail beetle weight: {available_beetle_weight}")
+            if debug_mode = True:
+                Player.HeadMessage(2125, f"DEBUG avail beetle weight: {available_beetle_weight}")
 
             if total_item_weight is None or amount is None or amount == 0:
                 Player.HeadMessage(2125, f"Cannot determine weight/amount for item {res.Serial}!")
@@ -178,18 +185,21 @@ def move_resources():
 
             #weight_per_item = float(total_item_weight) / amount
             weight_per_item = 1
-            Player.HeadMessage(2125, f"DEBUG weight per item: {weight_per_item}")
+            if debug_mode = True:
+                   Player.HeadMessage(2125, f"DEBUG weight per item: {weight_per_item}")
 
             # How many can we move and not exceed max_beetle_weight?
             max_movable = int(available_beetle_weight // weight_per_item)
-            Player.HeadMessage(2125, f"DEBUG max movable: {max_movable}")
+            if debug_mode = True:
+                Player.HeadMessage(2125, f"DEBUG max movable: {max_movable}")
             if max_movable <= 0:
                 Player.HeadMessage(2125, f"Not enough space in Beetle {beetle_index+1}, skipping!")
                 continue
 
             # Move only as much as fits (never more than whats left in the stack)
             move_amount = min(amount, max_movable)
-            Player.HeadMessage(2125, f"DEBUG move amount: {move_amount}")
+            if debug_mode = True:
+                Player.HeadMessage(2125, f"DEBUG move amount: {move_amount}")
             Items.Move(res, beetle_backpack.Serial, move_amount)
             Misc.Pause(delay_drag)
             set_beetle_weight_globals(number_of_beetles_to_use) # update beetle weights
