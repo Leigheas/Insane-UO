@@ -22,7 +22,12 @@ non-automated miner, mines where you are standing till no more ore then you manu
 auto smelts and creates more shovels. will move ingots to blue beetle when it needs to<br>
 will also run inside the ACME mines.<br>
 <br>
+<a href= https://github.com/Leigheas/Insane-UO/blob/main/Scripts/walking_lumberjack.py>Walking Lumberjack</a><br>
+non-automated lumberjacker! walk up to a tree and start whacking! Features the ability to auto detect your blue beetles so you<br>
+don't have to worry about putting in serials (don't worry you can do it that was as well). You can set how full you want to make<br>
+the beetles and it will cram them full till that weight is met. Will alert you when all your beetles are full so you know when<br>
+to go unload!<br>
+<br>
 <a href= https://github.com/Leigheas/Insane-UO/blob/main/Scripts/moveallcont1tocont2.py>Move all container 1 to container 2</a><br>
 simple script to move everything from one container to another.<br>
-<h2>Walking Lumberjack is a WIP, not responsible for issues as its not in a release state</h2>
-<h2>Once Ready for release will post in discord!!</h2>
+<br>
