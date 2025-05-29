@@ -198,7 +198,7 @@ def move_resources():
         for res in resources:
             beetle_info = get_next_non_full_beetle()
             if beetle_info is None:
-                Player.HeadMessage(2125, 'ALL BEETLES FULL!!!!')
+                #Player.HeadMessage(2125, 'ALL BEETLES FULL!!!!')
                 all_beetles_full = True
                 return
             beetle_index, _, beetle_backpack = beetle_info
@@ -290,12 +290,11 @@ while True:
     # If getting heavy, chop up the logs.
     if Player.Weight >= start_chopping_logs_weight:
         #Misc.SendMessage("Heavy, chopping logs...")
-        Player.HeadMessage(2125, 'Heavy, choping logs if needed then dumping to beetles if room')
+        Player.HeadMessage(2125, 'Heavy, chopping logs if needed then dumping to beetles if room')
         chop_logs()
         move_resources()
         Misc.Pause(600)
-    # Stop chopping trees when we can\'t carry more.
-    if Player.Weight >= stop_chopping_trees_weight:
-        #Misc.SendMessage("Too heavy.... Stop")
-        Player.HeadMessage(2125, 'Too heavy... Stopping')
+    # Stop chopping trees when beetles are full.
+    if all_beetles_full == True:
+        Player.HeadMessage(2125, 'All beetles full! Go unload and get back to it!')
         break
