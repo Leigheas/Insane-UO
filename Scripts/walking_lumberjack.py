@@ -10,6 +10,7 @@
 #		* Will move all resources to blue beetle (multiple beetles if used)
 #		* Will cram the beetles full untill it hits the weight you set.
 #		* Will chop trees when you walk up to them
+#       * Once your beetles are filled up, script will tell you and then stop.
 
 # How To Setup:
 # 1. If you are wanting your beetles to be auto-detected, make sure auto_detect_beetles = True.
@@ -96,11 +97,6 @@ else: # auto detect beetles
     beetle_info = find_blue_beetles_with_serials()
     BEETLE_SERIALS = beetle_info
     number_of_beetles_to_use = len(BEETLE_SERIALS)
-"""    
-    #BEETLE_SERIALS = find_blue_beetles_nearby()
-    #number_of_beetles_to_use = len(BEETLE_SERIALS)
-"""
-
 
 def setup_beetles(BEETLE_SERIALS, number_of_beetles_to_use):
     """
@@ -236,33 +232,7 @@ def move_resources():
             Items.Move(res, beetle_backpack.Serial, move_amount)
             Misc.Pause(delay_drag)
             set_beetle_weight_globals(number_of_beetles_to_use) # update beetle weights
-"""
-def move_resources():
-    set_beetle_weight_globals(number_of_beetles_to_use) # update beetle weights
-    for resource_id in LJ_RESOURCES:
-        resources = Items.FindAllByID(resource_id, -1, Player.Backpack.Serial, False)
-        for res in resources:
-            beetle_info = get_next_non_full_beetle()
-            if beetle_info is None:
-                #Misc.SendMessage("All beetles are full! Cannot move more resources.")
-                Player.HeadMessage(2125, 'ALL BEETLES FULL!!!!')
-                return
-            _, _, beetle_backpack = beetle_info
-            Items.Move(res, beetle_backpack.Serial, 0)
-            Misc.Pause(delay_drag)
-            set_beetle_weight_globals(number_of_beetles_to_use) # update beetle weights
-"""
 
-""" original move_resources code
-def move_resources():
-    set_beetle_weight_globals(number_of_beetles_to_use) # update beetle weights
-    for resource_id in LJ_RESOURCES:
-        resources = Items.FindAllByID(resource_id, -1, Player.Backpack.Serial, False)
-        for res in resources:
-            Items.Move(res, beetle1_backpack.Serial, 0)
-            Misc.Pause(delay_drag)
-            set_beetle_weight_globals(number_of_beetles_to_use) # update beetle weights
-"""
 # Initialize Beetle information
 setup_beetles(BEETLE_SERIALS, number_of_beetles_to_use) # pull in serials and backpack info
 set_beetle_weight_globals(number_of_beetles_to_use) # pull in initial weights
@@ -290,7 +260,7 @@ while True:
     # If getting heavy, chop up the logs.
     if Player.Weight >= start_chopping_logs_weight:
         #Misc.SendMessage("Heavy, chopping logs...")
-        Player.HeadMessage(2125, 'Heavy, chopping logs if needed then dumping to beetles if room')
+        Player.HeadMessage(2125, 'Heavy, chopping logs if needed then dumping to beetle')
         chop_logs()
         move_resources()
         Misc.Pause(600)
