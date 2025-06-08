@@ -69,6 +69,10 @@ LJ_RESOURCES = [0x1BD7, 0x2F5F, 0x318F, 0x3190, 0x3191, 0x3199, 0x5738]
 # ****  No Need to Change beyond this point  ****
 # ***********************************************
 
+# stupid me forgot this which was causing a NameError on running
+# from a fresh download
+all_beetles_full = False 
+
 # find nearby blue beetles and pull in their serial and name.
 def find_blue_beetles_with_serials():
     beetles = []
