@@ -74,6 +74,7 @@ LJ_RESOURCES = [0x1BD7, 0x2F5F, 0x318F, 0x3190, 0x3191, 0x3199, 0x5738]
 all_beetles_full = False 
 
 # find nearby blue beetles and pull in their serial and name.
+# will now find guild/friendly beetles as well ty chipjack(Sage/Erith/Echo) in discord
 def find_blue_beetles_with_serials():
     beetles = []
     fil = Mobiles.Filter()
@@ -82,8 +83,10 @@ def find_blue_beetles_with_serials():
     fil.Notorieties = List[Byte](bytes([1]))
     
     for mob in Mobiles.ApplyFilter(fil):
-        if mob.Body == blue_beetle_body_id and mob.Notoriety == 1:
-            beetles.append(mob.Serial)
+		if mob.Body == blue_beetle_body_id and mob.Notoriety == 1;
+			beetles.append(mob.Serial)
+		if mob.Body == blue_beetle_body_id and mob.Notoriety == 2;
+			beetles.append(mob.Serial)
     return beetles
     
 if auto_detect_beetles == False: # manual adding
