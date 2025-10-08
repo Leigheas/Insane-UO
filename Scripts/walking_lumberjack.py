@@ -83,9 +83,7 @@ def find_blue_beetles_with_serials():
     fil.Notorieties = List[Byte](bytes([1]))
     
     for mob in Mobiles.ApplyFilter(fil):
-		if mob.Body == blue_beetle_body_id and mob.Notoriety == 1;
-			beetles.append(mob.Serial)
-		if mob.Body == blue_beetle_body_id and mob.Notoriety == 2;
+		if mob.Body == blue_beetle_body_id and mob.Notoriety in (1, 2):
 			beetles.append(mob.Serial)
     return beetles
     
