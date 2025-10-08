@@ -116,7 +116,6 @@ def setup_beetles(BEETLE_SERIALS, number_of_beetles_to_use):
         serial = BEETLE_SERIALS[i]
         beetle = Mobiles.FindBySerial(serial)
         if not beetle:
-            #Misc.SendMessage(f"Beetle {i+1} not found! Check BEETLE_SERIALS[{i}] value.")
             Player.HeadMessage(2125, f'Beetle {i+1} not found! Check BEETLE_SERIALS[{i}] value.')
             raise Exception(f"Beetle {i+1} not found!")
 
@@ -127,7 +126,6 @@ def setup_beetles(BEETLE_SERIALS, number_of_beetles_to_use):
 
         backpack = beetle.Backpack
         if not backpack:
-            #Misc.SendMessage(f"Beetle {i+1} backpack not found!")
             Player.HeadMessage(2125, f'Beetle {i+1} backpack not found!!')
             raise Exception(f"Beetle {i+1} backpack not found!")
 
@@ -199,7 +197,6 @@ def move_resources():
         for res in resources:
             beetle_info = get_next_non_full_beetle()
             if beetle_info is None:
-                #Player.HeadMessage(2125, 'ALL BEETLES FULL!!!!')
                 all_beetles_full = True
                 return
             beetle_index, _, beetle_backpack = beetle_info
