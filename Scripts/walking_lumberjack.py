@@ -4,29 +4,29 @@
 
 # Lumberjacking now with enhanced QOL features!
 # Features:
-#		* Ability to auto-detect your blue beetles and adjust accordingly
-#		* Can still manually set your beetle serials and amount of beetles if you wish to
-#		* Automatically cuts logs into boards to help with weight.
-#		* Will move all resources to blue beetle (multiple beetles if used)
-#		* Will cram the beetles full untill it hits the weight you set.
-#		* Will chop trees when you walk up to them
+#       * Ability to auto-detect your blue beetles and adjust accordingly
+#       * Can still manually set your beetle serials and amount of beetles if you wish to
+#       * Automatically cuts logs into boards to help with weight.
+#       * Will move all resources to blue beetle (multiple beetles if used)
+#       * Will cram the beetles full untill it hits the weight you set.
+#       * Will chop trees when you walk up to them
 #       * Once your beetles are filled up, script will tell you and then stop.
 
 # How To Setup:
 # 1. If you are wanting your beetles to be auto-detected, make sure auto_detect_beetles = True.
-# 		if not make sure auto_detect_beetles = False.
+#       if not make sure auto_detect_beetles = False.
 # 2. If not using auto-detect beetles then you will need to set number_of_beetles_to_use to 
-#		the amount of beetles you want to use.
-#		Then you will need to set the serial for each beetle (BEETLE1_SERIAL, BEETLE2_SERIAL ect.)
-#		(Razor Enhanced > Inspect Entity > target beetle > Serial
+#       the amount of beetles you want to use.
+#       Then you will need to set the serial for each beetle (BEETLE1_SERIAL, BEETLE2_SERIAL ect.)
+#       (Razor Enhanced > Inspect Entity > target beetle > Serial
 # 3. Now set the max weight you want crammed into your beetle(s) with max_beetle_weight
-#		1500 is a good amount and is the default.
+#       1500 is a good amount and is the default.
 # 4. Set the serial to the axe under AXE_SERIAL in the serials section.
-#		Razor Enhanced > Inspect Entity > target axe > Serial
+#       Razor Enhanced > Inspect Entity > target axe > Serial
 # 5. wood_logs and blue_beetle_body_id should not need to be changed unless your shard is different.
 # 6. under LJ_RESOURCES are the itemid for the items that will be transferred to your beetle(s).
-#		there is a list of items and their id so if you want to remove any and add them 
-#		back later you can.
+#       there is a list of items and their id so if you want to remove any and add them 
+#       back later you can.
 #
 # 
 from System.Collections.Generic import List
@@ -34,7 +34,7 @@ from System import Byte
 import sys
 
 # ***************************************
-# ****	Settings (Can Change) Start  ****
+# ****  Settings (Can Change) Start  ****
 # ***************************************
 debug_mode = False                              # set to true if needing to see debug messages
 auto_detect_beetles = True                      # change to true to auto detect beetles
@@ -83,8 +83,8 @@ def find_blue_beetles_with_serials():
     fil.Notorieties = List[Byte](bytes([1]))
     
     for mob in Mobiles.ApplyFilter(fil):
-		if mob.Body == blue_beetle_body_id and mob.Notoriety in (1, 2):
-			beetles.append(mob.Serial)
+        if mob.Body == blue_beetle_body_id and mob.Notoriety in (1, 2):
+            beetles.append(mob.Serial)
     return beetles
     
 if auto_detect_beetles == False: # manual adding
@@ -106,7 +106,7 @@ else: # auto detect beetles
 def setup_beetles(BEETLE_SERIALS, number_of_beetles_to_use):
     """
     Scans thru beetles to pull their serials and backpacks for use 
-    thru the script.
+    thru the script
     
     Args:
         BEETLE_SERIALS: List of beetle serial numbers.
