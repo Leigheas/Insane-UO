@@ -2,7 +2,7 @@
   {
     "Index": 0,
     "SearchText": "Physical Resist",
-    "FormattedText": "/c[#784504]{0}/c[white]{1}%",
+    "FormattedText": "/c[#784504]{0}/c[white] {1}%",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -13,7 +13,7 @@
   {
     "Index": 1,
     "SearchText": "Physical Resist",
-    "FormattedText": "/c[#784504]{0}/c[#35d404]{1}%",
+    "FormattedText": "/c[#784504]{0}/c[#35d404] {1}%",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -24,7 +24,7 @@
   {
     "Index": 2,
     "SearchText": "Physical Resist",
-    "FormattedText": "/c[#784504]{0}/c[#09ede6]{1}%",
+    "FormattedText": "/c[#784504]{0}/c[#09ede6] {1}%",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -35,7 +35,7 @@
   {
     "Index": 3,
     "SearchText": "Physical Resist",
-    "FormattedText": "/c[#784504]{0}/c[yellow]{1}%",
+    "FormattedText": "/c[#784504]{0}/c[yellow] {1}%",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -46,7 +46,7 @@
   {
     "Index": 4,
     "SearchText": "Physical Resist",
-    "FormattedText": "/c[#784504]{0}/c[orange]{1}%",
+    "FormattedText": "/c[#784504]{0}/c[orange] {1}%",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -57,7 +57,7 @@
   {
     "Index": 5,
     "SearchText": "Physical Resist",
-    "FormattedText": "/c[#784504]{0}/c[#ff0342]{1}%",
+    "FormattedText": "/c[#784504]{0}/c[#ff0342] {1}%",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -68,7 +68,7 @@
   {
     "Index": 6,
     "SearchText": "Fire Resist",
-    "FormattedText": "/c[#a80303]{0}/c[white]{1}%",
+    "FormattedText": "/c[#a80303]{0}/c[white] {1}%",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -79,7 +79,7 @@
   {
     "Index": 7,
     "SearchText": "Fire Resist",
-    "FormattedText": "/c[#a80303]{0}/c[#35d404]{1}%",
+    "FormattedText": "/c[#a80303]{0}/c[#35d404] {1}%",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -90,7 +90,7 @@
   {
     "Index": 8,
     "SearchText": "Fire Resist",
-    "FormattedText": "/c[#a80303]{0}/c[#09ede6]{1}%",
+    "FormattedText": "/c[#a80303]{0}/c[#09ede6] {1}%",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -101,7 +101,7 @@
   {
     "Index": 9,
     "SearchText": "Fire Resist",
-    "FormattedText": "/c[#a80303]{0}/c[yellow]{1}%",
+    "FormattedText": "/c[#a80303]{0}/c[yellow] {1}%",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -112,7 +112,7 @@
   {
     "Index": 10,
     "SearchText": "Fire Resist",
-    "FormattedText": "/c[#a80303]{0}/c[orange]{1}%",
+    "FormattedText": "/c[#a80303]{0}/c[orange] {1}%",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -123,7 +123,7 @@
   {
     "Index": 11,
     "SearchText": "Fire Resist",
-    "FormattedText": "/c[red]{0}/c[#ff0342]{1}%",
+    "FormattedText": "/c[red]{0}/c[#ff0342] {1}%",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -134,7 +134,7 @@
   {
     "Index": 12,
     "SearchText": "Cold Resist",
-    "FormattedText": "/c[#09ede6]{0}/c[white]{1}%",
+    "FormattedText": "/c[#09ede6]{0}/c[white] {1}%",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -145,7 +145,7 @@
   {
     "Index": 13,
     "SearchText": "Cold Resist",
-    "FormattedText": "/c[blue]{0}/c[#35d404]{1}%",
+    "FormattedText": "/c[blue]{0}/c[#35d404] {1}%",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -156,7 +156,7 @@
   {
     "Index": 14,
     "SearchText": "Cold Resist",
-    "FormattedText": "/c[blue]{0}/c[#09ede6]{1}%",
+    "FormattedText": "/c[blue]{0}/c[#09ede6] {1}%",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -167,7 +167,7 @@
   {
     "Index": 15,
     "SearchText": "Cold Resist",
-    "FormattedText": "/c[blue]{0}/c[yellow]{1}%",
+    "FormattedText": "/c[blue]{0}/c[yellow] {1}%",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -178,7 +178,7 @@
   {
     "Index": 16,
     "SearchText": "Cold Resist",
-    "FormattedText": "/c[blue]{0}/c[orange]{1}%",
+    "FormattedText": "/c[blue]{0}/c[orange] {1}%",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -189,7 +189,7 @@
   {
     "Index": 17,
     "SearchText": "Cold Resist",
-    "FormattedText": "/c[blue]{0}/c[#ff0342]{1}%",
+    "FormattedText": "/c[blue]{0}/c[#ff0342] {1}%",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -200,7 +200,7 @@
   {
     "Index": 18,
     "SearchText": "Poison Resist",
-    "FormattedText": "/c[green]{0}/c[white]{1}%",
+    "FormattedText": "/c[green]{0}/c[white] {1}%",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -211,7 +211,7 @@
   {
     "Index": 19,
     "SearchText": "Poison Resist",
-    "FormattedText": "/c[green]{0}/c[#35d404]{1}%",
+    "FormattedText": "/c[green]{0}/c[#35d404] {1}%",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -222,7 +222,7 @@
   {
     "Index": 20,
     "SearchText": "Poison Resist",
-    "FormattedText": "/c[green]{0}/c[#09ede6]{1}%",
+    "FormattedText": "/c[green]{0}/c[#09ede6] {1}%",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -233,7 +233,7 @@
   {
     "Index": 21,
     "SearchText": "Poison Resist",
-    "FormattedText": "/c[green]{0}/c[yellow]{1}%",
+    "FormattedText": "/c[green]{0}/c[yellow] {1}%",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -244,7 +244,7 @@
   {
     "Index": 22,
     "SearchText": "Poison Resist",
-    "FormattedText": "/c[green]{0}/c[orange]{1}%",
+    "FormattedText": "/c[green]{0}/c[orange] {1}%",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -255,7 +255,7 @@
   {
     "Index": 23,
     "SearchText": "Poison Resist",
-    "FormattedText": "/c[green]{0}/c[#ff0342]{1}%",
+    "FormattedText": "/c[green]{0}/c[#ff0342] {1}%",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -266,7 +266,7 @@
   {
     "Index": 24,
     "SearchText": "Energy Resist",
-    "FormattedText": "/c[purple]{0}/c[white]{1}%",
+    "FormattedText": "/c[purple]{0}/c[white] {1}%",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -277,7 +277,7 @@
   {
     "Index": 25,
     "SearchText": "Energy Resist",
-    "FormattedText": "/c[purple]{0}/c[#35d404]{1}%",
+    "FormattedText": "/c[purple]{0}/c[#35d404] {1}%",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -288,7 +288,7 @@
   {
     "Index": 26,
     "SearchText": "Energy Resist",
-    "FormattedText": "/c[purple]{0}/c[#09ede6]{1}%",
+    "FormattedText": "/c[purple]{0}/c[#09ede6] {1}%",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -299,7 +299,7 @@
   {
     "Index": 27,
     "SearchText": "Energy Resist",
-    "FormattedText": "/c[purple]{0}/c[yellow]{1}%",
+    "FormattedText": "/c[purple]{0}/c[yellow] {1}%",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -310,7 +310,7 @@
   {
     "Index": 28,
     "SearchText": "Energy Resist",
-    "FormattedText": "/c[purple]{0}/c[orange]{1}%",
+    "FormattedText": "/c[purple]{0}/c[orange] {1}%",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -321,7 +321,7 @@
   {
     "Index": 29,
     "SearchText": "Energy Resist",
-    "FormattedText": "/c[purple]{0}/c[#ff0342]{1}%",
+    "FormattedText": "/c[purple]{0}/c[#ff0342] {1}%",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,

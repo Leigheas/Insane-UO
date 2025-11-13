@@ -13,7 +13,7 @@
   {
     "Index": 1,
     "SearchText": "Enhance Potions",
-    "FormattedText": "/c[#63bfbf]{0}/c[white]{1}%",
+    "FormattedText": "/c[#63bfbf]{0}/c[white] {1}%",
     "Min1": 1,
     "Max1": 6,
     "Min2": -1,
@@ -24,7 +24,7 @@
   {
     "Index": 2,
     "SearchText": "Enhance Potions",
-    "FormattedText": "/c[#63bfbf]{0}/c[#35d404]{1}%",
+    "FormattedText": "/c[#63bfbf]{0}/c[#35d404] {1}%",
     "Min1": 7,
     "Max1": 12,
     "Min2": -1,
@@ -35,7 +35,7 @@
   {
     "Index": 3,
     "SearchText": "Enhance Potions",
-    "FormattedText": "/c[#63bfbf]{0}/c[#09ede6]{1}%",
+    "FormattedText": "/c[#63bfbf]{0}/c[#09ede6] {1}%",
     "Min1": 13,
     "Max1": 18,
     "Min2": -1,
@@ -46,7 +46,7 @@
   {
     "Index": 4,
     "SearchText": "Enhance Potions",
-    "FormattedText": "/c[#63bfbf]{0}/c[yellow]{1}%",
+    "FormattedText": "/c[#63bfbf]{0}/c[yellow] {1}%",
     "Min1": 19,
     "Max1": 24,
     "Min2": -1,
@@ -57,7 +57,7 @@
   {
     "Index": 5,
     "SearchText": "Enhance Potions",
-    "FormattedText": "/c[#63bfbf]{0}/c[orange]{1}%",
+    "FormattedText": "/c[#63bfbf]{0}/c[orange] {1}%",
     "Min1": 25,
     "Max1": 30,
     "Min2": -1,
@@ -68,7 +68,7 @@
   {
     "Index": 6,
     "SearchText": "Enhance Potions",
-    "FormattedText": "/c[#63bfbf]{0}/c[#ff0342]{1}%",
+    "FormattedText": "/c[#63bfbf]{0}/c[#ff0342] {1}%",
     "Min1": 31,
     "Max1": 99,
     "Min2": -1,
@@ -79,7 +79,7 @@
   {
     "Index": 7,
     "SearchText": "Faster Cast Recovery",
-    "FormattedText": "/c[#63bfbf]{0}/c[white]{1}",
+    "FormattedText": "/c[#63bfbf]{0}/c[white] {1}",
     "Min1": 1,
     "Max1": 1,
     "Min2": -1,
@@ -90,7 +90,7 @@
   {
     "Index": 8,
     "SearchText": "Faster Cast Recovery",
-    "FormattedText": "/c[#63bfbf]{0}/c[#35d404]{1}",
+    "FormattedText": "/c[#63bfbf]{0}/c[#35d404] {1}",
     "Min1": 2,
     "Max1": 2,
     "Min2": -1,
@@ -101,7 +101,7 @@
   {
     "Index": 9,
     "SearchText": "Faster Cast Recovery",
-    "FormattedText": "/c[#63bfbf]{0}/c[orange]{1}",
+    "FormattedText": "/c[#63bfbf]{0}/c[orange] {1}",
     "Min1": 3,
     "Max1": 3,
     "Min2": -1,
@@ -112,7 +112,7 @@
   {
     "Index": 10,
     "SearchText": "Faster Cast Recovery",
-    "FormattedText": "/c[#63bfbf]{0}/c[#ff0342]{1}",
+    "FormattedText": "/c[#63bfbf]{0}/c[#ff0342] {1}",
     "Min1": 4,
     "Max1": 99,
     "Min2": -1,
@@ -123,7 +123,7 @@
   {
     "Index": 11,
     "SearchText": "Faster Casting",
-    "FormattedText": "/c[#63bfbf]{0}/c[#ff0342]{1}",
+    "FormattedText": "/c[#63bfbf]{0}/c[#ff0342] {1}",
     "Min1": 1,
     "Max1": 99,
     "Min2": -1,
@@ -134,7 +134,7 @@
   {
     "Index": 12,
     "SearchText": "Lower Mana Cost",
-    "FormattedText": "/c[#63bfbf]{0}/c[white]{1}%",
+    "FormattedText": "/c[#63bfbf]{0}/c[white] {1}%",
     "Min1": 1,
     "Max1": 1,
     "Min2": -1,
@@ -145,7 +145,7 @@
   {
     "Index": 13,
     "SearchText": "Lower Mana Cost",
-    "FormattedText": "/c[#63bfbf]{0}/c[#35d404]{1}%",
+    "FormattedText": "/c[#63bfbf]{0}/c[#35d404] {1}%",
     "Min1": 2,
     "Max1": 2,
     "Min2": -1,
@@ -156,7 +156,7 @@
   {
     "Index": 14,
     "SearchText": "Lower Mana Cost",
-    "FormattedText": "/c[#63bfbf]{0}/c[#09ede6]{1}%",
+    "FormattedText": "/c[#63bfbf]{0}/c[#09ede6] {1}%",
     "Min1": 3,
     "Max1": 4,
     "Min2": -1,
@@ -167,7 +167,7 @@
   {
     "Index": 15,
     "SearchText": "Lower Mana Cost",
-    "FormattedText": "/c[#63bfbf]{0}/c[yellow]{1}%",
+    "FormattedText": "/c[#63bfbf]{0}/c[yellow] {1}%",
     "Min1": 5,
     "Max1": 6,
     "Min2": -1,
@@ -178,7 +178,7 @@
   {
     "Index": 16,
     "SearchText": "Lower Mana Cost",
-    "FormattedText": "/c[#63bfbf]{0}/c[orange]{1}%",
+    "FormattedText": "/c[#63bfbf]{0}/c[orange] {1}%",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -189,7 +189,7 @@
   {
     "Index": 17,
     "SearchText": "Lower Mana Cost",
-    "FormattedText": "/c[#63bfbf]{0}/c[#ff0342]{1}%",
+    "FormattedText": "/c[#63bfbf]{0}/c[#ff0342] {1}%",
     "Min1": 10,
     "Max1": 99,
     "Min2": -1,
@@ -200,7 +200,7 @@
   {
     "Index": 18,
     "SearchText": "Lower Reagent Cost",
-    "FormattedText": "/c[#63bfbf]{0}/c[white]{1}%",
+    "FormattedText": "/c[#63bfbf]{0}/c[white] {1}%",
     "Min1": 1,
     "Max1": 4,
     "Min2": -1,
@@ -211,7 +211,7 @@
   {
     "Index": 19,
     "SearchText": "Lower Reagent Cost",
-    "FormattedText": "/c[#63bfbf]{0}/c[#35d404]{1}%",
+    "FormattedText": "/c[#63bfbf]{0}/c[#35d404] {1}%",
     "Min1": 5,
     "Max1": 8,
     "Min2": -1,
@@ -222,7 +222,7 @@
   {
     "Index": 20,
     "SearchText": "Lower Reagent Cost",
-    "FormattedText": "/c[#63bfbf]{0}/c[#09ede6]{1}%",
+    "FormattedText": "/c[#63bfbf]{0}/c[#09ede6] {1}%",
     "Min1": 9,
     "Max1": 12,
     "Min2": -1,
@@ -233,7 +233,7 @@
   {
     "Index": 21,
     "SearchText": "Lower Reagent Cost",
-    "FormattedText": "/c[#63bfbf]{0}/c[yellow]{1}%",
+    "FormattedText": "/c[#63bfbf]{0}/c[yellow] {1}%",
     "Min1": 13,
     "Max1": 16,
     "Min2": -1,
@@ -244,7 +244,7 @@
   {
     "Index": 22,
     "SearchText": "Lower Reagent Cost",
-    "FormattedText": "/c[#63bfbf]{0}/c[orange]{1}%",
+    "FormattedText": "/c[#63bfbf]{0}/c[orange] {1}%",
     "Min1": 17,
     "Max1": 20,
     "Min2": -1,
@@ -255,7 +255,7 @@
   {
     "Index": 23,
     "SearchText": "Lower Reagent Cost",
-    "FormattedText": "/c[#63bfbf]{0}/c[#ff0342]{1}%",
+    "FormattedText": "/c[#63bfbf]{0}/c[#ff0342] {1}%",
     "Min1": 21,
     "Max1": 99,
     "Min2": -1,
@@ -266,7 +266,7 @@
   {
     "Index": 24,
     "SearchText": "Mana Increase",
-    "FormattedText": "/c[#63bfbf]{0}/c[white]{1}",
+    "FormattedText": "/c[#63bfbf]{0}/c[white] {1}",
     "Min1": 1,
     "Max1": 2,
     "Min2": -1,
@@ -277,7 +277,7 @@
   {
     "Index": 25,
     "SearchText": "Mana Increase",
-    "FormattedText": "/c[#63bfbf]{0}/c[#35d404]{1}",
+    "FormattedText": "/c[#63bfbf]{0}/c[#35d404] {1}",
     "Min1": 3,
     "Max1": 5,
     "Min2": -1,
@@ -288,7 +288,7 @@
   {
     "Index": 26,
     "SearchText": "Mana Increase",
-    "FormattedText": "/c[#63bfbf]{0}/c[#09ede6]{1}",
+    "FormattedText": "/c[#63bfbf]{0}/c[#09ede6] {1}",
     "Min1": 6,
     "Max1": 9,
     "Min2": -1,
@@ -299,7 +299,7 @@
   {
     "Index": 27,
     "SearchText": "Mana Increase",
-    "FormattedText": "/c[#63bfbf]{0}/c[orange]{1}",
+    "FormattedText": "/c[#63bfbf]{0}/c[orange] {1}",
     "Min1": 10,
     "Max1": 14,
     "Min2": -1,
@@ -310,7 +310,7 @@
   {
     "Index": 28,
     "SearchText": "Mana Increase",
-    "FormattedText": "/c[#63bfbf]{0}/c[#ff0342]{1}",
+    "FormattedText": "/c[#63bfbf]{0}/c[#ff0342] {1}",
     "Min1": 15,
     "Max1": 99,
     "Min2": -1,
@@ -332,7 +332,7 @@
   {
     "Index": 30,
     "SearchText": "Spell Damage Increase",
-    "FormattedText": "/c[#63bfbf]{0}/c[white]{1}%",
+    "FormattedText": "/c[#63bfbf]{0}/c[white] {1}%",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -343,7 +343,7 @@
   {
     "Index": 31,
     "SearchText": "Spell Damage Increase",
-    "FormattedText": "/c[#63bfbf]{0}/c[#35d404]{1}%",
+    "FormattedText": "/c[#63bfbf]{0}/c[#35d404] {1}%",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -354,7 +354,7 @@
   {
     "Index": 32,
     "SearchText": "Spell Damage Increase",
-    "FormattedText": "/c[#63bfbf]{0}/c[#09ede6]{1}%",
+    "FormattedText": "/c[#63bfbf]{0}/c[#09ede6] {1}%",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -365,7 +365,7 @@
   {
     "Index": 33,
     "SearchText": "Spell Damage Increase",
-    "FormattedText": "/c[#63bfbf]{0}/c[yellow]{1}%",
+    "FormattedText": "/c[#63bfbf]{0}/c[yellow] {1}%",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -376,7 +376,7 @@
   {
     "Index": 34,
     "SearchText": "Spell Damage Increase",
-    "FormattedText": "/c[#63bfbf]{0}/c[orange]{1}%",
+    "FormattedText": "/c[#63bfbf]{0}/c[orange] {1}%",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -387,7 +387,7 @@
   {
     "Index": 35,
     "SearchText": "Spell Damage Increase",
-    "FormattedText": "/c[#63bfbf]{0}/c[#ff0342]{1}%",
+    "FormattedText": "/c[#63bfbf]{0}/c[#ff0342] {1}%",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -409,7 +409,7 @@
   {
     "Index": 37,
     "SearchText": "Damage Increase",
-    "FormattedText": "/c[#c40a54]{0}{1}%",
+    "FormattedText": "/c[#c40a54]{0} {1}%",
     "Min1": 1,
     "Max1": 6,
     "Min2": -1,
@@ -420,7 +420,7 @@
   {
     "Index": 38,
     "SearchText": "Damage Increase",
-    "FormattedText": "/c[#c40a54]{0}/c[white]{1}%",
+    "FormattedText": "/c[#c40a54]{0}/c[white] {1}%",
     "Min1": 7,
     "Max1": 12,
     "Min2": -1,
@@ -431,7 +431,7 @@
   {
     "Index": 39,
     "SearchText": "Damage Increase",
-    "FormattedText": "/c[#c40a54]{0}{1}%",
+    "FormattedText": "/c[#c40a54]{0} {1}%",
     "Min1": 13,
     "Max1": 18,
     "Min2": -1,
@@ -442,7 +442,7 @@
   {
     "Index": 40,
     "SearchText": "Damage Increase",
-    "FormattedText": "/c[#c40a54]{0}{1}%",
+    "FormattedText": "/c[#c40a54]{0} {1}%",
     "Min1": 19,
     "Max1": 24,
     "Min2": -1,
@@ -453,7 +453,7 @@
   {
     "Index": 41,
     "SearchText": "Damage Increase",
-    "FormattedText": "/c[#c40a54]{0}{1}",
+    "FormattedText": "/c[#c40a54]{0} {1}",
     "Min1": 25,
     "Max1": 30,
     "Min2": -1,
@@ -464,7 +464,7 @@
   {
     "Index": 42,
     "SearchText": "Damage Increase",
-    "FormattedText": "/c[#c40a54]{0}{1}",
+    "FormattedText": "/c[#c40a54]{0} {1}",
     "Min1": 31,
     "Max1": 99,
     "Min2": -1,
@@ -475,7 +475,7 @@
   {
     "Index": 43,
     "SearchText": "Swing Speed Increase",
-    "FormattedText": "/c[#c40a54]{0}/c[white]{1}%",
+    "FormattedText": "/c[#c40a54]{0}/c[white] {1}%",
     "Min1": 1,
     "Max1": 1,
     "Min2": -1,
@@ -486,7 +486,7 @@
   {
     "Index": 44,
     "SearchText": "Swing Speed Increase",
-    "FormattedText": "/c[#c40a54]{0}{1}%",
+    "FormattedText": "/c[#c40a54]{0} {1}%",
     "Min1": 2,
     "Max1": 2,
     "Min2": -1,
@@ -497,7 +497,7 @@
   {
     "Index": 45,
     "SearchText": "Swing Speed Increase",
-    "FormattedText": "/c[#c40a54]{0}{1}%",
+    "FormattedText": "/c[#c40a54]{0} {1}%",
     "Min1": 3,
     "Max1": 4,
     "Min2": -1,
@@ -508,7 +508,7 @@
   {
     "Index": 46,
     "SearchText": "Swing Speed Increase",
-    "FormattedText": "/c[#c40a54]{0}{1}%",
+    "FormattedText": "/c[#c40a54]{0} {1}%",
     "Min1": 5,
     "Max1": 6,
     "Min2": -1,
@@ -519,7 +519,7 @@
   {
     "Index": 47,
     "SearchText": "Swing Speed Increase",
-    "FormattedText": "/c[#c40a54]{0}{1}%",
+    "FormattedText": "/c[#c40a54]{0} {1}%",
     "Min1": 7,
     "Max1": 8,
     "Min2": -1,
@@ -530,7 +530,7 @@
   {
     "Index": 48,
     "SearchText": "Swing Speed Increase",
-    "FormattedText": "/c[#c40a54]{0}{1}%",
+    "FormattedText": "/c[#c40a54]{0} {1}%",
     "Min1": 9,
     "Max1": 99,
     "Min2": -1,
@@ -541,7 +541,7 @@
   {
     "Index": 49,
     "SearchText": "Defense Chance Increase",
-    "FormattedText": "/c[#c40a54]{0}/c[white]{1}%",
+    "FormattedText": "/c[#c40a54]{0}/c[white] {1}%",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -552,7 +552,7 @@
   {
     "Index": 50,
     "SearchText": "Defense Chance Increase",
-    "FormattedText": "/c[#c40a54]{0}{1}%",
+    "FormattedText": "/c[#c40a54]{0} {1}%",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -563,7 +563,7 @@
   {
     "Index": 51,
     "SearchText": "Defense Chance Increase",
-    "FormattedText": "/c[#c40a54]{0}{1}%",
+    "FormattedText": "/c[#c40a54]{0} {1}%",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -574,7 +574,7 @@
   {
     "Index": 52,
     "SearchText": "Defense Chance Increase",
-    "FormattedText": "/c[#c40a54]{0}{1}%",
+    "FormattedText": "/c[#c40a54]{0} {1}%",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -585,7 +585,7 @@
   {
     "Index": 53,
     "SearchText": "Defense Chance Increase",
-    "FormattedText": "/c[#c40a54]{0}{1}%",
+    "FormattedText": "/c[#c40a54]{0} {1}%",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -596,7 +596,7 @@
   {
     "Index": 54,
     "SearchText": "Defense Chance Increase",
-    "FormattedText": "/c[#c40a54]{0}{1}%",
+    "FormattedText": "/c[#c40a54]{0} {1}%",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -607,7 +607,7 @@
   {
     "Index": 55,
     "SearchText": "Hit Chance Increase",
-    "FormattedText": "/c[#c40a54]{0}/c[white]{1}%",
+    "FormattedText": "/c[#c40a54]{0}/c[white] {1}%",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -618,7 +618,7 @@
   {
     "Index": 56,
     "SearchText": "Hit Chance Increase",
-    "FormattedText": "/c[#c40a54]{0}{1}%",
+    "FormattedText": "/c[#c40a54]{0} {1}%",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -629,7 +629,7 @@
   {
     "Index": 57,
     "SearchText": "Hit Chance Increase",
-    "FormattedText": "/c[#c40a54]{0}{1}%",
+    "FormattedText": "/c[#c40a54]{0} {1}%",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -640,7 +640,7 @@
   {
     "Index": 58,
     "SearchText": "Hit Chance Increase",
-    "FormattedText": "/c[#c40a54]{0}{1}%",
+    "FormattedText": "/c[#c40a54]{0} {1}%",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -651,7 +651,7 @@
   {
     "Index": 59,
     "SearchText": "Hit Chance Increase",
-    "FormattedText": "/c[#c40a54]{0}{1}%",
+    "FormattedText": "/c[#c40a54]{0} {1}%",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -662,7 +662,7 @@
   {
     "Index": 60,
     "SearchText": "Hit Chance Increase",
-    "FormattedText": "/c[#c40a54]{0}{1}%",
+    "FormattedText": "/c[#c40a54]{0} {1}%",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -684,7 +684,7 @@
   {
     "Index": 62,
     "SearchText": "Hit Point Regeneration",
-    "FormattedText": "/c[#0ee684]{0}/c[white]{1}",
+    "FormattedText": "/c[#0ee684]{0}/c[white] {1}",
     "Min1": 1,
     "Max1": 1,
     "Min2": -1,
@@ -695,7 +695,7 @@
   {
     "Index": 63,
     "SearchText": "Hit Point Regeneration",
-    "FormattedText": "/c[#0ee684]{0}/c[#35d404]{1}",
+    "FormattedText": "/c[#0ee684]{0}/c[#35d404] {1}",
     "Min1": 2,
     "Max1": 2,
     "Min2": -1,
@@ -706,7 +706,7 @@
   {
     "Index": 64,
     "SearchText": "Hit Point Regeneration",
-    "FormattedText": "/c[#0ee684]{0}/c[#09ede6]{1}",
+    "FormattedText": "/c[#0ee684]{0}/c[#09ede6] {1}",
     "Min1": 3,
     "Max1": 3,
     "Min2": -1,
@@ -717,7 +717,7 @@
   {
     "Index": 65,
     "SearchText": "Hit Point Regeneration",
-    "FormattedText": "/c[#0ee684]{0}/c[#ff0342]{1}",
+    "FormattedText": "/c[#0ee684]{0}/c[#ff0342] {1}",
     "Min1": 4,
     "Max1": 99,
     "Min2": -1,
@@ -728,7 +728,7 @@
   {
     "Index": 66,
     "SearchText": "Mana Regeneration",
-    "FormattedText": "/c[#0ee684]{0}/c[white]{1}",
+    "FormattedText": "/c[#0ee684]{0}/c[white] {1}",
     "Min1": 1,
     "Max1": 1,
     "Min2": -1,
@@ -739,7 +739,7 @@
   {
     "Index": 67,
     "SearchText": "Mana Regeneration",
-    "FormattedText": "/c[#0ee684]{0}/c[#35d404]{1}",
+    "FormattedText": "/c[#0ee684]{0}/c[#35d404] {1}",
     "Min1": 2,
     "Max1": 2,
     "Min2": -1,
@@ -750,7 +750,7 @@
   {
     "Index": 68,
     "SearchText": "Mana Regeneration",
-    "FormattedText": "/c[#0ee684]{0}/c[#09ede6]{1}",
+    "FormattedText": "/c[#0ee684]{0}/c[#09ede6] {1}",
     "Min1": 3,
     "Max1": 3,
     "Min2": -1,
@@ -761,7 +761,7 @@
   {
     "Index": 69,
     "SearchText": "Mana Regeneration",
-    "FormattedText": "/c[#0ee684]{0}/c[#ff0342]{1}",
+    "FormattedText": "/c[#0ee684]{0}/c[#ff0342] {1}",
     "Min1": 4,
     "Max1": 99,
     "Min2": -1,
@@ -772,7 +772,7 @@
   {
     "Index": 70,
     "SearchText": "Stamina Regeneration",
-    "FormattedText": "/c[#0ee684]{0}/c[white]{1}",
+    "FormattedText": "/c[#0ee684]{0}/c[white] {1}",
     "Min1": 1,
     "Max1": 1,
     "Min2": -1,
@@ -783,7 +783,7 @@
   {
     "Index": 71,
     "SearchText": "Stamina Regeneration",
-    "FormattedText": "/c[#0ee684]{0}/c[#35d404]{1}",
+    "FormattedText": "/c[#0ee684]{0}/c[#35d404] {1}",
     "Min1": 2,
     "Max1": 2,
     "Min2": -1,
@@ -794,7 +794,7 @@
   {
     "Index": 72,
     "SearchText": "Stamina Regeneration",
-    "FormattedText": "/c[#0ee684]{0}/c[#09ede6]{1}",
+    "FormattedText": "/c[#0ee684]{0}/c[#09ede6] {1}",
     "Min1": 3,
     "Max1": 3,
     "Min2": -1,
@@ -805,7 +805,7 @@
   {
     "Index": 73,
     "SearchText": "Stamina Regeneration",
-    "FormattedText": "/c[#0ee684]{0}/c[#ff0342]{1}",
+    "FormattedText": "/c[#0ee684]{0}/c[#ff0342] {1}",
     "Min1": 4,
     "Max1": 99,
     "Min2": -1,
@@ -816,7 +816,7 @@
   {
     "Index": 74,
     "SearchText": "Dexterity Bonus",
-    "FormattedText": "/c[#0ee684]{0}/c[white]{1}",
+    "FormattedText": "/c[#0ee684]{0}/c[white] {1}",
     "Min1": 1,
     "Max1": 1,
     "Min2": -1,
@@ -827,7 +827,7 @@
   {
     "Index": 75,
     "SearchText": "Dexterity Bonus",
-    "FormattedText": "/c[#0ee684]{0}{1}",
+    "FormattedText": "/c[#0ee684]{0} {1}",
     "Min1": 2,
     "Max1": 2,
     "Min2": -1,
@@ -838,7 +838,7 @@
   {
     "Index": 76,
     "SearchText": "Dexterity Bonus",
-    "FormattedText": "/c[#0ee684]{0}{1}",
+    "FormattedText": "/c[#0ee684]{0} {1}",
     "Min1": 3,
     "Max1": 4,
     "Min2": -1,
@@ -849,7 +849,7 @@
   {
     "Index": 77,
     "SearchText": "Dexterity Bonus",
-    "FormattedText": "/c[#0ee684]{0}{1}",
+    "FormattedText": "/c[#0ee684]{0} {1}",
     "Min1": 5,
     "Max1": 6,
     "Min2": -1,
@@ -860,7 +860,7 @@
   {
     "Index": 78,
     "SearchText": "Dexterity Bonus",
-    "FormattedText": "/c[#0ee684]{0}{1}",
+    "FormattedText": "/c[#0ee684]{0} {1}",
     "Min1": 7,
     "Max1": 8,
     "Min2": -1,
@@ -871,7 +871,7 @@
   {
     "Index": 79,
     "SearchText": "Dexterity Bonus",
-    "FormattedText": "/c[#0ee684]{0}{1}",
+    "FormattedText": "/c[#0ee684]{0} {1}",
     "Min1": 9,
     "Max1": 99,
     "Min2": -1,
@@ -882,7 +882,7 @@
   {
     "Index": 80,
     "SearchText": "Intelligence Bonus",
-    "FormattedText": "/c[#0ee684]{0}/c[white]{1}",
+    "FormattedText": "/c[#0ee684]{0}/c[white] {1}",
     "Min1": 1,
     "Max1": 1,
     "Min2": -1,
@@ -893,7 +893,7 @@
   {
     "Index": 81,
     "SearchText": "Intelligence Bonus",
-    "FormattedText": "/c[#0ee684]{0}{1}",
+    "FormattedText": "/c[#0ee684]{0} {1}",
     "Min1": 2,
     "Max1": 2,
     "Min2": -1,
@@ -904,7 +904,7 @@
   {
     "Index": 82,
     "SearchText": "Intelligence Bonus",
-    "FormattedText": "/c[#0ee684]{0}{1}",
+    "FormattedText": "/c[#0ee684]{0} {1}",
     "Min1": 3,
     "Max1": 4,
     "Min2": -1,
@@ -915,7 +915,7 @@
   {
     "Index": 83,
     "SearchText": "Intelligence Bonus",
-    "FormattedText": "/c[#0ee684]{0}{1}",
+    "FormattedText": "/c[#0ee684]{0} {1}",
     "Min1": 5,
     "Max1": 6,
     "Min2": -1,
@@ -926,7 +926,7 @@
   {
     "Index": 84,
     "SearchText": "Intelligence Bonus",
-    "FormattedText": "/c[#0ee684]{0}{1}",
+    "FormattedText": "/c[#0ee684]{0} {1}",
     "Min1": 7,
     "Max1": 8,
     "Min2": -1,
@@ -937,7 +937,7 @@
   {
     "Index": 85,
     "SearchText": "Intelligence Bonus",
-    "FormattedText": "/c[#0ee684]{0}{1}",
+    "FormattedText": "/c[#0ee684]{0} {1}",
     "Min1": 9,
     "Max1": 99,
     "Min2": -1,
@@ -948,7 +948,7 @@
   {
     "Index": 86,
     "SearchText": "Luck",
-    "FormattedText": "/c[#0ee684]{0}/c[white]{1}",
+    "FormattedText": "/c[#0ee684]{0}/c[white] {1}",
     "Min1": 1,
     "Max1": 25,
     "Min2": -1,
@@ -959,7 +959,7 @@
   {
     "Index": 87,
     "SearchText": "Luck",
-    "FormattedText": "/c[#0ee684]{0}{1}",
+    "FormattedText": "/c[#0ee684]{0} {1}",
     "Min1": 26,
     "Max1": 50,
     "Min2": -1,
@@ -970,7 +970,7 @@
   {
     "Index": 88,
     "SearchText": "Luck",
-    "FormattedText": "/c[#0ee684]{0}{1}",
+    "FormattedText": "/c[#0ee684]{0} {1}",
     "Min1": 51,
     "Max1": 75,
     "Min2": -1,
@@ -981,7 +981,7 @@
   {
     "Index": 89,
     "SearchText": "Luck",
-    "FormattedText": "/c[#0ee684]{0}{1}",
+    "FormattedText": "/c[#0ee684]{0} {1}",
     "Min1": 76,
     "Max1": 100,
     "Min2": -1,
@@ -992,7 +992,7 @@
   {
     "Index": 90,
     "SearchText": "Luck",
-    "FormattedText": "/c[#0ee684]{0}{1}",
+    "FormattedText": "/c[#0ee684]{0} {1}",
     "Min1": 101,
     "Max1": 125,
     "Min2": -1,
@@ -1003,7 +1003,7 @@
   {
     "Index": 91,
     "SearchText": "Luck",
-    "FormattedText": "/c[#0ee684]{0}{1}",
+    "FormattedText": "/c[#0ee684]{0} {1}",
     "Min1": 126,
     "Max1": 999,
     "Min2": -1,
@@ -1014,7 +1014,7 @@
   {
     "Index": 92,
     "SearchText": "Stamina Increase",
-    "FormattedText": "/c[#0ee684]{0}/c[white]{1}",
+    "FormattedText": "/c[#0ee684]{0}/c[white] {1}",
     "Min1": 1,
     "Max1": 1,
     "Min2": -1,
@@ -1025,7 +1025,7 @@
   {
     "Index": 93,
     "SearchText": "Stamina Increase",
-    "FormattedText": "/c[#0ee684]{0}{1}",
+    "FormattedText": "/c[#0ee684]{0} {1}",
     "Min1": 2,
     "Max1": 2,
     "Min2": -1,
@@ -1036,7 +1036,7 @@
   {
     "Index": 94,
     "SearchText": "Stamina Increase",
-    "FormattedText": "/c[#0ee684]{0}{1}",
+    "FormattedText": "/c[#0ee684]{0} {1}",
     "Min1": 3,
     "Max1": 3,
     "Min2": -1,
@@ -1047,7 +1047,7 @@
   {
     "Index": 95,
     "SearchText": "Stamina Increase",
-    "FormattedText": "/c[#0ee684]{0}{1}",
+    "FormattedText": "/c[#0ee684]{0} {1}",
     "Min1": 4,
     "Max1": 4,
     "Min2": -1,
@@ -1058,7 +1058,7 @@
   {
     "Index": 96,
     "SearchText": "Stamina Increase",
-    "FormattedText": "/c[#0ee684]{0}{1}",
+    "FormattedText": "/c[#0ee684]{0} {1}",
     "Min1": 5,
     "Max1": 99,
     "Min2": -1,
@@ -1069,7 +1069,7 @@
   {
     "Index": 97,
     "SearchText": "Strength Bonus",
-    "FormattedText": "/c[#0ee684]{0}/c[white]{1}",
+    "FormattedText": "/c[#0ee684]{0}/c[white] {1}",
     "Min1": 1,
     "Max1": 1,
     "Min2": -1,
@@ -1080,7 +1080,7 @@
   {
     "Index": 98,
     "SearchText": "Strength Bonus",
-    "FormattedText": "/c[#0ee684]{0}{1}",
+    "FormattedText": "/c[#0ee684]{0} {1}",
     "Min1": 2,
     "Max1": 2,
     "Min2": -1,
@@ -1091,7 +1091,7 @@
   {
     "Index": 99,
     "SearchText": "Strength Bonus",
-    "FormattedText": "/c[#0ee684]{0}{1}",
+    "FormattedText": "/c[#0ee684]{0} {1}",
     "Min1": 3,
     "Max1": 4,
     "Min2": -1,
@@ -1102,7 +1102,7 @@
   {
     "Index": 100,
     "SearchText": "Strength Bonus",
-    "FormattedText": "/c[#0ee684]{0}{1}",
+    "FormattedText": "/c[#0ee684]{0} {1}",
     "Min1": 5,
     "Max1": 6,
     "Min2": -1,
@@ -1113,7 +1113,7 @@
   {
     "Index": 101,
     "SearchText": "Strength Bonus",
-    "FormattedText": "/c[#0ee684]{0}{1}",
+    "FormattedText": "/c[#0ee684]{0} {1}",
     "Min1": 7,
     "Max1": 8,
     "Min2": -1,
@@ -1124,7 +1124,7 @@
   {
     "Index": 102,
     "SearchText": "Strength Bonus",
-    "FormattedText": "/c[#0ee684]{0}{1}",
+    "FormattedText": "/c[#0ee684]{0} {1}",
     "Min1": 9,
     "Max1": 99,
     "Min2": -1,
@@ -1146,7 +1146,7 @@
   {
     "Index": 104,
     "SearchText": "Anatomy",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -1157,7 +1157,7 @@
   {
     "Index": 105,
     "SearchText": "Anatomy",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -1168,7 +1168,7 @@
   {
     "Index": 106,
     "SearchText": "Anatomy",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -1179,7 +1179,7 @@
   {
     "Index": 107,
     "SearchText": "Anatomy",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -1190,7 +1190,7 @@
   {
     "Index": 108,
     "SearchText": "Anatomy",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -1201,7 +1201,7 @@
   {
     "Index": 109,
     "SearchText": "Anatomy",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -1212,7 +1212,7 @@
   {
     "Index": 110,
     "SearchText": "Animal Lore",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -1223,7 +1223,7 @@
   {
     "Index": 111,
     "SearchText": "Animal Lore",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -1234,7 +1234,7 @@
   {
     "Index": 112,
     "SearchText": "Animal Lore",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -1245,7 +1245,7 @@
   {
     "Index": 113,
     "SearchText": "Animal Lore",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -1256,7 +1256,7 @@
   {
     "Index": 114,
     "SearchText": "Animal Lore",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -1267,7 +1267,7 @@
   {
     "Index": 115,
     "SearchText": "Animal Lore",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -1278,7 +1278,7 @@
   {
     "Index": 116,
     "SearchText": "Animal Taming",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -1289,7 +1289,7 @@
   {
     "Index": 117,
     "SearchText": "Animal Taming",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -1300,7 +1300,7 @@
   {
     "Index": 118,
     "SearchText": "Animal Taming",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -1311,7 +1311,7 @@
   {
     "Index": 119,
     "SearchText": "Animal Taming",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -1322,7 +1322,7 @@
   {
     "Index": 120,
     "SearchText": "Animal Taming",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -1333,7 +1333,7 @@
   {
     "Index": 121,
     "SearchText": "Animal Taming",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -1344,7 +1344,7 @@
   {
     "Index": 122,
     "SearchText": "$^\bArchery\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -1355,7 +1355,7 @@
   {
     "Index": 123,
     "SearchText": "$^\bArchery\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -1366,7 +1366,7 @@
   {
     "Index": 124,
     "SearchText": "$^\bArchery\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -1377,7 +1377,7 @@
   {
     "Index": 125,
     "SearchText": "$^\bArchery\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -1388,7 +1388,7 @@
   {
     "Index": 126,
     "SearchText": "$^\bArchery\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -1399,7 +1399,7 @@
   {
     "Index": 127,
     "SearchText": "$^\bArchery\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -1410,7 +1410,7 @@
   {
     "Index": 128,
     "SearchText": "Bushido",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -1421,7 +1421,7 @@
   {
     "Index": 129,
     "SearchText": "Bushido",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -1432,7 +1432,7 @@
   {
     "Index": 130,
     "SearchText": "Bushido",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -1443,7 +1443,7 @@
   {
     "Index": 131,
     "SearchText": "Bushido",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -1454,7 +1454,7 @@
   {
     "Index": 132,
     "SearchText": "Bushido",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -1465,7 +1465,7 @@
   {
     "Index": 133,
     "SearchText": "Bushido",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -1476,7 +1476,7 @@
   {
     "Index": 134,
     "SearchText": "Chivalry",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -1487,7 +1487,7 @@
   {
     "Index": 135,
     "SearchText": "Chivalry",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -1498,7 +1498,7 @@
   {
     "Index": 136,
     "SearchText": "Chivalry",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -1509,7 +1509,7 @@
   {
     "Index": 137,
     "SearchText": "Chivalry",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -1520,7 +1520,7 @@
   {
     "Index": 138,
     "SearchText": "Chivalry",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -1531,7 +1531,7 @@
   {
     "Index": 139,
     "SearchText": "Chivalry",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -1542,7 +1542,7 @@
   {
     "Index": 140,
     "SearchText": "Discordance",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -1553,7 +1553,7 @@
   {
     "Index": 141,
     "SearchText": "Discordance",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -1564,7 +1564,7 @@
   {
     "Index": 142,
     "SearchText": "Discordance",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -1575,7 +1575,7 @@
   {
     "Index": 143,
     "SearchText": "Discordance",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -1586,7 +1586,7 @@
   {
     "Index": 144,
     "SearchText": "Discordance",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -1597,7 +1597,7 @@
   {
     "Index": 145,
     "SearchText": "Animal Lore",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -1608,7 +1608,7 @@
   {
     "Index": 146,
     "SearchText": "Evaluate Intelligence",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -1619,7 +1619,7 @@
   {
     "Index": 147,
     "SearchText": "Evaluate Intelligence",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -1630,7 +1630,7 @@
   {
     "Index": 148,
     "SearchText": "Evaluate Intelligence",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -1641,7 +1641,7 @@
   {
     "Index": 149,
     "SearchText": "Evaluate Intelligence",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -1652,7 +1652,7 @@
   {
     "Index": 150,
     "SearchText": "Evaluate Intelligence",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -1663,7 +1663,7 @@
   {
     "Index": 151,
     "SearchText": "Evaluate Intelligence",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -1674,7 +1674,7 @@
   {
     "Index": 152,
     "SearchText": "$^\bFencing\\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -1685,7 +1685,7 @@
   {
     "Index": 153,
     "SearchText": "$^\bFencing\\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -1696,7 +1696,7 @@
   {
     "Index": 154,
     "SearchText": "$^\bFencing\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -1707,7 +1707,7 @@
   {
     "Index": 155,
     "SearchText": "$^\bFencing\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -1718,7 +1718,7 @@
   {
     "Index": 156,
     "SearchText": "$^\bFencing\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -1729,7 +1729,7 @@
   {
     "Index": 157,
     "SearchText": "$^\bFencing\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -1740,7 +1740,7 @@
   {
     "Index": 158,
     "SearchText": "Focus",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -1751,7 +1751,7 @@
   {
     "Index": 159,
     "SearchText": "Focus",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -1762,7 +1762,7 @@
   {
     "Index": 160,
     "SearchText": "Focus",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -1773,7 +1773,7 @@
   {
     "Index": 161,
     "SearchText": "Focus",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -1784,7 +1784,7 @@
   {
     "Index": 162,
     "SearchText": "Focus",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -1795,7 +1795,7 @@
   {
     "Index": 163,
     "SearchText": "Provocation",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -1806,7 +1806,7 @@
   {
     "Index": 164,
     "SearchText": "Healing",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -1817,7 +1817,7 @@
   {
     "Index": 165,
     "SearchText": "Healing",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -1828,7 +1828,7 @@
   {
     "Index": 166,
     "SearchText": "Healing",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -1839,7 +1839,7 @@
   {
     "Index": 167,
     "SearchText": "Healing",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -1850,7 +1850,7 @@
   {
     "Index": 168,
     "SearchText": "Healing",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -1861,7 +1861,7 @@
   {
     "Index": 169,
     "SearchText": "Healing",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -1872,7 +1872,7 @@
   {
     "Index": 170,
     "SearchText": "$^\bMace Fighting\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -1883,7 +1883,7 @@
   {
     "Index": 171,
     "SearchText": "$^\bMace Fighting\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -1894,7 +1894,7 @@
   {
     "Index": 172,
     "SearchText": "$^\bMace Fighting\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -1905,7 +1905,7 @@
   {
     "Index": 173,
     "SearchText": "$^\bMace Fighting\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -1916,7 +1916,7 @@
   {
     "Index": 174,
     "SearchText": "$^\bMace Fighting\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -1927,7 +1927,7 @@
   {
     "Index": 175,
     "SearchText": "$^\bMace Fighting\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -1938,7 +1938,7 @@
   {
     "Index": 176,
     "SearchText": "Magery",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -1949,7 +1949,7 @@
   {
     "Index": 177,
     "SearchText": "Magery",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -1960,7 +1960,7 @@
   {
     "Index": 178,
     "SearchText": "Magery",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -1971,7 +1971,7 @@
   {
     "Index": 179,
     "SearchText": "Magery",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -1982,7 +1982,7 @@
   {
     "Index": 180,
     "SearchText": "Magery",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -1993,7 +1993,7 @@
   {
     "Index": 181,
     "SearchText": "Magery",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -2004,7 +2004,7 @@
   {
     "Index": 182,
     "SearchText": "Meditation",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -2015,7 +2015,7 @@
   {
     "Index": 183,
     "SearchText": "Meditation",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -2026,7 +2026,7 @@
   {
     "Index": 184,
     "SearchText": "Meditation",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -2037,7 +2037,7 @@
   {
     "Index": 185,
     "SearchText": "Meditation",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -2048,7 +2048,7 @@
   {
     "Index": 186,
     "SearchText": "Meditation",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -2059,7 +2059,7 @@
   {
     "Index": 187,
     "SearchText": "Meditation",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -2070,7 +2070,7 @@
   {
     "Index": 188,
     "SearchText": "Musicianship",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -2081,7 +2081,7 @@
   {
     "Index": 189,
     "SearchText": "Musicianship",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -2092,7 +2092,7 @@
   {
     "Index": 190,
     "SearchText": "Musicianship",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -2103,7 +2103,7 @@
   {
     "Index": 191,
     "SearchText": "Musicianship",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -2114,7 +2114,7 @@
   {
     "Index": 192,
     "SearchText": "Musicianship",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -2125,7 +2125,7 @@
   {
     "Index": 193,
     "SearchText": "Musicianship",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -2136,7 +2136,7 @@
   {
     "Index": 194,
     "SearchText": "Mysticism",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -2147,7 +2147,7 @@
   {
     "Index": 195,
     "SearchText": "Mysticism",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -2158,7 +2158,7 @@
   {
     "Index": 196,
     "SearchText": "Mysticism",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -2169,7 +2169,7 @@
   {
     "Index": 197,
     "SearchText": "Mysticism",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -2180,7 +2180,7 @@
   {
     "Index": 198,
     "SearchText": "Mysticism",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -2191,7 +2191,7 @@
   {
     "Index": 199,
     "SearchText": "Mysticism",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -2202,7 +2202,7 @@
   {
     "Index": 200,
     "SearchText": "Necromancy",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -2213,7 +2213,7 @@
   {
     "Index": 201,
     "SearchText": "Necromancy",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -2224,7 +2224,7 @@
   {
     "Index": 202,
     "SearchText": "Necromancy",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -2235,7 +2235,7 @@
   {
     "Index": 203,
     "SearchText": "Necromancy",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -2246,7 +2246,7 @@
   {
     "Index": 204,
     "SearchText": "Necromancy",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -2257,7 +2257,7 @@
   {
     "Index": 205,
     "SearchText": "Necromancy",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -2268,7 +2268,7 @@
   {
     "Index": 206,
     "SearchText": "Ninjitsu",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -2279,7 +2279,7 @@
   {
     "Index": 207,
     "SearchText": "Ninjitsu",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -2290,7 +2290,7 @@
   {
     "Index": 208,
     "SearchText": "Ninjitsu",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -2301,7 +2301,7 @@
   {
     "Index": 209,
     "SearchText": "Ninjitsu",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -2312,7 +2312,7 @@
   {
     "Index": 210,
     "SearchText": "Ninjitsu",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -2323,7 +2323,7 @@
   {
     "Index": 211,
     "SearchText": "Ninjitsu",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -2334,7 +2334,7 @@
   {
     "Index": 212,
     "SearchText": "Parrying",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -2345,7 +2345,7 @@
   {
     "Index": 213,
     "SearchText": "Parrying",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -2356,7 +2356,7 @@
   {
     "Index": 214,
     "SearchText": "Parrying",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -2367,7 +2367,7 @@
   {
     "Index": 215,
     "SearchText": "Parrying",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -2378,7 +2378,7 @@
   {
     "Index": 216,
     "SearchText": "Parrying",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -2389,7 +2389,7 @@
   {
     "Index": 217,
     "SearchText": "Parrying",
-    "FormattedText": "/c[#e8da10]{0}/c[#ff0342]{1}",
+    "FormattedText": "/c[#e8da10]{0}/c[#ff0342] {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -2400,7 +2400,7 @@
   {
     "Index": 218,
     "SearchText": "Focus",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -2411,7 +2411,7 @@
   {
     "Index": 219,
     "SearchText": "Peacemaking",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -2422,7 +2422,7 @@
   {
     "Index": 220,
     "SearchText": "Peacemaking",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -2433,7 +2433,7 @@
   {
     "Index": 221,
     "SearchText": "Peacemaking",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -2444,7 +2444,7 @@
   {
     "Index": 222,
     "SearchText": "Peacemaking",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -2455,7 +2455,7 @@
   {
     "Index": 223,
     "SearchText": "Peacemaking",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -2466,7 +2466,7 @@
   {
     "Index": 224,
     "SearchText": "Peacemaking",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -2477,7 +2477,7 @@
   {
     "Index": 225,
     "SearchText": "Provocation",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -2488,7 +2488,7 @@
   {
     "Index": 226,
     "SearchText": "Provocation",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -2499,7 +2499,7 @@
   {
     "Index": 227,
     "SearchText": "Provocation",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -2510,7 +2510,7 @@
   {
     "Index": 228,
     "SearchText": "Provocation",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -2521,7 +2521,7 @@
   {
     "Index": 229,
     "SearchText": "Provocation",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -2532,7 +2532,7 @@
   {
     "Index": 230,
     "SearchText": "Provocation",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -2543,7 +2543,7 @@
   {
     "Index": 231,
     "SearchText": "Resisting Spells",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -2554,7 +2554,7 @@
   {
     "Index": 232,
     "SearchText": "Resisting Spells",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -2565,7 +2565,7 @@
   {
     "Index": 233,
     "SearchText": "Resisting Spells",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -2576,7 +2576,7 @@
   {
     "Index": 234,
     "SearchText": "Resisting Spells",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -2587,7 +2587,7 @@
   {
     "Index": 235,
     "SearchText": "Resisting Spells",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -2598,7 +2598,7 @@
   {
     "Index": 236,
     "SearchText": "Resisting Spells",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -2609,7 +2609,7 @@
   {
     "Index": 237,
     "SearchText": "Spirit Speak",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -2620,7 +2620,7 @@
   {
     "Index": 238,
     "SearchText": "Spirit Speak",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -2631,7 +2631,7 @@
   {
     "Index": 239,
     "SearchText": "Spirit Speak",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -2642,7 +2642,7 @@
   {
     "Index": 240,
     "SearchText": "Spirit Speak",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -2653,7 +2653,7 @@
   {
     "Index": 241,
     "SearchText": "Spirit Speak",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -2664,7 +2664,7 @@
   {
     "Index": 242,
     "SearchText": "Spirit Speak",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -2675,7 +2675,7 @@
   {
     "Index": 243,
     "SearchText": "$\\wStealing",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -2686,7 +2686,7 @@
   {
     "Index": 244,
     "SearchText": "$\\wStealing",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -2697,7 +2697,7 @@
   {
     "Index": 245,
     "SearchText": "$\\wStealing",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -2708,7 +2708,7 @@
   {
     "Index": 246,
     "SearchText": "$\\wStealing",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -2719,7 +2719,7 @@
   {
     "Index": 247,
     "SearchText": "$\\wStealing",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -2730,7 +2730,7 @@
   {
     "Index": 248,
     "SearchText": "Veterinary",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -2741,7 +2741,7 @@
   {
     "Index": 249,
     "SearchText": "Stealth",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -2752,7 +2752,7 @@
   {
     "Index": 250,
     "SearchText": "Stealth",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -2763,7 +2763,7 @@
   {
     "Index": 251,
     "SearchText": "Stealth",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -2774,7 +2774,7 @@
   {
     "Index": 252,
     "SearchText": "Stealth",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -2785,7 +2785,7 @@
   {
     "Index": 253,
     "SearchText": "Stealth",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -2796,7 +2796,7 @@
   {
     "Index": 254,
     "SearchText": "$^\bSwordsmanship\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -2807,7 +2807,7 @@
   {
     "Index": 255,
     "SearchText": "$^\bSwordsmanship\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -2818,7 +2818,7 @@
   {
     "Index": 256,
     "SearchText": "$^\bSwordsmanship\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -2829,7 +2829,7 @@
   {
     "Index": 257,
     "SearchText": "$^\bSwordsmanship\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -2840,7 +2840,7 @@
   {
     "Index": 258,
     "SearchText": "$^\bSwordsmanship\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -2851,7 +2851,7 @@
   {
     "Index": 259,
     "SearchText": "$^\bSwordsmanship\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -2862,7 +2862,7 @@
   {
     "Index": 260,
     "SearchText": "Tactics",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -2873,7 +2873,7 @@
   {
     "Index": 261,
     "SearchText": "Tactics",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -2884,7 +2884,7 @@
   {
     "Index": 262,
     "SearchText": "Tactics",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -2895,7 +2895,7 @@
   {
     "Index": 263,
     "SearchText": "Tactics",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -2906,7 +2906,7 @@
   {
     "Index": 264,
     "SearchText": "Tactics",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -2917,7 +2917,7 @@
   {
     "Index": 265,
     "SearchText": "Tactics",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -2928,7 +2928,7 @@
   {
     "Index": 266,
     "SearchText": "$^\bThrowing\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -2939,7 +2939,7 @@
   {
     "Index": 267,
     "SearchText": "$^\bThrowing\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -2950,7 +2950,7 @@
   {
     "Index": 268,
     "SearchText": "$^\bThrowing\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -2961,7 +2961,7 @@
   {
     "Index": 269,
     "SearchText": "$^\bThrowing\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -2972,7 +2972,7 @@
   {
     "Index": 270,
     "SearchText": "$^\bThrowing\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -2983,7 +2983,7 @@
   {
     "Index": 271,
     "SearchText": "$^\bThrowing\b",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -2994,7 +2994,7 @@
   {
     "Index": 272,
     "SearchText": "Veterinary",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -3005,7 +3005,7 @@
   {
     "Index": 273,
     "SearchText": "Veterinary",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -3016,7 +3016,7 @@
   {
     "Index": 274,
     "SearchText": "Veterinary",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -3027,7 +3027,7 @@
   {
     "Index": 275,
     "SearchText": "Veterinary",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -3038,7 +3038,7 @@
   {
     "Index": 276,
     "SearchText": "Veterinary",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -3049,7 +3049,7 @@
   {
     "Index": 277,
     "SearchText": "Veterinary",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
@@ -3060,7 +3060,7 @@
   {
     "Index": 278,
     "SearchText": "Wrestling",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 1,
     "Max1": 3,
     "Min2": -1,
@@ -3071,7 +3071,7 @@
   {
     "Index": 279,
     "SearchText": "Wrestling",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 4,
     "Max1": 6,
     "Min2": -1,
@@ -3082,7 +3082,7 @@
   {
     "Index": 280,
     "SearchText": "Wrestling",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 7,
     "Max1": 9,
     "Min2": -1,
@@ -3093,7 +3093,7 @@
   {
     "Index": 281,
     "SearchText": "Wrestling",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 10,
     "Max1": 12,
     "Min2": -1,
@@ -3104,7 +3104,7 @@
   {
     "Index": 282,
     "SearchText": "Wrestling",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 13,
     "Max1": 15,
     "Min2": -1,
@@ -3115,7 +3115,7 @@
   {
     "Index": 283,
     "SearchText": "Wrestling",
-    "FormattedText": "/c[#e8da10]{0}{1}",
+    "FormattedText": "/c[#e8da10]{0} {1}",
     "Min1": 16,
     "Max1": 99,
     "Min2": -1,
