@@ -45,7 +45,10 @@ stop_chopping_trees_weight = max_weight - 10    #adjust as needed
 delay_drag = 600                                #only adjust due to lag
 
 # serials
-AXE_SERIAL = 0x40F9310B                         # Change to your axe serial
+# uncomment out the first AXE_SERIAL and then comment out 
+# the second AXE_SERIAL  if you wish to not have to choose the axe everytime
+#AXE_SERIAL = 0x40F9310B                         # Change to your axe serial
+AXE_SERIAL = Target.PromptTarget('Select Your Axe/Hatchet You Wish To Use')
 
 # ===== ItemID =====
 wood_logs = 0x1BDD                              # change only if the ItemID for logs are different
