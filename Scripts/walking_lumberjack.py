@@ -258,11 +258,11 @@ while True:
         
     if Player.Hits >= Player.HitsMax:
         if Journal.SearchByType( "There's not enough wood here to harvest.", 'System' ):
-            #x, y = Player.Position.X, Player.Position.Y 
+            x, y = Player.Position.X, Player.Position.Y 
             Player.HeadMessage(2125, "Tree is empty!!")
-            #while Player.Position.X == x and Player.Position.Y == y:
-            #    Misc.Pause(3000)
-            Misc.Pause(5000)
+            while Player.Position.X == x and Player.Position.Y == y:
+                Misc.Pause(100)
+            Misc.Pause(1000)
             Journal.Clear()
         else:
             Target.TargetResource(AXE_SERIAL, "wood")
