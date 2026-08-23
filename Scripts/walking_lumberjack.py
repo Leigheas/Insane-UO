@@ -28,8 +28,7 @@
 #       there is a list of items and their id so if you want to remove any and add them 
 #       back later you can.
 #
-# 7. If your shard randomly inflicts damage while you are gathering make sure to set watch_health
-#       to true
+# 
 from System.Collections.Generic import List
 from System import Byte
 import sys
@@ -40,13 +39,6 @@ import sys
 debug_mode = False                              # set to true if needing to see debug messages
 auto_detect_beetles = True                      # change to true to auto detect beetles
 max_beetle_weight = 1500                        # change to how full you want your beetle to be
-
-#set watch_health to true if your shard will randomly inflict damage while gathering
-watch_health = True
-use_magery_to_heal = True   #set to true to use magery (greater heal)
-use_chiv_to_heal = False    #set to true to use chivalry to heal (close wounds)
-
-
 max_weight = Player.MaxWeight
 start_chopping_logs_weight = max_weight - 50    #adjust as needed
 stop_chopping_trees_weight = max_weight - 10    #adjust as needed
@@ -174,52 +166,15 @@ def set_beetle_weight_globals(number_of_beetles_to_use):
             Mobiles.WaitForProps(beetle, 200)
             globals()[f'beetle{i+1}_weight'] = Mobiles.GetPropValue(beetle, "Weight")
 
-def heal_player():
-    while Player.Hits != Player.HitsMax:
-        if use_magery_to_heal:
-            Spells.CastMagery("Greater Heal")
-            Target.WaitForTarget(10000, False)
-            Target.Self()
-            Misc.Pause(1000)
-        elif use_chiv_to_heal:
-            Spells.CastChivalry("Cleanse Wound")
-            Target.WaitForTarget(10000,False)
-            Target.Self()
-            Misc.Pause(1000)
-        else:
-            Player.HeadMessage(2125, "Somehow script got into heal_player with no method set!!!")
-            Player.HeadMessage(2125, "Please report!!!!")
-            Misc.ScriptStop('walking_lumberjack.py')
-            
-            
-            
-def check_health():
-    if debug_mode == True:
-        Player.HeadMessage(2125, "entered check health")
-    if Player.Hits >= Player.HitsMax:
-        if debug_mode == True:
-            Player.HeadMessage(2125, "health full!")
-        return
-    else:
-        heal_player()
 
 def chop_logs():
     log = Items.FindByID(wood_logs, -1, Player.Backpack.Serial)
     while log is not None:
-        if watch_health:
-            check_health()
-            Items.UseItem(axe_serial)
-            Target.WaitForTarget(5000, False)
-            Target.TargetExecute(log)
-            Misc.Pause(1000)
-            log = Items.FindByID(wood_logs, -1, Player.Backpack.Serial)
-        else:
-            Items.UseItem(axe_serial)
-            Target.WaitForTarget(5000, False)
-            Target.TargetExecute(log)
-            Misc.Pause(1000)
-            log = Items.FindByID(wood_logs, -1, Player.Backpack.Serial)
-            
+        Items.UseItem(axe_serial)
+        Target.WaitForTarget(5000, False)
+        Target.TargetExecute(log)
+        Misc.Pause(1000)
+        log = Items.FindByID(wood_logs, -1, Player.Backpack.Serial)
 
 def get_next_non_full_beetle():
     # Returns the index and serial of the next beetle that isnt full.
@@ -301,10 +256,7 @@ while True:
     #Journal.Clear()
     
         
-    if watch_health:
-        if debug_mode == True:
-            Player.HeadMessage(2125, "checking health from chopping loop!")
-        check_health()
+    if Player.Hits >= Player.HitsMax:
         if Journal.SearchByType( "There's not enough wood here to harvest.", 'System' ):
             x, y = Player.Position.X, Player.Position.Y 
             Player.HeadMessage(2125, "Tree is empty!!")
@@ -315,19 +267,9 @@ while True:
         else:
             Target.TargetResource(AXE_SERIAL, "wood")
             Misc.Pause(1000) #increased from 500 to accomodate possible injuries
-    else:
-        if Journal.SearchByType( "There's not enough wood here to harvest.", 'System' ):
-            x, y = Player.Position.X, Player.Position.Y 
-            Player.HeadMessage(2125, "Tree is empty!!")
-            while Player.Position.X == x and Player.Position.Y == y:
-                Misc.Pause(100)
-            Misc.Pause(1000)
-            Journal.Clear()
-    
-    if Journal.SearchByType('You have found a parasitic plant', 'System'):
-        m = Journal.GetLineText('You have found a parasitic plant', False)
-        Player.HeadMessage(1266, m)
-        Journal.Clear(m)    
+    elif Player.Hits < Player.HitsMax: #added for injuries
+            Player.HeadMessage(2125, 'Injured, Stopping so you dont kill yourself')
+            break
   
    # if debug_mode == True:
    #     for serial in beetle_info:
