@@ -71,19 +71,6 @@ blue_beetle_body_id = 0x0317                    # Change if needed
 # crystal shard     0x5738
 LJ_RESOURCES = [0x1BD7, 0x2F5F, 0x318F, 0x3190, 0x3191, 0x3199, 0x5738]
 
-RESOURCE_NAMES = {
-    0x1BD7: "Boards",
-    0x2F5F: "Switch",
-    0x318F: "Bark Fragment",
-    0x3190: "Parasitic Plant",
-    0x3191: "Luminescent Fungi",
-    0x3199: "Brilliant Amber",
-    0x5738: "Crystal Shard"
-}
-
-# Initialize dynamic counters for resources
-gathered_counters = {res_id: 0 for res_id in LJ_RESOURCES}
-
 # *************************************
 # ****  Settings (Can Change) End  ****
 # *************************************
@@ -311,12 +298,8 @@ if not axe_serial:
 
 # Chop trees as you run up against them, until you are too heavy.
 while True:
-    Journal.Clear()
-    Target.TargetResource(AXE_SERIAL, "wood")
-    Misc.Pause(500)
+    #Journal.Clear()
     
-    
-<<<<<<< HEAD
         
     if watch_health:
         if debug_mode == True:
@@ -346,8 +329,6 @@ while True:
         Player.HeadMessage(1266, m)
         Journal.Clear(m)    
   
-=======
->>>>>>> parent of f85c68a (handles injuries and doesn't spam)
    # if debug_mode == True:
    #     for serial in beetle_info:
    #         Misc.SendMessage(f"Detected beetle: (serial: {hex(serial)})")
